@@ -24,12 +24,12 @@ export default {
                 $('#navbar').addClass('black');
                 $('a').addClass('blacky');
                 $('li').addClass('blackyi');
-                document.getElementById('logo').setAttribute("src","http://localhost:8080/img/logo_rosa.9f863e19.png");
+                document.getElementById('logo').setAttribute("src","/img/logo_rosa.9f863e19.png");
             }else{
                 $('#navbar').removeClass('black');
                 $('a').removeClass('blacky');
                 $('li').removeClass('blackyi');
-                $('img').attr("src","http://localhost:8080/img/logo_branca.f747ee1b.png");
+                $('img').attr("src","/img/logo_branca.f747ee1b.png");
             }
         }
     },
