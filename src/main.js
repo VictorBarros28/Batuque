@@ -4,12 +4,13 @@ import router from "./router";
 import store from "./store";
 import BootstrapVue from "bootstrap-vue";
 import VeeValidate from 'vee-validate';
-
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
+import Index from './components/Index.vue'
 
 Vue.use(BootstrapVue)
 Vue.use(VeeValidate);
+
+Vue.component('home-navbar',Index)
+
 
 Vue.config.productionTip = false;
 
