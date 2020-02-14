@@ -6,8 +6,9 @@ import BootstrapVue from "bootstrap-vue";
 import VeeValidate from 'vee-validate';
 import Index from './components/Index.vue'
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 Vue.use(VeeValidate);
+Vue.component('home-navbar',Index)
 
 Vue.component('home-navbar',Index)
 

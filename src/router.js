@@ -7,12 +7,12 @@ export default new Router({
   routes: [
     {
       path: "/",
-      redirect: '/index'
+      redirect: "/index"
     },
     {
       path: "/index",
       name: "index",
       component: () => import("./components/Index.vue")
-    },
+    }
   ]
 });
