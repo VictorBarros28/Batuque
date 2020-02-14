@@ -1,35 +1,41 @@
 <template>
   <div id="formulario">
     <form action="" method="post" enctype="multipart/form-data">
-    <div id="infoum" >
+    <div id="form-name" >
         <label class="info" for="">NOME</label>
         <input class="placeholder" type="text" name ="nome" required="required" placeholder="">
     </div>
-    <div id="infodois" >
+    <div id="form-email" >
         <label class="info" for="">EMAIL</label>
         <input class="placeholder" type="text" name="nome" required="required" placeholder="">
     </div>
-    <div id="infotres" >
+    <div id="form-fone" >
         <label class="info" for="">TELEFONE</label>
         <input class="placeholder" type="text" name="telefone" required="required" placeholder="">
     </div>
-    <div id="infoquatro">
+    <div id="form-mensagem">
         <label class="info" for="">MENSAGEM</label>
-        <textarea name="mensagem" id="placeholder" required="required" placeholder="" cols="61" rows="10"></textarea>
+        <textarea name="mensagem" id="mensagem" required="required" placeholder="" cols="61" rows="10"></textarea>
     </div>
     </form>
-    <div id="infocinco">
+    <div id="form-enviar">
     <button id="enviar">ENVIAR!</button>
     </div>
     <div id="logo">
         <div>
-        <img  src="../assets/face.png" alt="">
+        <a href="">
+        <img class="icones" src="../assets/face.png" alt="">
+        </a>
         </div>
         <div>
-        <img  src="../assets/insta.png" alt="">
+        <a href="">   
+        <img class="icones" src="../assets/insta.png" alt="">
+        </a> 
         </div>
         <div>
-        <img  src="../assets/be.png" alt="">
+        <a href="">
+        <img class="icones" src="../assets/be.png" alt="">
+        </a>
         </div>
     </div>
     
@@ -76,27 +82,25 @@ export default {
     background-color: #f8f8f8;
     opacity: 0.3;
 }
-#infoum{
-    
-}
-#infodois{
+
+#form-email{
     margin-top: 34.7px;
     
 }
-#infotres{
+#form-fone{
     margin-top: 35.2px;
     
 }
-#infoquatro{
+#form-mensagem{
     margin-top: 22.1px;
     
 }
-#infocinco{
+#form-enviar{
     width: 454.1px;
     height: 30px;
     
 }
-#placeholder{
+#mensagem{
     width: 453.4px;
     height: 137.8px;
     border: solid 0.3px #e8777b;
@@ -129,5 +133,8 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     width: 180px;
+}
+.icones{
+    cursor: pointer;
 }
 </style>
