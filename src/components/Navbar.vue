@@ -29,12 +29,12 @@ export default {
                 $('#navbar').addClass('black');
                 $('a').addClass('blacky');
                 $('li').addClass('blackyi');
-                document.getElementById('logo').setAttribute("src","../assets/logo_rosa.png");
+                document.getElementById('logo').setAttribute("src",require('@/assets/logo_rosa.png'));
             }else{
                 $('#navbar').removeClass('black');
                 $('a').removeClass('blacky');
                 $('li').removeClass('blackyi');
-                $('img').attr("src","http://localhost:8080/img/logo_branca.f747ee1b.png");
+                document.getElementById('logo').setAttribute("src",require('@/assets/logo_branca.png'));
             }
         }
     },
@@ -64,7 +64,7 @@ export default {
     }
 
     img{
-        transition: .5s;
+        transition: .6s;
     }
     ul{
         
