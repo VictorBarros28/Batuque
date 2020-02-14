@@ -2,13 +2,14 @@
 
       <div id="navbar">
         <img id="logo" src="../assets/logo_branca.png" alt="">
+      <img id="burguer" src="../assets/menu.png" alt="">
         <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">sobre</a></li>
-            <li><a href="">portfólio</a></li>
-            <li><a href="">serviços</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">contato</a></li>
+            <li><router-link to="">home</router-link></li>
+            <li><router-link to="">sobre</router-link></li>
+            <li><router-link to="">portfólio</router-link></li>
+            <li><router-link to="">serviços</router-link></li>
+            <li><router-link to="">blog</router-link></li>
+            <li><router-link to="">contato</router-link></li>
         </ul>
     </div>
 
@@ -30,11 +31,13 @@ export default {
                 $('a').addClass('blacky');
                 $('li').addClass('blackyi');
                 document.getElementById('logo').setAttribute("src",require('@/assets/logo_rosa.png'));
+                document.getElementById('burguer').setAttribute("src",require('@/assets/menu_rosa.png'));
             }else{
                 $('#navbar').removeClass('black');
                 $('a').removeClass('blacky');
                 $('li').removeClass('blackyi');
                 document.getElementById('logo').setAttribute("src",require('@/assets/logo_branca.png'));
+                document.getElementById('burguer').setAttribute("src",require('@/assets/menu.png'));
             }
         }
     },
@@ -52,6 +55,10 @@ export default {
 
 <style>
 
+    #burguer{
+        display:none;
+    }
+
     #navbar{
         box-sizing: border-box;
         position: fixed;
@@ -63,15 +70,11 @@ export default {
         transition: .5s;
     }
 
-    img{
-        transition: .6s;
-    }
     ul{
-        
         margin: 0 12% 0 0 !important;
         display: inline;
     }
-    
+
     li{
         display: inline;
         margin-right: 10%;
@@ -86,19 +89,16 @@ export default {
     li a{
         text-decoration: none;
         color: #ffffff;
-        transition: .2s;
     }
 
     li a:hover{
         text-decoration: none;
         color: #ffffff;
-       
     }
 
     li:hover{
         border-bottom: solid;
         border-width: 1px;
-        cursor: pointer;
         border-color: #ffffff;;
     }
 
@@ -119,5 +119,91 @@ export default {
         height: 182px !important;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     }
+
+
+    @media screen and (max-width: 1200px){
+
+        li{
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 950px){
+
+        
+
+        li{
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 830px){
+
+        #navbar{
+            height: 210px;
+        }
+
+        #logo{
+            width: 240px;
+            height: 67.5px;
+        }
+
+        
+        li{
+            font-size: 18px;
+        }
+    }
+
+
+    @media screen and (max-width: 830px) and (max-height: 620px){
+
+        .black{
+            height: 150px !important;
+        }
+
+        #navbar{
+            height: 180px;
+        }
+
+        #logo{
+            width: 240px;
+            height: 67.5px;
+        }
+
+        
+        li{
+            font-size: 18px;
+        }
+    }
+
+
+    @media screen and (max-width: 700px){
+
+        ul{
+            display: none;
+        }
+
+       
+        #burguer {
+            display: flex;
+            width: 8%;
+            margin:0;
+            padding: 0;
+        }
+        .black{
+            height: 120px !important;
+        }
+
+        #navbar{
+            height: 150px;
+        }
+
+        #logo{
+            width: 200px;
+            height: 56.6px;
+        }
+
+    }
+
 
 </style>
