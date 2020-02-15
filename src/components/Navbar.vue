@@ -158,16 +158,16 @@ export default {
     @media screen and (max-width: 830px) and (max-height: 620px){
 
         .black{
-            height: 150px !important;
+            height: 130px !important;
         }
 
         #navbar{
-            height: 180px;
+            height: 160px;
         }
 
         #logo{
-            width: 240px;
-            height: 67.5px;
+            width: 200px;
+            height: 56.6px;
         }
 
         
@@ -186,7 +186,7 @@ export default {
        
         #burguer {
             display: flex;
-            width: 8%;
+            width: 5%;
             margin:0;
             padding: 0;
         }
@@ -199,11 +199,17 @@ export default {
         }
 
         #logo{
-            width: 200px;
-            height: 56.6px;
+            width: 150px;
+            height: 42.4px;
         }
 
     }
 
 
+    @media screen and (max-width: 567px){
+
+        #burguer{
+            width: 8%;
+        }
+    }
 </style>
