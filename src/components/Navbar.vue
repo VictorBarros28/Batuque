@@ -158,11 +158,11 @@ export default {
     @media screen and (max-width: 830px) and (max-height: 620px){
 
         .black{
-            height: 130px !important;
+            height: 120px !important;
         }
 
         #navbar{
-            height: 160px;
+            height: 150px;
         }
 
         #logo{
@@ -191,11 +191,11 @@ export default {
             padding: 0;
         }
         .black{
-            height: 120px !important;
+            height: 100px !important;
         }
 
         #navbar{
-            height: 150px;
+            height: 130px;
         }
 
         #logo{
