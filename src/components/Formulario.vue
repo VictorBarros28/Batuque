@@ -137,4 +137,33 @@ export default {
 .icones{
     cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+    .placeholder{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mensagem{
+        width: 80%;
+        
+        
+    }
+    #formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+    }
+    #enviar{
+        width: 79%;
+        float: none;
+    }
+    #form-enviar{
+        display: flex;
+        align-items: center;
+    }
+}
 </style>
