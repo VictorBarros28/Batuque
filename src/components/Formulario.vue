@@ -158,12 +158,15 @@ export default {
 
     }
     #enviar{
-        width: 79%;
+        width: 80%;
         float: none;
     }
     #form-enviar{
+        width: 80%;
         display: flex;
         align-items: center;
     }
+    
+    
 }
 </style>
