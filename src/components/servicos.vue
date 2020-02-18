@@ -2,27 +2,35 @@
   <div class="hello">
     
 
+    <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
 
-<img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
  
   <div class= "cont">
 <h1>{{ msg }}</h1>
-<div class = "texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+<div class = "texto">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</div>
+<!--
 <div class="cardservicos">
 
-<div class="cardservicos1 grid-md">
-<img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
-<p class = "txt">GRÁFICO</p>
+  <div class="cardservicos1 grid-md">
+  <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
+  <p class = "txt">GRÁFICO</p>
+  </div>
+  <div class="cardservicos2 grid-md">
+  <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
+  <p class = "txt">INTERIORES</p>
+  </div>
+  <div class="cardservicos3 grid-md">
+  <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
+  <p class = "txt">PRODUTOS</p>
+  </div>
 </div>
-<div class="cardservicos2 grid-md">
-<img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
-<p class = "txt">INTERIORES</p>
-</div>
-<div class="cardservicos3 grid-md">
-<img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
-<p class = "txt">PRODUTOS</p>
-</div>
-</div>
+-->
 
 </div>
 <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral2">
@@ -101,7 +109,7 @@ border-left: solid transparent 110px;
 }
 
 .hello{  
-  width: 1920px;
+  
   height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
@@ -116,7 +124,7 @@ border-left: solid transparent 110px;
   top:-30px;
   padding-left: 50px;
   width: 1290px;
-  height: 900px;
+ /* height: 900px; */
   background-color: #e48f8e;
   display: flex;
   flex-direction: column;
@@ -147,15 +155,13 @@ a {
 }
 
 .texto{
-  position: relative;
+ 
   font-family: 'Open Sans';
   font-size: 30px;
   font-weight:lighter;
   color: #ffffff;
-  width:1236px;
-  height: 124px;
-  bottom:-42px;
-  height: 124px;
+  border:1px solid black;
+  width: 100%;
 
 }
 
@@ -163,9 +169,9 @@ a {
   @media screen and (max-width: 840px) {
     
 .cont{
-width: 300px;
-margin-bottom: 500px;
-left:-200px;
+
+/*margin-bottom: 500px;*/
+
 }
 
 .img-responsive{
@@ -180,19 +186,23 @@ align-items: space-around;
   position: relative;
   bottom:10px;
   font-family: 'Open Sans';
-  font-size: 44px;
+  font-size: 25px;
   font-weight:lighter;
   color: #ffffff;
+  border:1px solid blue;
+
+  /* tirar 
   width:1150px;
   height: 124px;
   margin-top:72px;
   height: 124px;
+  */
   }
 
   h1{
    font-family: monospace;
-    width: 1000px;
-  font-size: 110px;
+   
+  font-size: 50px;
   font-stretch: extra-expanded;
   font-weight: lighter;
   color: #fffffff1;
@@ -210,26 +220,28 @@ align-items: space-around;
   }
   .lateral1{
     
-  width: 427.275px;
-  height: 781.65px;
+  width: 50px;
+  height: 195px;
   display:flex;
   position: relative;
-  bottom:-990px;
-  margin-left:-200px;
-  margin-right:500px;
+  top:475px;
+  left:0px;
   align-self: auto;
   
   
 }
 
 .lateral2{
-  display:flex;
-  position: relative;
-  align-self: auto;
-    width: 427.275px;
-    height: 781.65px;
+    display:flex;
+    position: relative;
+    align-self: auto;
+    width: 50px !important;
+    height: 195px !important;
     bottom: 890px;
-    left:250px;
+    left:0px;
+    bottom: 425px;
+    
+
 
 }
     .cardservicos {
@@ -262,29 +274,27 @@ align-items: space-around;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 2100px;
-      width:1700px;
+      /*height: 2100px;*/
+     
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
     }
   }
-  
-@media screen and (max-width: 430px) {
+
+  /*
+  @media screen and (max-width: 430px) {
     
 .cont{
 width: 190px !important;
 position: relative;
 left: 170px;
 }
-
 .img-responsive{
 width: 270px;
 padding-bottom: 30px;
 margin-top:-60px;
 align-items: space-around;
 }
-
 .texto{
-
   font-family: 'Open Sans';
   font-size: 50px;
   font-weight:lighter;
@@ -295,7 +305,6 @@ align-items: space-around;
   margin-bottom: 300px;
   height: 124px;
   }
-
   h1{
    font-family: monospace;
     width: 2000px;
@@ -326,7 +335,6 @@ align-items: space-around;
   margin-top: 900px;
   
 }
-
 .lateral2{
   display:flex;
   position: relative;
@@ -338,7 +346,6 @@ align-items: space-around;
     margin-right:310px;
     padding-left: 1px;
     left:-220px;
-
 }
     .cardservicos {
       flex:1 1 calc(33% - 2rem);
@@ -372,4 +379,7 @@ align-items: space-around;
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
     }
   }
+
+  */
+  
 </style>
