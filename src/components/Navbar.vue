@@ -68,6 +68,7 @@ export default {
         width: 100%;
         height: 280px;
         transition: .5s;
+        z-index: 100;
     }
 
     ul{
@@ -144,8 +145,8 @@ export default {
         }
 
         #logo{
-            width: 240px;
-            height: 67.5px;
+            width: 220px;
+            height: 61.8px;
         }
 
         
