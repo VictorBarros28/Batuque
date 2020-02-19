@@ -107,6 +107,7 @@ export default {
     margin-top:15.8px;
     background-color: #f8f8f8;
     opacity: 0.3;
+    resize: none;
 }
 #enviar{
     font-family: monospace;
@@ -129,6 +130,7 @@ export default {
 }
 #logo{
     margin-top: 33.7px;
+
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -143,6 +145,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     #mensagem{
         width: 80%;
@@ -153,8 +156,7 @@ export default {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
+        
 
     }
     #enviar{
@@ -164,9 +166,15 @@ export default {
     #form-enviar{
         width: 80%;
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
-    
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+
+    }
     
 }
 </style>
