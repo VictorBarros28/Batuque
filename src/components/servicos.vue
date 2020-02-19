@@ -95,7 +95,7 @@ justify-content: space-around;
 .cont{  
   
   position: relative;
-  right:4%;
+  right:2%;
   top:-30px;
   background-color: #e48f8e;
   display: flex;
