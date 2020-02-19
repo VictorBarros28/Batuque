@@ -1,9 +1,10 @@
 <template>
   <div class="hello">
     
-
+<img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral2">
 
 <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
+
  
   <div class= "cont">
 <h1>{{ msg }}</h1>
@@ -25,7 +26,7 @@
 </div>
 
 </div>
-<img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral2">
+
 </div>
 </template>
 
@@ -40,21 +41,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.lateral1{
-  position: relative;
-  left: -100px;
-  width: 379px;
-  height: 620.8px;
+/* .lateral1{
+  width: 10vw;
+  position: absolute;
+  left: -200px;
   bottom:-400px;
 }
 
 .lateral2{  
-  position: relative;
-  width: 379px;
-  height: 620.8px;
+  position: absolute;
+  width: 10vw;
   display: flex;
-  bottom:350px;
-  left: 100px;
+  bottom:450px;
+  left: 11px;
+  
+} */
+
+.lateral1{
+  position: relative;
+  width:100vw;
+  right: 390px;
+  bottom: -36vh;
+}
+.lateral2{  
+  position: relative;
+  width: 100vw;
+  bottom:35vh;
+  right: -89vw;
   
 }
 .txt{
@@ -68,41 +81,22 @@ export default {
 .img-responsive{
 position: relative;
 bottom:35px;  
-align-items: space-around;
 }
 
 .cardservicos{
 display: flex;
 position: relative;
-width: 1280px;
-height: 800px;
+width: 100vw;
+height: fit-content;
 justify-content: center;
 top:80px;
-flex-wrap: wrap;
-align-items: center;
+justify-content: space-evenly;
 
-}
-.cardservicos1{
-  
-border-right: solid transparent 110px;
-border-left: solid transparent 110px;
-}
-
-.cardservicos2{
-  
-border-right: solid transparent 110px;
-border-left: solid transparent 110px;
-}
-
-.cardservicos3{
-  
-border-right: solid transparent 110px;
-border-left: solid transparent 110px;
 }
 
 .hello{  
-  width: 1920px;
-  height: 1000px;
+  width: 100vw;
+  height: fit-content;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -112,12 +106,10 @@ border-left: solid transparent 110px;
 
 .cont{  
   position: relative;
-  left:-10px;
-  top:-30px;
-  padding-left: 50px;
-  width: 1290px;
-  height: 900px;
-  background-color: #e48f8e;
+  left:-340px;
+  top:30px;
+  width: 82%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,31 +139,104 @@ a {
 }
 
 .texto{
-  position: relative;
+  /* position: relative; */
   font-family: 'Open Sans';
   font-size: 30px;
   font-weight:lighter;
   color: #ffffff;
-  width:1236px;
-  height: 124px;
+  width:50vw;
+  height: fit-content;
   bottom:-42px;
-  height: 124px;
 
 }
 
  
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 1800px) {
     
 .cont{
-width: 300px;
-margin-bottom: 500px;
-left:-200px;
+bottom:2002px;
+width:100vw;
+left:-300px;
+height: 70vh;
 }
 
 .img-responsive{
-width: 270px;
-padding-bottom: 30px;
-margin-top:-60px;
+align-items: space-evenly;
+}
+
+.texto{
+
+  position: relative;
+  bottom:10px;
+  font-family: 'Open Sans';
+  font-weight:lighter;
+  color: #ffffff;
+  font-size: 20px;
+  border:1px solid blue;
+}
+  h1{
+  font-family: monospace;
+  width: 100vw;
+  font-size: 62px;
+  font-weight: lighter;
+  color: #fffffff1;
+  padding-top: 94px;
+  }
+  .txt{
+  
+  color:white;
+  font-style: inherit;
+  font-family: monospace;
+  font-weight:lighter;
+  font-size: 30px;
+  }
+  .lateral1{
+    
+  display:flex;
+  position: relative;
+  bottom:-490px;
+  left:-110px;
+  
+  
+}
+
+.lateral2{
+  display:flex;
+  position: relative;
+    bottom: 500px;
+    left:100%;
+    margin-left:5%;
+
+}
+    .cardservicos {
+      flex:1 1 calc(33% - 2rem);
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vw;
+      height:fit-content;
+    }
+
+    .hello {
+      flex: 1 1 calc(33% - 2rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+    }
+  }
+  
+@media screen and (max-width: 1293px) {
+ .cont{
+width:100vw;
+bottom:100px;
+height: 50vh;
+left: -350px;
+}
+
+.img-responsive{
+width: 15vw;
 align-items: space-around;
 }
 
@@ -180,20 +245,15 @@ align-items: space-around;
   position: relative;
   bottom:10px;
   font-family: 'Open Sans';
-  font-size: 44px;
   font-weight:lighter;
   color: #ffffff;
-  width:1150px;
-  height: 124px;
-  margin-top:72px;
-  height: 124px;
-  }
-
+  font-size: 15px;
+  border:1px solid blue;
+}
   h1{
-   font-family: monospace;
-    width: 1000px;
-  font-size: 110px;
-  font-stretch: extra-expanded;
+  font-family: monospace;
+  width: 100%;
+  font-size: 52px;
   font-weight: lighter;
   color: #fffffff1;
   padding-top: 94px;
@@ -204,20 +264,14 @@ align-items: space-around;
   font-style: inherit;
   font-family: monospace;
   font-weight:lighter;
-  font-size: 45px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  font-size: 20px;
   }
   .lateral1{
     
-  width: 427.275px;
-  height: 781.65px;
   display:flex;
   position: relative;
-  bottom:-990px;
-  margin-left:-200px;
-  margin-right:500px;
-  align-self: auto;
+  bottom:-590px;
+  left:-200px;
   
   
 }
@@ -225,150 +279,98 @@ align-items: space-around;
 .lateral2{
   display:flex;
   position: relative;
-  align-self: auto;
-    width: 427.275px;
-    height: 781.65px;
-    bottom: 890px;
-    left:250px;
+    bottom: 590px;
+    left:100%;
+    margin-left: 12%;
 
 }
     .cardservicos {
       flex:1 1 calc(33% - 2rem);
       display: flex;
-      position: relative;
-      top:400px;
-      flex-direction: column;
-      width: 800px;
-      height: 198px;
-      margin-right: 300px;
+      justify-content: space-evenly;
+      width: 100vw;
+      height: fit-content;
     }
-    .cardservicos1 {
-      flex:1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
-    .cardservicos2 {
-      flex: 1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
-    .cardservicos3 {
-      flex: 1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
+
     .hello {
       flex: 1 1 calc(33% - 2rem);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 2100px;
-      width:1700px;
+      height: 100vh;
+      width: 100vw;
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
     }
   }
-  
-@media screen and (max-width: 430px) {
-    
-.cont{
-width: 190px !important;
-position: relative;
-left: 170px;
+
+  @media screen and (max-width: 666px) {
+ .cont{
+width:100vw;
+height: fit-content;
 }
 
 .img-responsive{
-width: 270px;
-padding-bottom: 30px;
-margin-top:-60px;
+width: 11vw;
 align-items: space-around;
 }
 
 .texto{
-
+width: 70vw;
+  position: relative;
+  bottom:10px;
   font-family: 'Open Sans';
-  font-size: 50px;
   font-weight:lighter;
   color: #ffffff;
-  width:1000px;
-  height: 124px;
-  margin-top:72px;
-  margin-bottom: 300px;
-  height: 124px;
-  }
-
+  font-size: 10px;
+  border:1px solid blue;
+}
   h1{
-   font-family: monospace;
-    width: 2000px;
-  font-size: 110px;
-  font-stretch: extra-expanded;
+  font-family: monospace;
+  width: 100vw;
+  font-size: 32px;
   font-weight: lighter;
   color: #fffffff1;
   padding-top: 94px;
   }
   .txt{
-    
+  
   color:white;
   font-style: inherit;
   font-family: monospace;
   font-weight:lighter;
-  font-size: 45px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  font-size: 10px;
   }
   .lateral1{
-    
-  width: 377.275px;
-  height: 781.65px;
   display:flex;
-  position: fixed;
-  align-self: auto;
-  margin-left:-780px;
-  margin-top: 900px;
+  position:fixed;
+  /* bottom:-990px; */
+  left:90%;
+  
   
 }
 
 .lateral2{
   display:flex;
-  position: relative;
-  align-self: auto;
-    width: 427.275px;
-    height: 601.65px;
-    margin-bottom: 1500px;
-    margin-left: 11%;
-    margin-right:310px;
-    padding-left: 1px;
-    left:-220px;
+  position: fixed;
+    /* bottom: 890px; */
+    left:90%;
 
 }
     .cardservicos {
       flex:1 1 calc(33% - 2rem);
       display: flex;
-      flex-direction: column;
-      width: 800px;
-      height: 198px;
-      margin-right: 300px;
+      justify-content: space-evenly;
+      width:100vw;
+      height: fit-content;
     }
-    .cardservicos1 {
-      flex:1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
-    .cardservicos2 {
-      flex: 1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
-    .cardservicos3 {
-      flex: 1 1 calc(33% - 2rem);
-      border-right: solid transparent 55px;
-      border-left: solid transparent 55px;
-    }
+
     .hello {
       flex: 1 1 calc(33% - 2rem);
       display: flex;
       justify-content: center;
-      height: 1800px;
-      width:1700px;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
     }
   }
