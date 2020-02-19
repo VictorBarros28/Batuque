@@ -38,13 +38,15 @@
         </a>
         </div>
     </div>
-    
+    <Contatos></Contatos>
     </div>
 </template>
 
 <script>
+import Contatos from "./Contatos.vue"
 export default {
-    
+    components: {Contatos
+    },
 }
 
 </script>
@@ -62,8 +64,8 @@ export default {
     display: flex;
     flex-direction: column;
     color:#4e4e4e;
-    font-family: monospace;
-    font-weight: 500;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.17;
@@ -110,10 +112,10 @@ export default {
     resize: none;
 }
 #enviar{
-    font-family: monospace;
+    font-family: 'Segoe UI';
     font-size: 12px;
     color: black;
-    font-weight: 500;
+    font-weight: lighter;
     width: 73.7px;
     height: 25.8px;
     border: solid 0.6px #e8777b ;
