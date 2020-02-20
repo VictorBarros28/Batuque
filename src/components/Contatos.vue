@@ -1,41 +1,36 @@
 <template>
     <div id="contatos">
         <div id="info">
-        
-        <div id="email">
-            <div class="icones" >
-            <a href="">
+            
+            <div id="email">
+                <div class="icones" >
+                <a href="">
                 <img src="../assets/email.png" alt="">
-            </a>
+                </a>
+                </div>
+                <div class="email">batuque.design@gmail.com</div>
+            </div>        
+            
+            <div id="fone">
+                <div class="icones">
+                    <a href="">
+                    <img src="../assets/fone.png" alt="">
+                    </a>
+                </div>
+                <div id="cidade">Maceió</div>
+                <div>(82) 9 0000-0000</div>
             </div>
-            <div class="email">
-            batuque.design@gmail.com
+   
+            <div id="horario">
+                <div class="icones">
+                    <a href="">
+                    <img src="../assets/fone.png" alt="">
+                    </a>
+                </div>
+                <div id="dias">Segunda à Sexta</div>
+                <div>8 às 17h</div>
             </div>
-        </div>
-        
-        <div id="fone">
-            <div class="icones">
-            <a href="">
-                <img src="../assets/fone.png" alt="">
-            </a>
-            </div>
-            <div id="cidade">
-            Maceió 
-            </div>
-            <div>
-            (82) 9 0000-0000   
-            </div>
-        </div>
-        
-        <div id="horario">
-            <div class="icones">
-            <a href="">
-                <img src="../assets/fone.png" alt="">
-            </a>
-            </div>
-            <div>Segunda à Sexta</div>
-            <div>8 às 17h</div>
-        </div>
+           
     </div>
     <div id="location">
         <div class="icones" >
@@ -50,9 +45,17 @@
     </div>
 </template>
 <script>
-
+import {
+    BContainer,
+    BRow,
+    BCol,
+}from 'bootstrap-vue'
 export default {
-    
+    components:{
+        BContainer,
+        BRow,
+        BCol,
+    }
 }
 </script>
 <style scoped>
@@ -91,8 +94,8 @@ export default {
     border-right:1px solid #707070;
     border-top: 0px;
     border-bottom: 0px;
-    padding-left: 50px; 
-    padding-right: 50px;
+    padding-left: 44.5px; 
+    padding-right: 44.5px;
     padding-bottom:14px;
     border-color:#4e4e4e;
 }
@@ -118,5 +121,50 @@ export default {
 .icones{
     width: 31.7px;
     height: 31.7px;
+}
+
+@media screen and (max-width: 600px){
+
+#contatos{
+    font-size:9px;
+}
+.icones{
+    width: 22.3px;
+    height: 22.3px;
+}
+#info{
+    flex-wrap: wrap;
+    width:95%;
+    
+
+}
+#email{
+    padding-left: 24.475px;
+    padding-right: 24.475px;
+}
+#fone{
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+#dias{
+    margin-top:8px;
+}
+#cidade{
+    margin-top: 8px;
+}
+#horario{
+    margin-left: 0px;
+    padding-left:46.5px;
+    padding-right:46.5px ;
+
+
+}
+#fone{
+    margin-left: 0px;
+}
+#location{
+    margin-top: 20px;
+}
 }
 </style>
