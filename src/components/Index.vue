@@ -4,6 +4,8 @@
 
         <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
         <section></section>
+        <Formulario></Formulario>
+
     </div>
 
     
@@ -11,10 +13,12 @@
 
 <script>
 import Navbar from './Navbar'
+import Formulario from './Formulario'
 export default {
     
     components:{
-        'home-navebar': Navbar
+        'home-navebar': Navbar,
+        Formulario
     }
 }
 </script>
