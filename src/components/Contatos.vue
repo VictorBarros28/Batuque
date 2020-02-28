@@ -68,7 +68,7 @@ export default {
 #info{
     display: flex;
     flex-direction: row;
-    width: 750px;
+    width: 599px;
     justify-content: center;
 }
 
@@ -131,6 +131,7 @@ export default {
 .icones{
     width: 22.3px;
     height: 22.3px;
+    margin-right: 8px;
 }
 #info{
     flex-wrap: wrap;
@@ -157,6 +158,7 @@ export default {
     margin-left: 0px;
     padding-left:46.5px;
     padding-right:46.5px ;
+    align-items: center;
 
 
 }
@@ -165,6 +167,21 @@ export default {
 }
 #location{
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#endereço{
+    width: 248px;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 742px){
+
+#endereço{
+    width: 383px;
+}
+#location{
+    justify-content: center;
+    align-items: center;
 }
 }
 </style>
