@@ -1,7 +1,32 @@
-<template>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-      <div id="navbar">
-        <img id="logo" src="./img/logo_branca.png" alt="">
+<script type="text/javascript">
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $('#navbar').addClass('black');
+            $('a').addClass('blacky');
+            $('li').addClass('blackyi');
+            $('img').attr("src", "./src/components/img/logo_rosa.png");
+        }
+        else
+        {
+            $('#navbar').removeClass('black');
+            $('a').removeClass('blacky');
+            $('li').removeClass('blackyi');
+            $('img').attr("src", "./src/components/img/logo_branca.png");
+        }
+    })
+</script>
+</head>
+<body>
+    <div id="navbar">
+        <img src="./src/components/img/logo_branca.png" alt="">
         <ul>
             <li><a href="">home</a></li>
             <li><a href="">sobre</a></li>
@@ -12,40 +37,21 @@
         </ul>
     </div>
 
-</template>
-
-<script>
- //adicionando o efeito de trocar a navbar com o scroll
-export default {
-
-    methods:{
-        handleScroll (event){
-            if($(window).scrollTop()){
-                $('#navbar').addClass('black');
-                $('a').addClass('blacky');
-                $('li').addClass('blackyi');
-                document.getElementById('logo').setAttribute("src","/img/logo_rosa.9f863e19.png");
-            }else{
-                $('#navbar').removeClass('black');
-                $('a').removeClass('blacky');
-                $('li').removeClass('blackyi');
-                $('img').attr("src","/img/logo_branca.f747ee1b.png");
-            }
-        }
-    },
-
-    created () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-
-    destroyed () {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
-
-}
-</script>
+    <section></section>
+</body>
+</html>
 
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    section{
+        background-color: yellowgreen;
+        width: 100%;
+        height: 150vh;
+    }
 
     #navbar{
         box-sizing: border-box;
@@ -62,8 +68,6 @@ export default {
         transition: .5s;
     }
     ul{
-        
-        margin: 0 12% 0 0 !important;
         display: inline;
     }
     
@@ -77,19 +81,11 @@ export default {
         border-color: #ffffff;;
 
     }
-
     li a{
         text-decoration: none;
         color: #ffffff;
         transition: .2s;
     }
-
-    li a:hover{
-        text-decoration: none;
-        color: #ffffff;
-       
-    }
-
     li:hover{
         border-bottom: solid;
         border-width: 1px;
@@ -98,10 +94,6 @@ export default {
     }
 
     .blacky{
-        color: #535353;
-    }
-
-    .blacky:hover{
         color: #535353;
     }
 
@@ -114,5 +106,4 @@ export default {
         height: 182px !important;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     }
-
 </style>
