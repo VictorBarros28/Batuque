@@ -1,28 +1,23 @@
 <template>
     <div id="index">
-        <home-navebar></home-navebar>
+        <banner></banner>
 
-        <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
-        <section></section>
+        
     </div>
 
     
 </template>
 
 <script>
-import Navbar from './Navbar'
+import Banner from './Banner'
 export default {
     
     components:{
-        'home-navebar': Navbar
+        'banner': Banner
     }
 }
 </script>
 
 <style>
-    section{
-        width: 100%;
-        height: 125vh;
-        background-color: yellowgreen;
-    }
+    
 </style>
