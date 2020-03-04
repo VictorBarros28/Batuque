@@ -3,7 +3,7 @@
     <div id="banner">
       <div class= "filtro"> 
       <div id="texto">
-        <h1>LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</h1>
+        <div id="h1">LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</div>
       </div>
       <div id="mouse" >
         <img src="../assets/mouse.png" id="icone" />
@@ -66,17 +66,20 @@ export default {
     position: absolute;
     bottom: 0;
 }
+#h1{
+  font-size:45px;
+}
 @media screen and (max-width: 660px){
 
 #banner{
   font-size: 26px;
 }
 #texto{
-  width: 324px;
+  width: 258px;
  font-size:26px;
 }
-h1{
-  
+#h1{
+  font-size:26px;  
 }
 }
 </style>
