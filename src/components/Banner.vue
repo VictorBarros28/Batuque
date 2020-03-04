@@ -32,18 +32,17 @@ export default {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  z-index: 0;
+  position: relative;
 }
 .filtro{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(141, 50, 49);
-  opacity:0.55;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(141, 50, 49, 0.555);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 0;
+  
 }
 
 #texto {
@@ -57,17 +56,27 @@ export default {
   margin-top: 230px;
   
 }
-h1{
-  z-index: 1;
-}
+
 #icone {
     height: 57.3px;
-    widht: 73.5px;
+    
  
 }
 #mouse{
-    
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 660px){
+
+#banner{
+  font-size: 26px;
+}
+#texto{
+  width: 324px;
+ font-size:26px;
+}
+h1{
+  
+}
 }
 </style>
