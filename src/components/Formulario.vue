@@ -38,15 +38,14 @@
         </a>
         </div>
     </div>
-    <Contatos></Contatos>
+    
     </div>
 </template>
 
 <script>
-import Contatos from "./Contatos.vue"
+
 export default {
-    components: {Contatos
-    },
+    
 }
 
 </script>

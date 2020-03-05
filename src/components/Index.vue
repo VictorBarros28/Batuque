@@ -4,7 +4,7 @@
 
         <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
         <section></section>
-        <Formulario></Formulario>
+        <Footer></Footer>
 
     </div>
 
@@ -13,12 +13,13 @@
 
 <script>
 import Navbar from './Navbar'
-import Formulario from './Formulario'
+
+import Footer from './Footer.vue'
 export default {
     
     components:{
         'home-navebar': Navbar,
-        Formulario
+        Footer
     }
 }
 </script>

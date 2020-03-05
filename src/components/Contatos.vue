@@ -123,7 +123,7 @@ export default {
     height: 31.7px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1150px){
 
 #contatos{
     font-size:9px;
