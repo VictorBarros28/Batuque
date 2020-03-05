@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style>
+
 #banner {
   width: 100%;
   height: 100vh;
@@ -74,17 +75,15 @@ export default {
 #h1{
   font-size:45px;
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 680px){
 
-#banner{
-  font-size: 26px;
-}
+
 #texto{
   width: 258px;
- font-size:26px;
 }
 #h1{
-  font-size:26px;  
+  font-size:26px; 
+   
 }
 }
 </style>
