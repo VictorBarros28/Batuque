@@ -1,12 +1,11 @@
 <template>
     <div id="index">
-       
+        <home-navebar></home-navebar>
 
         <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
-        
+      
         <Servicos></Servicos>
         
-
     </div>
 
     
