@@ -1,7 +1,7 @@
 <template>
+
   <div class="hello">
     
-
     <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
 
  
@@ -17,11 +17,11 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa
 
 <div class="cardservicos">
   <div class="cardservicos1 grid-md">
-  <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
+  <img src= "../assets/BATUQUE_GRAFICO.png" href="/grafico" class="img-responsive">
   <p class = "txt">GRÁFICO</p>
   </div>
   <div class="cardservicos1 grid-md">
-  <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
+  <img src= "../assets/BATUQUE_INTERIORES.png" href="/interiores"  class="img-responsive">
   <p class = "txt">INTERIORES</p>
   </div>
   <div class="cardservicos1 grid-md">
