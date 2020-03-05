@@ -13,8 +13,10 @@ Vue.use(BootstrapVue);
 Vue.use(VeeValidate);
 Vue.component('home-navbar',Index)
 
-Vue.config.productionTip = false;
+Vue.component('home-navbar',Index)
 
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,

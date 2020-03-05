@@ -20,6 +20,7 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
+
  //adicionando o efeito de trocar a navbar com o scroll
 export default {
     
@@ -105,21 +106,30 @@ export default {
         height: 182px !important;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     }
+
+
     @media screen and (max-width: 1200px){
+
         li{
             font-size: 24px;
         }
     }
+
     @media screen and (max-width: 950px){
+
         
+
         li{
             font-size: 20px;
         }
     }
+
     @media screen and (max-width: 830px){
+
         #navbar{
             height: 210px;
         }
+
         #logo{
             width: 220px;
             height: 61.8px;
@@ -145,10 +155,14 @@ export default {
             font-size: 18px;
         }
     }
+
+
     @media screen and (max-width: 700px){
+
         ul{
             display: none;
         }
+
        
         #burguer {
             display: flex;
@@ -166,8 +180,12 @@ export default {
             width: 150px;
             height: 42.4px;
         }
+
     }
+
+
     @media screen and (max-width: 567px){
+
         #burguer{
             width: 8%;
         }
