@@ -1,37 +1,37 @@
 <template>
-  <div class="hello">
+<div class="hello">
     
 
-    <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
+  <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
 
- 
+  
   <div class= "cont">
-<h1>{{ msg }}</h1>
-<div class = "texto">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
-</div>
+    <h1>{{ msg }}</h1>
+    <div class = "texto">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
 
-<div class="cardservicos">
-  <div class="cardservicos1 grid-md">
-  <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
-  <p class = "txt">GRÁFICO</p>
-  </div>
-  <div class="cardservicos1 grid-md">
-  <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
-  <p class = "txt">INTERIORES</p>
-  </div>
-  <div class="cardservicos1 grid-md">
-  <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
-  <p class = "txt">PRODUTOS</p>
-  </div>
-</div>
+    <div class="cardservicos">
+      <div class="cardservicos1 grid-md">
+        <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
+        <p class = "txt">GRÁFICO</p>
+      </div>
+      <div class="cardservicos1 grid-md">
+        <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
+        <p class = "txt">INTERIORES</p>
+      </div>
+      <div class="cardservicos1 grid-md">
+        <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
+        <p class = "txt">PRODUTOS</p>
+      </div>
+    </div>
 
 
-</div>
+  </div>
 <img src = "../assets/latdir.png" class= "lateral2">
 </div>
 </template>
@@ -84,7 +84,7 @@ justify-content: space-around;
 
 }
 .hello{  
-  position: absolute;
+ 
   height: fit-content;
   padding-bottom:200px;
   background-color: #e48f8e;
@@ -176,7 +176,7 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
-  position: absolute;
+ 
   height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
@@ -266,7 +266,7 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
-  position: absolute;
+ 
   height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
@@ -357,7 +357,7 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
-  position: absolute;
+ 
   height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
@@ -448,7 +448,7 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
-  position: absolute;
+ 
   height: 800px;
   background-color: #e48f8e;
   display: flex !important;

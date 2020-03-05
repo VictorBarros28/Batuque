@@ -41,24 +41,19 @@ export default {
             }
         }
     },
-
     created () {
         window.addEventListener('scroll', this.handleScroll);
     },
-
     destroyed () {
         window.removeEventListener('scroll', this.handleScroll);
     }
-
 }
 </script>
 
 <style>
-
     #burguer{
         display:none;
     }
-
     #navbar{
         box-sizing: border-box;
         position: fixed;
@@ -69,13 +64,12 @@ export default {
         height: 280px;
         transition: .5s;
         z-index: 100;
+        top:0;
     }
-
     ul{
         margin: 0 12% 0 0 !important;
         display: inline;
     }
-
     li{
         display: inline;
         margin-right: 10%;
@@ -84,37 +78,29 @@ export default {
         line-height: 0.72;
         letter-spacing: -1.98px;
         border-color: #ffffff;;
-
     }
-
     li a{
         text-decoration: none;
         color: #ffffff;
     }
-
     li a:hover{
         text-decoration: none;
         color: #ffffff;
     }
-
     li:hover{
         border-bottom: solid;
         border-width: 1px;
         border-color: #ffffff;;
     }
-
     .blacky{
         color: #535353;
     }
-
     .blacky:hover{
         color: #535353;
     }
-
     .blackyi:hover{
         border-color: #535353;
     }
-
     .black{
         background-color: #ffffff;
         height: 182px !important;
@@ -148,29 +134,22 @@ export default {
             width: 220px;
             height: 61.8px;
         }
-
         
         li{
             font-size: 18px;
         }
     }
-
-
     @media screen and (max-width: 830px) and (max-height: 620px){
-
         .black{
             height: 120px !important;
         }
-
         #navbar{
             height: 150px;
         }
-
         #logo{
             width: 200px;
             height: 56.6px;
         }
-
         
         li{
             font-size: 18px;
@@ -194,11 +173,9 @@ export default {
         .black{
             height: 100px !important;
         }
-
         #navbar{
             height: 130px;
         }
-
         #logo{
             width: 150px;
             height: 42.4px;

@@ -1,10 +1,10 @@
 <template>
     <div id="index">
-        <home-navebar></home-navebar>
+        <banner></banner>
 
-        <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
-      
-        <Servicos></Servicos>
+            <Servicos></Servicos>
+        
+        <Formulario></Formulario>
         
     </div>
 
@@ -13,6 +13,7 @@
 
 <script>
 import Navbar from './Navbar'
+import Banner from './Banner'
 import Formulario from './Formulario'
 import Servicos from './Servicos'
 export default {
@@ -20,15 +21,12 @@ export default {
     components:{
         'home-navebar': Navbar,
         Servicos,
-        Formulario
+        Formulario,
+        Banner
     }
 }
 </script>
 
 <style>
-    section{
-        width: 100%;
-        height: 125vh;
-        background-color: yellowgreen;
-    }
+    
 </style>

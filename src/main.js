@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import BootstrapVue from "bootstrap-vue";
-import VeeValidate from 'vee-validate';
+import VeeValidate from "vee-validate";
 import Index from './components/Index.vue'
 
 
