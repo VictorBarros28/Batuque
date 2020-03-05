@@ -1,6 +1,10 @@
 <template>
   <div>
+    
+   
+    
     <div id="banner">
+       <Navbar></Navbar>
       <div class= "filtro"> 
       <div id="texto">
         <div id="h1">LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</div>
@@ -10,6 +14,7 @@
       </div>
     </div>
     </div>
+    
   </div>
 </template>
 
