@@ -69,6 +69,7 @@ export default {
         height: 280px;
         transition: .5s;
         z-index: 100;
+        top:0px;
     }
 
     ul{

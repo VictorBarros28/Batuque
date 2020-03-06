@@ -1,6 +1,6 @@
 <template>
     <div id="index">
-        <home-navebar></home-navebar>
+        <banner></banner>
 
         <!-- SECTION PARA TESTE DO EFEITO SCROLL-->
         <section></section>
@@ -12,22 +12,20 @@
 </template>
 
 <script>
+import Banner from './Banner'
 import Navbar from './Navbar'
 
 import Footer from './Footer.vue'
 export default {
     
     components:{
-        'home-navebar': Navbar,
-        Footer
+         'home-navebar': Navbar,
+        Footer,
+        'banner': Banner
     }
 }
 </script>
 
 <style>
-    section{
-        width: 100%;
-        height: 125vh;
-        background-color: yellowgreen;
-    }
+    
 </style>
