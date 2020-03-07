@@ -1,11 +1,24 @@
 <template>
   <div id="app">
-    <home-navbar></home-navbar>
+    <Banner></Banner>
+    <servicos></servicos>
+    
+      
+     
+     <Formulario></Formulario>
   </div>
 </template>
 
 <script>
+import Banner from './components/Banner'
+import servicos from './components/Servicos'
+import Formulario from './components/Formulario'
 export default {
+  components:{
+    Banner,
+    Formulario,
+    servicos
+  }
 }
 </script>
 
