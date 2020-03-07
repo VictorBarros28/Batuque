@@ -5,7 +5,6 @@
     
       
      
-     <Formulario></Formulario>
   </div>
 </template>
 
