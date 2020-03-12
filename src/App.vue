@@ -70,11 +70,16 @@
 
 <style>
 h1{
-  font-size: 30px;
+  font-size: 50px !important;
   color: #707070;
+  font-family: 'Segoe UI' !important;
+  font-weight: 500 !important;
   position: absolute;
-  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 60px;
   z-index: 2;
 }
 
@@ -86,8 +91,8 @@ h1{
   display: flex;
   justify-content: center;  
   justify-content: space-between;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 17.5%;
+  padding-right: 17.5%;
   align-items: center;
   z-index: 1;
 }
@@ -110,11 +115,43 @@ h1{
   
 }
 .texto{
-  width: 540px;
-  height:120px;
+  width: 440px;
+  height:225px;
   text-align: center;
   font-family: Calibri;
   color: #707070;
   font-size: 25px;
+  letter-spacing: -1.86px;
+  line-height: 55px;
+  
+}
+
+@media screen and (max-width: 700px){
+
+.texto{
+  font-size: 15px;
+  letter-spacing: 0;
+    line-height: 30px;
+    width: 53%;
+}
+.imagens{
+  width: 160px !important;
+  height: 160px !important;
+}
+.slides{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+h1{
+  font-size: 30px !important;
+  margin-top: 8% !important;
+  
+}
+}
+@media screen and (min-width: 600px) and (max-width: 950px){
+.slides{
+  padding-right: 7%;
+  padding-left: 7%;
+}
 }
 </style>
