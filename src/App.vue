@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    
+    <h1  class="titulo">QUEM SOMOS NÓS?</h1>
   <md-card>
     <md-card-actions>
       
@@ -41,8 +41,9 @@
             quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
           <img class="imagens" src="./assets/sobre_quatro.png" alt="">
+
         </swiper-slide>
-       
+        
         
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
@@ -68,7 +69,14 @@
 </script>
 
 <style>
-
+h1{
+  font-size: 30px;
+  color: #707070;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  z-index: 2;
+}
 
 .slides{
   
@@ -81,6 +89,7 @@
   padding-left: 15%;
   padding-right: 15%;
   align-items: center;
+  z-index: 1;
 }
 .banner{
   background-image: url('./assets/banner.png');
