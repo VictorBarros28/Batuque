@@ -17,7 +17,7 @@
 import Banner from './Banner'
 import Navbar from './Navbar'
 import Servicos from './Servicos'
-import Formulario from './Formulario'
+// import Formulario from './Formulario'
 import Footer from './Footer.vue'
 export default {
     
@@ -26,7 +26,7 @@ export default {
         Footer,
         'banner': Banner,
         Servicos,
-        Formulario
+        // Formulario
        
     }
 }

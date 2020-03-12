@@ -2,7 +2,7 @@
   <div id="app">
     <Banner></Banner>
      <router-view />
-   <Footer></Footer>
+   
   
       
      
