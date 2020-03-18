@@ -1,71 +1,65 @@
 <template>
+
+
 <div class="secao">
-    
-
-  <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
-
-  
-  <div class= "cont">
-    <h1>{{ msg }}</h1>
-    <div class = "texto">
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-
-    <div class="cardservicos">
-      <div class="cardservicos1 grid-md">
-        <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
-        <!-- <p class = "txt">GRÁFICO</p> -->
-        <router-link class = "txt" to = "/grafico">GRAFICO</router-link>
-
-
-      </div>
-      <div class="cardservicos1 grid-md">
-        <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
-        <!-- <p class = "txt">INTERIORES</p> -->
-            <router-link class = "txt" to = "/interiores">INTERIORES</router-link>
-      </div>
-      <div class="cardservicos1 grid-md">
-        <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
-        <!-- <p class = "txt">PRODUTOS</p> -->
-            <router-link class = "txt" to = "/produtos">PRODUTOS</router-link>
+  <div class="titulo">
+   <h1>+ QUE CLIENTES, FRIENDS</h1>
+      <div class="clientes grid-md">
+        <div class="edens">
+        <img src= "../assets/grupo26.png" href="" class="img-responsive">
+        <img src= "../assets/grupo26.png" href="" class="img-responsive">
+        </div>
+        <div class="batuque">
+        <img src= "../assets/navbar.png" href=""  class="img-responsive">
+        <img src= "../assets/navbar.png" href=""  class="img-responsive">
+        </div>
+         <div class="edens">
+        <img src= "../assets/grupo26.png" href="" class="img-responsive">
+        <img src= "../assets/grupo26.png" href="" class="img-responsive">
+        </div>
+        <div class="batuque">
+        <img src= "../assets/navbar.png" href=""  class="img-responsive">
+        <img src= "../assets/navbar.png" href=""  class="img-responsive">
+        </div>
+        
       </div>
     </div>
-
-
-  </div>
-<img src = "../assets/latdir.png" class= "lateral2">
 </div>
+
 </template>
 
 <script>
 export default {
-  name: 'servicos',
+  name: 'clientes',
   props: {
-    msg: String
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.lateral1{
-  width: 215px;
-  position: relative;
-  left: -100px;
-  bottom:-700px;
+
+
+.batuque{
+width: 100%; 
+margin-right: 7%;
+margin-top: 2%;
+height:70vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
 }
-.lateral2{  
-  width: 150px;
-  position: relative;
-  display: flex;
-  bottom:450px;
-  right: 0%;
-  
+
+
+.edens{
+width: 100%;
+margin-right: 7%;
+display: flex;
+justify-content: space-around;
+height: 70vh;
+flex-direction: column;
 }
+
 .txt{
   color:white;
   text-decoration: none;
@@ -80,7 +74,7 @@ bottom:35px;
 align-items: space-around;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
@@ -90,37 +84,23 @@ justify-content: space-around;
 
 }
 
-.cardservicos1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .secao{  
- 
+ padding-top: 10%;
+  width: 100%;
   height: 100vh;
   padding-bottom:200px;
   background-color: #e48f8e;
   display: flex !important;
+  flex-direction:column;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
-.cont{  
-  
-  position: relative;
-  right:2%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 h1{
-  
+  width: 50vw;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
   font-weight: lighter;
   color: #ffffff;
-  padding-top: 94px;
 }
 h3 {
   margin: 40px 0 0;
@@ -148,18 +128,6 @@ a {
  
   @media screen and (max-width: 1300px) {
 
-.lateral1{
-  position: relative;
-  left: -100px;
-  bottom:-700px;
-}
-.lateral2{  
-  position: relative;
-  display: flex;
-  bottom:450px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -167,13 +135,14 @@ a {
   font-size: 30px;
 }
 .img-responsive{
-width: 120px;
+width: 200px;
 position: relative;
 bottom:35px;  
 align-items: space-around;
 }
 
-.cardservicos{
+.clientes{
+  padding-right: 10%;
 display: flex;
 position: relative;
 height: fit-content;
@@ -183,25 +152,11 @@ justify-content: space-between;
 
 }
 
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .secao{  
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:4%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   
@@ -232,22 +187,8 @@ a {
   width: 100%;
 }}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1114px) {
 
-.lateral1{
-  width: 160px;
-  position: relative;
-  left: -60px;
-  bottom:-719px;
-}
-.lateral2{  
-  width: 100px;
-  position: relative;
-  display: flex;
-  bottom:450px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -255,41 +196,27 @@ a {
   font-size: 30px;
 }
 .img-responsive{
-width: 120px;
+width: 150px;
 position: relative;
 bottom:35px;  
 align-items: space-around;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
 top:100px;
-width: 110%;
+width: 100%;
 justify-content: space-between;
 
 }
 
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .secao{  
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:2%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   
@@ -321,22 +248,8 @@ a {
 }}
 
 
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 835px) {
 
-.lateral1{
-  width: 100px;
-  position: relative;
-  left: -30px;
-  bottom:-579px;
-}
-.lateral2{  
-  width: 80px;
-  position: relative;
-  display: flex;
-  bottom:370px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -344,27 +257,22 @@ a {
   font-size: 20px;
 }
 .img-responsive{
-width: 90px;
+width: 100px;
 position: relative;
 bottom:35px;  
 align-items: space-around;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
 top:100px;
-width: 110%;
+width: 100%;
 justify-content: space-between;
 
 }
 
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .secao{  
  
   height: 1000px;
@@ -372,15 +280,6 @@ justify-content: space-between;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:0%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   
@@ -412,22 +311,8 @@ a {
 }}
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 570px) {
 
-.lateral1{
-  width: 100px;
-  position: relative;
-  left: -30px;
-  bottom:-589px;
-}
-.lateral2{  
-  width: 70px;
-  position: relative;
-  display: flex;
-  bottom:290px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -441,20 +326,14 @@ bottom:20px;
 align-items: space-between;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
-top:100px;
-width: 110%;
+top:10px;
+width: 100%;
 justify-content: space-between;
 
-}
-
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .secao{  
  
@@ -462,16 +341,8 @@ justify-content: space-between;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
+  justify-content: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:0%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   
@@ -504,20 +375,6 @@ a {
 
 @media screen and (max-width: 450px) {
 
-.lateral1{
-  width: 100px;
-  position: relative;
-  left: -30px;
-  bottom:-589px;
-}
-.lateral2{  
-  width: 70px;
-  position: relative;
-  display: flex;
-  bottom:290px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -531,21 +388,16 @@ bottom:20px;
 align-items: space-between;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
 top:100px;
-width: 110%;
+width: 100%;
 justify-content: space-between;
 
 }
 
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .secao{  
  
   height: 800px;
@@ -553,15 +405,6 @@ justify-content: space-between;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:0%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   
@@ -594,20 +437,6 @@ a {
 
 @media screen and (max-width: 400px) {
 
-.lateral1{
-  width: 100px;
-  position: relative;
-  left: -30px;
-  bottom:-589px;
-}
-.lateral2{  
-  width: 70px;
-  position: relative;
-  display: flex;
-  bottom:290px;
-  right: 0%;
-  
-}
 .txt{
   color:white;
   font-style: inherit;
@@ -621,21 +450,16 @@ bottom:20px;
 align-items: space-between;
 }
 
-.cardservicos{
+.clientes{
 display: flex;
 position: relative;
 height: fit-content;
 top:100px;
-width: 110%;
+width: 100%;
 justify-content: space-between;
 
 }
 
-.cardservicos1{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .secao{  
  
   height: 800px;
@@ -643,15 +467,6 @@ justify-content: space-between;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  position: relative;
-  right:0%;
-  top:-30px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 h1{
   

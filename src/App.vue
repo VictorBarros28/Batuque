@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Banner></Banner>
-     <router-view />
+    <Clientes></Clientes>
    
   
       
@@ -12,10 +12,12 @@
 <script>
 import Banner from './components/Banner'
 import Footer from './components/Footer.vue'
+import Clientes from './components/Clientes.vue'
 export default {
   components:{
     Banner,
     Footer,
+    Clientes,
   }
 }
 </script>
