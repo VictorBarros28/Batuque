@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div class="bannerCarrossel">
     <h1  class="titulo">QUEM SOMOS NÓS?</h1>
   <md-card>
     <md-card-actions>
@@ -96,12 +96,13 @@ h1{
   align-items: center;
   z-index: 1;
 }
-.banner{
+.bannerCarrossel{
   background-image: url('../assets/banner.png');
   width: 100%;
   height: 100vh;
   background-position: right;
   background-size: cover;
+  position:relative;
 }
 .swiper-slide{
   height: 100vh !important;
