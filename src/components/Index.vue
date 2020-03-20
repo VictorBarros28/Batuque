@@ -1,6 +1,7 @@
 <template>
     <div id="index">
         <banner></banner>
+        <Carrossel></Carrossel>
         <Clientes></Clientes>
         <Footer></Footer>
         
