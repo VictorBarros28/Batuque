@@ -2,9 +2,7 @@
     <div id="index">
         <banner></banner>
 
-            <Servicos></Servicos>
-        
-        <Formulario></Formulario>
+
         
     </div>
 
