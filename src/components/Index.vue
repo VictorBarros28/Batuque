@@ -1,7 +1,7 @@
 <template>
     <div id="index">
         <banner></banner>
- 
+        <Clientes></Clientes>
         <Footer></Footer>
         
         
@@ -20,6 +20,7 @@ import Formulario from './Formulario'
 import Servicos from './Servicos'
 import Carrossel from './Carrossel'
 import Footer from './Footer'
+import Clientes from './Clientes'
 export default {
     
     components:{
@@ -28,7 +29,8 @@ export default {
         Banner,
         Carrossel,
         Footer,
-        Formulario
+        Formulario,
+        Clientes
     }
 }
 </script>
