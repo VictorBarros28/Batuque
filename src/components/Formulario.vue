@@ -18,27 +18,30 @@
         <textarea name="mensagem" id="mensagem" required="required" placeholder="" cols="61" rows="10"></textarea>
     </div>
     </form>
+
     <div id="form-enviar">
-    <button id="enviar">ENVIAR!</button>
+        <button id="enviar">ENVIAR!</button>
     </div>
+
     <div id="logo">
         <div>
-        <a href="">
-        <img class="icones" src="../assets/face.png" alt="">
-        </a>
+            <a href="">
+                <img class="icones" src="../assets/face.png" alt="">
+            </a>
         </div>
         <div>
-        <a href="">   
-        <img class="icones" src="../assets/insta.png" alt="">
-        </a> 
+            <a href="">   
+                <img class="icones" src="../assets/insta.png" alt="">
+            </a> 
         </div>
         <div>
-        <a href="">
-        <img class="icones" src="../assets/be.png" alt="">
-        </a>
+            <a href="">
+                <img class="icones" src="../assets/be.png" alt="">
+            </a>
         </div>
     </div>
-    <Contatos></Contatos>
+    
+    
     </div>
 </template>
 
@@ -58,8 +61,7 @@ export default {
 #formulario{
     background-color: #f8f8f8;
     
-    width: 100%;
-    
+  
     
 }
 .info{
@@ -144,6 +146,18 @@ export default {
 .icones{
     cursor: pointer;
 }
+ @media only screen and (max-width: 1150px) {
+      .placeholder{
+          width: 350px;
+      }
+      #mensagem{
+          width: 350px;
+      }
+      #form-enviar{
+          width: 350px;
+      }
+        
+    }
 @media screen and (max-width: 600px) {
     .placeholder{
         width: 80%;

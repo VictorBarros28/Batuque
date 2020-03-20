@@ -3,7 +3,6 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-
 import BootstrapVue from "bootstrap-vue";
 
 import VueMaterial from 'vue-material';
@@ -26,9 +25,6 @@ import Index from './components/Index.vue'
 import Carrossel from './components/Carrossel.vue'
 Vue.component('home-navbar',Index)
 Vue.component('carrossel', Carrossel)
-
-
-
 
 
 Vue.config.productionTip = false;

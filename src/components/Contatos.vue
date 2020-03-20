@@ -68,7 +68,7 @@ export default {
 #info{
     display: flex;
     flex-direction: row;
-    width: 599px;
+  
     justify-content: center;
 }
 
