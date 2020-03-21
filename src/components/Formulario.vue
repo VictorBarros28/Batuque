@@ -158,16 +158,32 @@ export default {
       }
         
     }
-@media screen and (max-width: 600px) {
+
+    @media only screen and (max-width: 950px) {
+      .placeholder{
+          width: 300px;
+      }
+      #mensagem{
+          width: 300px;
+      }
+      #form-enviar{
+          width: 300px;
+      }
+        
+    }  
+  
+
+@media screen and (max-width: 890px) {
     .placeholder{
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         
+        
     }
     #mensagem{
-        width: 80%;
+        width: 100%;
         
         
     }
@@ -175,23 +191,22 @@ export default {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         
 
     }
     #enviar{
-        width: 80%;
+        width: 100%;
         float: none;
     }
     #form-enviar{
-        width: 80%;
+        width: 444.59px;
         display: flex;
         justify-content: center;
     }
     #logo{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 80%;
+        
+        display: none;
 
     }
     

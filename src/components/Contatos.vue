@@ -1,48 +1,98 @@
 <template>
-    <div id="contatos">
-        <div id="info">
+    <div>
+        <div id="contatos">
+            <div id="info">
+                
+                <div id="email">
+                    <div class="icones" >
+                    <a href="">
+                    <img src="../assets/email.png" alt="">
+                    </a>
+                    </div>
+                    <div class="email">batuque.design@gmail.com</div>
+                </div>        
+                
+                <div id="fone">
+                    <div class="icones">
+                        <a href="">
+                        <img src="../assets/fone.png" alt="">
+                        </a>
+                    </div>
+                    <div id="cidade">Maceió</div>
+                    <div>(82) 9 0000-0000</div>
+                </div>
+    
+                <div id="horario">
+                    <div class="icones">
+                        <a href="">
+                        <img src="../assets/fone.png" alt="">
+                        </a>
+                    </div>
+                    <div id="dias">Segunda à Sexta</div>
+                    <div>8 às 17h</div>
+                </div>
             
-            <div id="email">
-                <div class="icones" >
+        </div>
+        <div id="location">
+            <div class="icones" >
                 <a href="">
-                <img src="../assets/email.png" alt="">
+                    <img src="../assets/location.png" alt="">
                 </a>
+            </div>
+            <div id="endereço">
+                Av.Lourival Melo Mota, S/n - Tabuleiro do Martins, Maceió-AL, Faculdade de Arquitetura e Urbanismo(UFAL)
+            </div>
+        </div>      
+        </div>
+        <div class="contatos-wrap">
+            <div id="info-wrap">
+
+                <div id="fone">
+                    <div class="icones">
+                        <a href="">
+                        <img src="../assets/fone.png" alt="">
+                        </a>
+                    </div>
+                    <div id="cidade">Maceió</div>
+                    <div>(82) 9 0000-0000</div>
                 </div>
-                <div class="email">batuque.design@gmail.com</div>
-            </div>        
+
+                <div id="horario">
+                    <div class="icones">
+                        <a href="">
+                        <img src="../assets/fone.png" alt="">
+                        </a>
+                    </div>
+                    <div id="dias">Segunda à Sexta</div>
+                    <div>8h às 17h</div>
+                </div>
+                               
+
+                <div id="email">
+                    <div class="icones" >
+                    <a href="">
+                    <img src="../assets/email.png" alt="">
+                    </a>
+                    </div>
+                    <div class="email">batuque.design@gmail.com</div>
+                </div>
+    
+                
             
-            <div id="fone">
-                <div class="icones">
+        </div>
+
+            <div id="location-wrap">
+                <div class="icones" >
                     <a href="">
-                    <img src="../assets/fone.png" alt="">
+                        <img src="../assets/location.png" alt="">
                     </a>
                 </div>
-                <div id="cidade">Maceió</div>
-                <div>(82) 9 0000-0000</div>
-            </div>
-   
-            <div id="horario">
-                <div class="icones">
-                    <a href="">
-                    <img src="../assets/fone.png" alt="">
-                    </a>
+                <div id="endereço">
+                    Av.Lourival Melo Mota, S/n - Tabuleiro do Martins, Maceió-AL, Faculdade de Arquitetura e Urbanismo(UFAL)
                 </div>
-                <div id="dias">Segunda à Sexta</div>
-                <div>8 às 17h</div>
             </div>
-           
-    </div>
-    <div id="location">
-        <div class="icones" >
-            <a href="">
-                <img src="../assets/location.png" alt="">
-            </a>
         </div>
-        <div id="endereço">
-            Av.Lourival Melo Mota, S/n - Tabuleiro do Martins, Maceió-AL, Faculdade de Arquitetura e Urbanismo(UFAL)
         </div>
-    </div>
-    </div>
 </template>
 <script>
 import {
@@ -59,6 +109,10 @@ export default {
 }
 </script>
 <style scoped>
+    .contatos-wrap{
+        display: none;
+        background-color: #f8f8f8;
+    }
 #contatos{
     background-color:#f8f8f8; 
     font-family:Calibri;
@@ -123,65 +177,53 @@ export default {
     height: 31.7px;
 }
 
-@media screen and (max-width: 600px){
+  @media only screen and (max-width: 1150px) {
+        #fone{
+            padding-right: 30.5px;
+            padding-left: 30.5px;
+            padding-bottom: 14px;
+            margin-left: 0px;
+        }
+        .email{
+            padding-right:15px;
+        }
+        #horario{
+            margin-left:15px;
+        }
+        
+        
+    }
 
-#contatos{
-    font-size:9px;
-}
-.icones{
-    width: 22.3px;
-    height: 22.3px;
-    margin-right: 8px;
-}
-#info{
-    flex-wrap: wrap;
-    width:95%;
+@media screen and (max-width: 890px){
+    #fone{
+    border:none;
+    padding-left: 0px; 
+     padding-right:0px;
+    }
+    #contatos{
+    display: none;
+    background-color: #f8f8f8;
     
+    }
+    .contatos-wrap{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        background: #f8f8f8;
+    }
+    #info-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 445px;
+    }
+    #email{
+        width:100%;
+    }
+    #location-wrap{
+        display: flex;
+    }
 
 }
-#email{
-    padding-left: 24.475px;
-    padding-right: 24.475px;
-}
-#fone{
-    border-left: 0px;
-    border-right: 0px;
-    
-}
-#dias{
-    margin-top:8px;
-}
-#cidade{
-    margin-top: 8px;
-}
-#horario{
-    margin-left: 0px;
-    padding-left:46.5px;
-    padding-right:46.5px ;
-    align-items: center;
 
-
-}
-#fone{
-    margin-left: 0px;
-}
-#location{
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-#endereço{
-    width: 248px;
-}
-}
-@media screen and (min-width: 600px) and (max-width: 742px){
-
-#endereço{
-    width: 383px;
-}
-#location{
-    justify-content: center;
-    align-items: center;
-}
-}
 </style>

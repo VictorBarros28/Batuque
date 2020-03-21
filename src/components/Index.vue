@@ -37,5 +37,7 @@ export default {
 </script>
 
 <style>
-    
+    #index{
+        background-color: #f8f8f8;
+    }
 </style>
