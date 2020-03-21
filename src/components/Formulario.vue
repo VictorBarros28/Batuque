@@ -17,11 +17,13 @@
         <label class="info" for="">MENSAGEM</label>
         <textarea name="mensagem" id="mensagem" required="required" placeholder="" cols="61" rows="10"></textarea>
     </div>
-    </form>
-
     <div id="form-enviar">
         <button id="enviar">ENVIAR!</button>
     </div>
+    </form>
+
+
+    
 
     <div id="logo">
         <div>
@@ -204,11 +206,49 @@ export default {
         display: flex;
         justify-content: center;
     }
-    #logo{
-        
-        display: none;
 
+    @media screen and (max-width: 520px) {
+        #form-enviar{
+            width: 100%;
+            
+        }
+       
+        .placeholder{
+            width: 100%;
+        }
+        #mensagem{
+            width: 100%;
+        }
+        form{
+            width: 80%;
+        }
+        #endereco{
+            font-size: 14px;
+        }
+        #location-wrap{
+            width: 80%;
+        }       
     }
+
+    @media screen and (max-width: 420px) {
+        #location-wrap{
+            width: 90%;
+            font-size: 12.5px;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+            .placeholder{
+                width: 100%;
+            }
+            #mensagem{
+                width: 100%;
+            }
+            #form-enviar{
+                width: 100%;
+            }
+    }
+   
     
 }
 </style>
