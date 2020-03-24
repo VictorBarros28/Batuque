@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="Contato">
             <h2 class="Contato"> VENHA NOS CONTAR SUA IDEIA! </h2>
         <div class="footer">
             <Formulario></Formulario>

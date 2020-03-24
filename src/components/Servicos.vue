@@ -1,4 +1,5 @@
 <template>
+<div id="Servicos">
 <div class="hello">
     <!-- 
 
@@ -39,6 +40,7 @@
   <img src = "../assets/latdir.png" class= "lateral2">
 -->
 
+</div>
 </div>
 </template>
 

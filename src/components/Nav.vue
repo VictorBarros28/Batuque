@@ -1,7 +1,7 @@
 <<template>
-   <div class="Navbar">
+   <div class="Navbar ">
    
-       <b-navbar toggleable="lg" id="navbar" >
+       <b-navbar toggleable="lg" id="navbar" class="navbarshadow">
       
     <b-navbar-brand href="#">
         <img id="logo" src="../assets/logo_branca.png" alt="">
@@ -18,11 +18,12 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-      <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">Sobre</b-nav-item>
-        <b-nav-item href="#">Portfólio</b-nav-item>
-         <b-nav-item href="#">Serviços</b-nav-item>
-          <b-nav-item href="#">Contato</b-nav-item>
+      <b-nav-item class="cor" href="#Home">home</b-nav-item>
+        <b-nav-item class="cor" href="#About">sobre</b-nav-item>
+        <b-nav-item  class="cor" href="#">portfólio</b-nav-item>
+         <b-nav-item class="cor" href="#Servicos">serviços</b-nav-item>
+         <b-nav-item class="cor" href="#">blog</b-nav-item>
+          <b-nav-item class="cor" href="#Contato">contato</b-nav-item>
    
 
      
@@ -31,23 +32,6 @@
   </b-navbar>
 </div>
 </template>
-
-<style>
-.Navbar{
-        position: fixed;
-        z-index: 50;
-    top: 0;
-    width: 100%;
-}
-
-   .navwhite{
-       background-color: white !important;
-   }
-     #burguer{
-         width: 30px;
-         height: 30px;
-     }
-</style>
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
@@ -64,14 +48,18 @@
            handleScroll (event){
                if($(window).scrollTop()){
                    $('#navbar').addClass('navwhite');
-                   $('a').addClass('blacky');
-                   $('li').addClass('blackyi');
+                   $('#navbar').removeClass('navbarshadow');
+                   $('a').removeClass('cor');
+                   $('li').removeClass('cor');
+                   
                    document.getElementById('logo').setAttribute("src",require('@/assets/logo_rosa.png'));
                    document.getElementById('burguer').setAttribute("src",require('@/assets/menu_rosa.png'));
                }else{
                    $('#navbar').removeClass('navwhite');
-                   $('a').removeClass('blacky');
-                   $('li').removeClass('blackyi');
+                   $('#navbar').addClass('navbarshadow');
+                  
+                   $('a').addClass('cor');
+                   $('li').addClass('cor');
                    document.getElementById('logo').setAttribute("src",require('@/assets/logo_branca.png'));
                    document.getElementById('burguer').setAttribute("src",require('@/assets/menu.png'));
                }
@@ -87,3 +75,87 @@
    </script>
 
  
+<style>
+    .navbar{
+        transition: 2s;
+    }
+    
+
+    .navbarshadow{
+        box-shadow: none !important;
+    }
+
+.cor a{
+        color: white !important;
+        font-family: Calibri;
+        font-weight: lighter;
+        font-size: 25px;
+
+        
+      
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+        font-size: 25px;
+        font-family: Calibri;
+        font-weight: lighter;
+        
+    
+
+}
+
+#logo{
+        width: 300px !important;
+        margin-left: 110px;
+}
+  
+.Navbar{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+}
+    
+
+   .navwhite{
+       background-color: white !important;
+       transition: 2s;
+   }
+     #burguer{
+         width: 30px;
+         height: 30px;
+     }
+
+     .navbar-expand-lg .navbar-collapse {
+        transition: 0.5s;  
+        margin-right: 229px;
+        
+     }
+
+     @media screen and (max-width:1500px) {
+        .navbar-expand-lg .navbar-collapse {
+         transition: 0.5s;   
+        margin-right: 170px;  
+     }    
+     }
+     @media screen and (max-width:1300px) {
+        .navbar-expand-lg .navbar-collapse {
+            transition: 0.5s;  
+
+        margin-right: 100px;  
+     }   
+     }
+     @media screen and (max-width:1300px) {
+        .navbar-expand-lg .navbar-collapse {
+            transition: 0.5s;  
+        margin-right: 50px;  
+     }   
+     }
+     @media screen and (max-width:1300px) {
+        #logo {
+        width: 280px;
+        transition: 0.5s;  
+        margin-left: 70px;
+        }
+     }
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bannerCarrossel">
+  <div class="bannerCarrossel" id="About">
     <md-card>
       <md-card-actions>
         
