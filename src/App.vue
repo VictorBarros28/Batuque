@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+   <Nav></Nav>
     <Banner></Banner>
     <Carrossel></Carrossel>
      <Servicos></Servicos>
@@ -20,13 +21,15 @@
   import Carrossel from './components/Carrossel'
   import Clientes from './components/Clientes'
   import Servicos from './components/Servicos'
+  import Nav from './components/Nav'
 export default {
   components:{
     Banner,
     Footer,
     Carrossel,
     Clientes,
-    Servicos
+    Servicos,
+    Nav
   }
 }
 </script>

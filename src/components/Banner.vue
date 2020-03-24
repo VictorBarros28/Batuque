@@ -1,6 +1,6 @@
 <template>
   <div>
- <Nav></Nav>
+
  <div id="Home">
     <div id="banner">
       <div class="filtro">

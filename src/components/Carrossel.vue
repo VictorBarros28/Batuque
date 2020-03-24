@@ -74,7 +74,8 @@ import AOS from 'aos'
       return {
         swiperOption: {
           loop:true,
-         
+         autoplay:true,
+         duration:8000,
           pagination: {
             el: '.swiper-pagination',    
           }
@@ -101,7 +102,7 @@ import AOS from 'aos'
   color: #707070;
   font-family: 'Segoe UI' !important;
   font-weight: 500 !important;
- 
+ padding-top:80px;
   display: flex;
   justify-content: center;
   align-items: center;
