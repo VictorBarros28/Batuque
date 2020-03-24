@@ -4,7 +4,7 @@
     <Banner></Banner>
     <Carrossel></Carrossel>
      <Servicos></Servicos>
-     <router-view />
+   
      <div class="sonhos"></div>
         <Clientes></Clientes>
         <Footer></Footer>

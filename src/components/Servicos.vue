@@ -1,14 +1,14 @@
 <template>
 <div id="Servicos">
 <div class="hello">
-    <!-- 
+    
 
   <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
 
   
   <div class= "cont">
-    <h1>{{ msg }}</h1>
-    <div class = "texto">
+    <h1 data-aos="fade-down" > O QUE FAZEMOS ?</h1>
+    <div class = "textservices">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -17,28 +17,27 @@
     </div>
 
     <div class="cardservicos">
-      <div class="cardservicos1 grid-md">
+      <div   data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
-        <p class = "txt">GRÁFICO</p> 
-        <router-link class = "txt" to = "/grafico">GRAFICO</router-link>
+
+        <router-link class = "txt" to = "/grafico">GRÁFICO</router-link>
 
 
       </div>
-      <div class="cardservicos1 grid-md">
+      <div   data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
-        <p class = "txt">INTERIORES</p> 
+        
             <router-link class = "txt" to = "/interiores">INTERIORES</router-link>
       </div>
-      <div class="cardservicos1 grid-md">
+      <div  data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
-         <p class = "txt">PRODUTOS</p> 
+        
             <router-link class = "txt" to = "/produtos">PRODUTOS</router-link>
       </div>
     </div>
     
   </div>
   <img src = "../assets/latdir.png" class= "lateral2">
--->
 
 </div>
 </div>
@@ -99,7 +98,7 @@ justify-content: space-around;
   align-items: center;
 }
 .hello{  
-  height: 100vh;
+  
   padding-bottom:200px;
   background-color: #e48f8e;
   display: flex !important;
@@ -119,13 +118,14 @@ justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
   font-weight: lighter;
   color: #ffffff;
-  padding-top: 94px;
+  padding-top: 260px;
+  padding-bottom: 72px;
 }
 h3 {
   margin: 40px 0 0;
@@ -141,10 +141,10 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  height: fit-content;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 45px;
+  font-size: 35px;
   font-weight:lighter;
   color: #ffffff;
   width: 90%;
@@ -208,7 +208,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 60px;
   font-weight: lighter;
@@ -229,7 +229,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
   font-size: 25px;
   font-weight:lighter;
@@ -296,7 +296,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 60px;
   font-weight: lighter;
@@ -317,7 +317,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
   font-size: 30px;
   font-weight:lighter;
@@ -387,7 +387,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 50px;
   font-weight: lighter;
@@ -408,7 +408,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
   font-size: 26px;
   font-weight:lighter;
@@ -478,7 +478,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 30px;
   font-weight: lighter;
@@ -499,7 +499,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
   line-height: 0.8;
   font-size: 25px;
   font-weight:lighter;
@@ -568,7 +568,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 30px;
   font-weight: lighter;
@@ -589,7 +589,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
   line-height: 0.8;
   font-size: 25px;
   font-weight:lighter;
@@ -658,7 +658,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 30px;
   font-weight: lighter;
@@ -679,7 +679,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
   line-height: 0.8;
   font-size: 20px;
   font-weight:lighter;
