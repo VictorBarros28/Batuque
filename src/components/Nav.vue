@@ -18,12 +18,12 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-      <b-nav-item class="cor" href="#Home">home</b-nav-item>
-        <b-nav-item class="cor" href="#About">sobre</b-nav-item>
+      <b-nav-item  data-scroll class="cor" href="#Home">home</b-nav-item>
+        <b-nav-item data-scroll class="cor" href="#About">sobre</b-nav-item>
         <b-nav-item  class="cor" href="#">portfólio</b-nav-item>
          <b-nav-item class="cor" href="#Servicos">serviços</b-nav-item>
          <b-nav-item class="cor" href="#">blog</b-nav-item>
-          <b-nav-item class="cor" href="#Contato">contato</b-nav-item>
+          <b-nav-item  data-scroll class="cor" href="#Contato">contato</b-nav-item>
    
 
      
@@ -36,10 +36,18 @@
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+
+<script src="path/to/smooth-scroll.polyfills.min.js"></script>
+
 
 
 <script>
+import SmoothScroll from 'smooth-scroll'
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+});
 
     //adicionando o efeito de trocar a navbar com o scroll
    export default {
@@ -79,6 +87,7 @@
     .navbar{
         transition: 2s;
     }
+
     
 
     .navbarshadow{
