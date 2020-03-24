@@ -14,7 +14,9 @@ import VeeValidate from "vee-validate";
 import 'swiper/dist/css/swiper.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-
+require("bootstrap-css-only/css/bootstrap.min.css");
+require("mdbvue/lib/css/mdb.min.css");
+require("@fortawesome/fontawesome-free/css/all.min.css");
 Vue.use(BootstrapVue);
 Vue.use(VeeValidate);
 Vue.use(VueAwesomeSwiper)

@@ -2,7 +2,7 @@
   <div>
 
     <div id="banner">
-
+      
       <div class="filtro">
         <div id="texto">
           <div id="h1">LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</div>
@@ -18,8 +18,13 @@
 
 <script>
   import Navbar from "./Navbar.vue";
+  
   export default {
-    components: { Navbar }
+    components: { 
+      Navbar,
+    
+     },
+    
   };
 </script>
 

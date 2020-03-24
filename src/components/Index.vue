@@ -1,9 +1,9 @@
 <template>
     <div id="index">
-        <banner></banner>
-        <Carrossel></Carrossel>
-        <Clientes></Clientes>
-        <Footer></Footer>
+
+        
+        <Servicos></Servicos>
+        
         
         
         
@@ -18,10 +18,11 @@ import Navbar from './Navbar'
 import Banner from './Banner'
 import Formulario from './Formulario'
 
-import Servicos from './Servicos'
 import Carrossel from './Carrossel'
-import Footer from './Footer'
 import Clientes from './Clientes'
+import Servicos from './Servicos'
+import Footer from './Footer'
+
 export default {
     
     components:{
@@ -29,9 +30,10 @@ export default {
         Servicos,
         Banner,
         Carrossel,
+        Clientes,
         Footer,
         Formulario,
-        Clientes
+
     }
 }
 </script>
@@ -39,5 +41,8 @@ export default {
 <style>
     #index{
         background-color: #f8f8f8;
+    }
+    .sonhos{
+        height: 100vh;
     }
 </style>

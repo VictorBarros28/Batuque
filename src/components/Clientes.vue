@@ -3,7 +3,7 @@
 
 <div class="secao">
   <div class="titulo">
-   <h1>+ QUE CLIENTES, FRIENDS</h1>
+   <h2>+ QUE CLIENTES, FRIENDS</h2>
       <div class="clientes grid-md">
         <div class="edens">
         <img src= "../assets/grupo26.png" href="" class="img-responsive">
@@ -39,6 +39,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.titulo h2{
+  color: #ffffff;
+}
 
 .batuque{
 width: 100%; 

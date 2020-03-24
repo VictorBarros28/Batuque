@@ -1,5 +1,6 @@
 <template>
     <div>
+            <h2 class="Contato"> VENHA NOS CONTAR SUA IDEIA! </h2>
         <div class="footer">
             <Formulario></Formulario>
             <div class="map">
@@ -32,6 +33,13 @@ export default {
 </script>
 
 <style>
+    .Contato{
+        color: #707070;
+        font-family: "Segoe UI";
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .footermobile{
         display: none;
     }
@@ -53,6 +61,7 @@ export default {
         width: 800px;
         
     }
+    
     @media only screen and (max-width: 1400px) {
         .map{
             width: 670px;
@@ -97,8 +106,15 @@ export default {
             width: 100%;
             padding-bottom: 50px;
         }
-        .contatos{
+       
+         .contatos{
             padding-top: 50px;
+            background-color: #f8f8f8;
+           
+        }
+        .Contato{
+            padding-top: 30px;
+             padding-bottom: 60px;
         }
         
 
@@ -119,10 +135,7 @@ export default {
             width: 450px;
             padding-bottom: 50px;
         }
-        .contatos{
-            padding-top: 50px;
-            background-color: #f8f8f8;
-        }
+       
         
     }
 </style>
