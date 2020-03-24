@@ -2,6 +2,7 @@
   <div id="app">
     <Banner></Banner>
     <Carrossel></Carrossel>
+     <Servicos></Servicos>
      <router-view />
      <div class="sonhos"></div>
         <Clientes></Clientes>
@@ -18,12 +19,14 @@
   import Footer from './components/Footer.vue'
   import Carrossel from './components/Carrossel'
   import Clientes from './components/Clientes'
+  import Servicos from './components/Servicos'
 export default {
   components:{
     Banner,
     Footer,
     Carrossel,
     Clientes,
+    Servicos
   }
 }
 </script>

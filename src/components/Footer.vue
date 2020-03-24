@@ -1,6 +1,6 @@
 <template>
     <div id="Contato">
-            <h2 class="Contato"> VENHA NOS CONTAR SUA IDEIA! </h2>
+            <h2 data-aos="fade-right" class="Contato"> VENHA NOS CONTAR SUA IDEIA! </h2>
         <div class="footer">
             <Formulario></Formulario>
             <div class="map">

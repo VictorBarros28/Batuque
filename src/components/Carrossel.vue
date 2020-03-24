@@ -1,5 +1,5 @@
 <template>
-  <div class="bannerCarrossel" id="About">
+  <div class="bannerCarrossel" id="About" >
     <md-card>
       <md-card-actions>
         
@@ -11,8 +11,8 @@
         
         >
         
-        <swiper-slide class="slides">
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+        <swiper-slide class="slides" >
+          <h1 data-aos="fade-up" class="titulo">QUEM SOMOS NÓS?</h1>
         <div class="slidecard">  
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -24,7 +24,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1  data-aos="fade-up"  class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -35,7 +35,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1 data-aos="fade-up"  class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -46,7 +46,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1  data-aos="fade-up" class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -66,7 +66,9 @@
 </div>
 </template>
 
+
 <script>
+import AOS from 'aos'
   export default {
     data() {
       return {
@@ -84,7 +86,7 @@
 
 <style>
  .slidecard{
-   border: 1px solid black;
+   
    display: flex;
    justify-content: space-between;
    width: 100%;
@@ -150,14 +152,15 @@
   color: #707070;
   font-size: 25px;
   letter-spacing: -1.86px;
-  line-height: 55px;
+  line-height: 46px;
   text-align: justify;
+  transition:0.2s;
   
 }
 
 @media screen and (max-height: 780px)  {
     .slidecard{
-      border: 1px solid blue;
+     
       padding-bottom: 25px;
     }
 }
@@ -166,10 +169,11 @@
 
 @media screen and (max-height: 780px)  and (max-width: 825px) {
   .slidecard{
-      border: 1px solid purple;
+      
     }
     .texto {
     line-height: 30px;
+    transition:0.2s;
     }
     .imagens {
     width: 220px !important;
@@ -186,6 +190,7 @@
   letter-spacing: 0;
     line-height: 25px;
     width: 80%;
+    transition:0.2s;
 }
 .imagens{
   width: 280px !important;
@@ -206,7 +211,7 @@
 
 @media only screen and (max-width: 786px) {
   .slidecard{
-      border: 1px solid orange;
+    
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -217,10 +222,24 @@
     }
 
 }
+@media screen and  (max-width: 1900px)  and (max-height:480px)  {
+
+.texto{
+  line-height:36px;
+  transition:0.2s;
+}
+.imagens{
+  width:280px !important;
+  height:280px !important;
+}
+.bannerCarrossel h1 {
+    font-size: 45px !important;
+}
+}
 
 @media screen and (max-height: 450px)  and (max-width: 825px) {
   .slidecard{
-      border: 1px solid rgb(0, 174, 255);
+     
       display: flex;
       justify-content: center;
       flex-direction: initial;
@@ -230,6 +249,7 @@
     }
     .texto{
       line-height: 25px;
+      transition:0.2s;
     }
     .imagens{
       width: 220px !important;
@@ -245,7 +265,7 @@
 
 @media screen and (max-height: 380px)  and (max-width: 650px) {
   .slidecard{
-      border: 1px solid pink ;
+     
       display: flex;
       justify-content: center;
       flex-direction: initial;
@@ -258,6 +278,7 @@
     }
     .texto{
       line-height: 23px;
+      transition:0.2s;
     }
     .bannerCarrossel h1 {
     padding-bottom: 20px !important;
@@ -289,7 +310,7 @@
 */
 @media screen and  (max-width: 812px) and (max-height: 380px)  {
   .slidecard{
-    border: 1px solid black;
+    
     margin-bottom: 25px;
 
   }
@@ -297,7 +318,7 @@
 
 @media screen and  (max-width: 650px) and (max-height: 370px)  {
   .slidecard{
-    border: 1px solid purple;
+  
     margin-bottom: 0px;
 
   }
@@ -308,17 +329,18 @@
 }
 @media screen and  (max-width: 320px)  {
   .slidecard{
-    border: 1px solid rgb(13, 33, 209);
+    
   }
   .texto{
     width: 100%;
     font-size:20px !important;
+    transition:0.2s;
   }
 }
 
 @media screen and  (max-width: 570px) and (max-height: 325px)  {
   .slidecard{
-    border: 1px solid rgb(59, 167, 152);
+    
   }
   .imagens {
     width: 210px !important;
@@ -333,6 +355,7 @@
   padding-left: 7%;
 }
 }
+
 @media screen and (max-width: 426px){
   .slides{
     
@@ -347,6 +370,8 @@
 }
 .texto{
   font-size:23px;
+  transition:0.2s;
 }
 }
+
 </style>

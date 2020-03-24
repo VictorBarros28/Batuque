@@ -122,8 +122,9 @@
        transition: 2s;
    }
      #burguer{
-         width: 30px;
-         height: 30px;
+        width: 25px;
+       height: 20px;
+       margin-top: 15px;
      }
 
      .navbar-expand-lg .navbar-collapse {
@@ -145,17 +146,27 @@
         margin-right: 100px;  
      }   
      }
-     @media screen and (max-width:1300px) {
+     @media screen and (max-width:1200px) {
         .navbar-expand-lg .navbar-collapse {
             transition: 0.5s;  
         margin-right: 50px;  
      }   
      }
-     @media screen and (max-width:1300px) {
+     @media screen and (max-width:1100px) {
         #logo {
         width: 280px;
         transition: 0.5s;  
         margin-left: 70px;
         }
+     }
+
+     @media screen and (max-width:680px) {
+        #logo {
+        width: 200px !important;
+        transition: 0.5s; 
+        margin-left: 20px;
+        
+        }
+
      }
 </style>

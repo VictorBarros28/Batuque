@@ -51,11 +51,17 @@ import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
 Vue.use(DropdownPlugin)
 Vue.use(TablePlugin)
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 Vue.config.productionTip = false;
 
 new Vue({
+  created () {
+    AOS.init()
+  },
   router,
   store,
   render: h => h(App)
