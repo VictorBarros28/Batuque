@@ -6,23 +6,7 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-<script type="text/javascript">
-    $(window).on('scroll', function(){
-        if($(window).scrollTop()){
-            $('#navbar').addClass('black');
-            $('a').addClass('blacky');
-            $('li').addClass('blackyi');
-            $('img').attr("src", "./src/assets/logo_rosa.png");
-        }
-        else
-        {
-            $('#navbar').removeClass('black');
-            $('a').removeClass('blacky');
-            $('li').removeClass('blackyi');
-            $('img').attr("src", "./src/assets/logo_branca.png");
-        }
-    })
-</script>
+
 </head>
 <body>
     <div id="navbar">
@@ -93,17 +77,5 @@
         border-color: #ffffff;;
     }
 
-    .blacky{
-        color: #535353;
-    }
-
-    .blackyi:hover{
-        border-color: #535353;
-    }
-
-    .black{
-        background-color: #ffffff;
-        height: 182px !important;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    }
+  
 </style>

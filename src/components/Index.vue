@@ -1,9 +1,8 @@
 <template>
     <div id="index">
 
-        
-        <Servicos></Servicos>
-        
+       
+     
         
         
         
@@ -33,6 +32,7 @@ export default {
         Clientes,
         Footer,
         Formulario,
+      
 
     }
 }

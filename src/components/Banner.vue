@@ -1,8 +1,7 @@
 <template>
   <div>
-
+ <Nav></Nav>
     <div id="banner">
-      
       <div class="filtro">
         <div id="texto">
           <div id="h1">LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</div>
@@ -17,11 +16,12 @@
 </template>
 
 <script>
-  import Navbar from "./Navbar.vue";
+
+  import Nav from './Nav'
   
   export default {
     components: { 
-      Navbar,
+      Nav
     
      },
     

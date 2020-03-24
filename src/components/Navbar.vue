@@ -1,4 +1,5 @@
-<template>
+<!--
+    <template>
 
       <div id="navbar">
         <img id="logo" src="../assets/logo_branca.png" alt="">
@@ -191,3 +192,5 @@ export default {
         }
     }
 </style>
+
+-->
