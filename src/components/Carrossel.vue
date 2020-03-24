@@ -20,34 +20,41 @@
             quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
           <img class="imagens" src="../assets/sobre.png" alt="">
+          
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
           <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
           <img class="imagens" src="../assets/sobre_dois.png" alt="">
+        </div>
         </swiper-slide>
         <swiper-slide class="slides">
           <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
           <img class="imagens" src="../assets/sobre_tres.png" alt="">
+        </div>
         </swiper-slide>
         <swiper-slide class="slides">
           <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+          <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut 
             aliquip ex ea commodo consequat.</p>
           <img class="imagens" src="../assets/sobre_quatro.png" alt="">
+          </div>
 
         </swiper-slide>
         
