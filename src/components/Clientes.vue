@@ -46,6 +46,11 @@ export default {
 
 .titulo{
   padding-left: 2vw;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10vh;
 }
 
 .carrosselClientes{
@@ -58,7 +63,7 @@ export default {
 width: 100%; 
 margin-right: 7%;
 margin-top: 2%;
-height:70vh;
+height:60vh;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -70,7 +75,7 @@ width: 100%;
 margin-right: 7%;
 display: flex;
 justify-content: space-around;
-height: 70vh;
+height: 60vh;
 flex-direction: column;
 }
 
@@ -303,8 +308,7 @@ justify-content: space-between;
 }
 
 .secao{  
- 
-  height: 1000px;
+
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -372,8 +376,6 @@ justify-content: space-between;
 
 }
 .secao{  
- 
-  height: 800px;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -435,8 +437,7 @@ justify-content: space-between;
 }
 
 .secao{  
- 
-  height: 800px;
+
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -497,8 +498,6 @@ justify-content: space-between;
 }
 
 .secao{  
- 
-  height: 800px;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
