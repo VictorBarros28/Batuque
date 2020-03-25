@@ -55,7 +55,6 @@ export default {
 
 .carrosselClientes{
   display:none;
-  border:1px solid black;
   width:100%;
 }
 
@@ -280,7 +279,6 @@ a {
 }
 .carrosselClientes{
   display:initial;
-  border:1px solid black;
   width:100%;
 }
 
@@ -311,6 +309,7 @@ justify-content: space-between;
 
   background-color: #e48f8e;
   display: flex !important;
+  justify-content: center;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
@@ -350,7 +349,6 @@ a {
 }
 .carrosselClientes{
   display:initial;
-  border:1px solid black;
   width:100%;
 }
 .txt{

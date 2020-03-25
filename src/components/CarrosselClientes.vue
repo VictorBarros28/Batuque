@@ -14,51 +14,24 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide>
-        <template v-slot:img>
-          <div class="CardClientes">
-          <div>  
-          <img
-            class="d-block img-fluid w-100"
-            width="80px"
-            height="480"
-            src="https://picsum.photos/1024/480/?image=55"
-            alt="image slot"
-          >
-          </div>
-          <div>
-          <img
-          class="d-block img-fluid w-100"
-          width="80px"
-          height="480"
-          src="../assets/navbar.png"
-          alt="image slot"
-        >
-          </div>
-          </div>
-        </template>
-      </b-carousel-slide>
-
-      <!-- Slides with image only -->
-      <b-carousel-slide v-html="html">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
+ <b-carousel-slide  img-blank> 
+        <p class = clientela>
+          <img src= "../assets/grupo26.png" class= "eden">
+          <img src ="../assets/navbar.png" class = "batuque">
         </p>
       </b-carousel-slide>
 
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-   
-
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
+      <!-- Slides with image only -->
+      <b-carousel-slide  img-blank> 
+        <p class = clientela>
+          <img src= "../assets/grupo26.png" class= "eden">
+          <img src ="../assets/navbar.png" class = "batuque">
+        </p>
+      </b-carousel-slide>
+ <b-carousel-slide  img-blank> 
+        <p class = clientela>
+          <img src= "../assets/grupo26.png" class= "eden">
+          <img src ="../assets/navbar.png" class = "batuque">
         </p>
       </b-carousel-slide>
     </b-carousel>
@@ -90,10 +63,31 @@
 </script>
 
 <style scoped>
+.eden{
+border-bottom: solid transparent 100px;
+}
+.batuque{
+  border: solid transparent 1px;
+}
 .CardClientes{
   border:2px solid red;
   display: flex;
   flex-wrap: wrap;
 }
+
+.clientela{
+display: flex;
+align-items:baseline;
+flex-direction: column;
+height: 100%;
+justify-content: baseline;
+width: 100%;
+margin-right: 25%;
+}
+
+.carousel-item{
+  background-color: #e48f8e !important;
+}
+
 
 </style>
