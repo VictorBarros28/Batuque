@@ -1,6 +1,6 @@
 <template>
   <div class="bannerCarrossel">
-    <h1  class="titulo">QUEM SOMOS NÓS?</h1>
+    <h1  class="tituloqm">QUEM SOMOS NÓS?</h1>
   <md-card>
     <md-card-actions>
       
@@ -69,7 +69,7 @@
 </script>
 
 <style>
-h1{
+.tituloqm{
   font-size: 50px !important;
   color: #707070;
   font-family: 'Segoe UI' !important;

@@ -24,21 +24,35 @@
         
       </div>
     </div>
+<div class="carrosselClientes">
+    <CarrosselClientes></CarrosselClientes>
+</div>    
+
 </div>
 
 </template>
-
 <script>
+import CarrosselClientes from './CarrosselClientes'
 export default {
   name: 'clientes',
-  props: {
-  }
+  components:{
+    CarrosselClientes
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.titulo{
+  padding-left: 2vw;
+}
+
+.carrosselClientes{
+  display:none;
+  border:1px solid black;
+  width:100%;
+}
 
 .batuque{
 width: 100%; 
@@ -71,14 +85,14 @@ flex-direction: column;
 .img-responsive{
 position: relative;
 bottom:35px;  
-align-items: space-around;
+align-items: space-evenly;
 }
 
 .clientes{
 display: flex;
 position: relative;
 height: fit-content;
-top:100px;
+top:-20px;
 width: 70vw;
 justify-content: space-around;
 
@@ -146,7 +160,7 @@ align-items: space-around;
 display: flex;
 position: relative;
 height: fit-content;
-top:100px;
+top:-10px;
 width: 100%;
 justify-content: space-between;
 
@@ -188,6 +202,13 @@ a {
 }}
 
 @media screen and (max-width: 1114px) {
+.titulo{
+padding-left: 6vw;
+  }
+
+h1{
+  width: 60vw;
+}
 
 .txt{
   color:white;
@@ -196,7 +217,7 @@ a {
   font-size: 30px;
 }
 .img-responsive{
-width: 150px;
+width: 220px;
 position: relative;
 bottom:35px;  
 align-items: space-around;
@@ -249,6 +270,14 @@ a {
 
 
 @media screen and (max-width: 835px) {
+  .titulo{
+  display: none;
+}
+.carrosselClientes{
+  display:initial;
+  border:1px solid black;
+  width:100%;
+}
 
 .txt{
   color:white;
@@ -312,7 +341,14 @@ a {
 
 
 @media screen and (max-width: 570px) {
-
+.titulo{
+  display: none;
+}
+.carrosselClientes{
+  display:initial;
+  border:1px solid black;
+  width:100%;
+}
 .txt{
   color:white;
   font-style: inherit;

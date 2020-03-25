@@ -3,7 +3,8 @@
         <banner></banner>
         <Carrossel></Carrossel>
         <Clientes></Clientes>
-        <Footer></Footer>
+  
+   
         
         
         
@@ -17,11 +18,11 @@
 import Navbar from './Navbar'
 import Banner from './Banner'
 import Formulario from './Formulario'
-
+import Clientes from './Clientes'
 import Servicos from './Servicos'
 import Carrossel from './Carrossel'
 import Footer from './Footer'
-import Clientes from './Clientes'
+
 export default {
     
     components:{
@@ -32,6 +33,7 @@ export default {
         Footer,
         Formulario,
         Clientes
+      
     }
 }
 </script>
