@@ -19,6 +19,7 @@
           <img src= "../assets/grupo26.png" class= "eden">
           <img src ="../assets/navbar.png" class = "batuque">
         </p>
+        
       </b-carousel-slide>
 
       <!-- Slides with image only -->
@@ -80,14 +81,27 @@ display: flex;
 align-items:baseline;
 flex-direction: column;
 height: 100%;
-justify-content: baseline;
+justify-content: center;
 width: 100%;
 margin-right: 25%;
 }
 
 .carousel-item{
   background-color: #e48f8e !important;
+  height: 100%;
+  display: flex;
 }
 
 
+#carousel-1{
+  background-color:#e48f8e !important ;
+  height: 800px;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 200px;
+  
+}
+
+#CarrosselClientes{
+}
 </style>

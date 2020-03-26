@@ -278,9 +278,10 @@ a {
   display: none;
 }
 .carrosselClientes{
-  display:initial;
+  display: initial;
   width:100%;
 }
+
 
 .txt{
   color:white;
