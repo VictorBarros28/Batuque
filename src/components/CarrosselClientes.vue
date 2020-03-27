@@ -15,26 +15,61 @@
     >
       <!-- Text slides with image -->
  <b-carousel-slide  img-blank> 
+    <div class="teste">
         <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden">
+          <img src= "../assets/grupo26.png" class= "eden1">
           <img src ="../assets/navbar.png" class = "batuque">
+          
         </p>
-        
+
+        <p class = clientela>
+          
+          <img src ="../assets/navbar.png" class = "batuque1">
+          <img src= "../assets/grupo26.png" class= "eden">
+          
+        </p>
+    </div>
+          
       </b-carousel-slide>
 
-      <!-- Slides with image only -->
-      <b-carousel-slide  img-blank> 
-        <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden">
-          <img src ="../assets/navbar.png" class = "batuque">
-        </p>
-      </b-carousel-slide>
  <b-carousel-slide  img-blank> 
+    <div class="teste">
         <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden">
+          <img src= "../assets/grupo26.png" class= "eden1">
           <img src ="../assets/navbar.png" class = "batuque">
+          
         </p>
+
+        <p class = clientela>
+          
+          <img src ="../assets/navbar.png" class = "batuque1">
+          <img src= "../assets/grupo26.png" class= "eden">
+          
+        </p>
+    </div>
+          
       </b-carousel-slide>
+
+
+ <b-carousel-slide  img-blank> 
+    <div class="teste">
+        <p class = clientela>
+          <img src= "../assets/grupo26.png" class= "eden1">
+          <img src ="../assets/navbar.png" class = "batuque">
+          
+        </p>
+
+        <p class = clientela>
+          
+          <img src ="../assets/navbar.png" class = "batuque1">
+          <img src= "../assets/grupo26.png" class= "eden">
+          
+        </p>
+    </div>
+          
+      </b-carousel-slide>
+
+
     </b-carousel>
 
   </div>
@@ -65,11 +100,18 @@
 
 <style scoped>
 .eden{
-border-bottom: solid transparent 100px;
+border-top:solid transparent 100px;
+}
+.eden1{
+border-bottom: solid transparent 130px;
 }
 .batuque{
-  border: solid transparent 1px;
+  border-bottom: solid transparent 10px;
 }
+.batuque1{
+border-top: solid transparent 41px;
+}
+
 .CardClientes{
   border:2px solid red;
   display: flex;
@@ -77,19 +119,19 @@ border-bottom: solid transparent 100px;
 }
 
 .clientela{
+  border:solid transparent 15px;
 display: flex;
 align-items:baseline;
 flex-direction: column;
 height: 100%;
 justify-content: center;
 width: 100%;
-margin-right: 25%;
 }
 
 .carousel-item{
   background-color: #e48f8e !important;
   height: 100%;
-  display: flex;
+  width: 70%;
 }
 
 
@@ -97,11 +139,22 @@ margin-right: 25%;
   background-color:#e48f8e !important ;
   height: 800px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   padding-bottom: 200px;
   
 }
 
 #CarrosselClientes{
+}
+
+.carousel-caption {
+display:flex;
+border: 1px solid red !important;
+}
+
+.teste{
+  display:flex;
+  width: 80vw;
+  justify-content: center;
 }
 </style>
