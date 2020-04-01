@@ -143,7 +143,7 @@
   padding-left: 3%;
   padding-right: 3%;
 }
-h1{
+.tituloqm{
   font-size: 30px !important;
   margin-top: 8% !important;
   

@@ -157,4 +157,23 @@ border: 1px solid red !important;
   width: 80vw;
   justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+  .batuque{
+width: 99%;
+  }
+  .batuque1{
+    border-top:solid transparent 21px;
+width: 99%;
+  }
+  .eden{
+width: 99%;
+border-top:solid transparent 30px;
+border-bottom: solid transparent 30px;
+  }
+  .eden1{
+width: 99%;
+border-bottom: solid transparent 50px;
+  }
+}
 </style>

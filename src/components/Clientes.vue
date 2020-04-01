@@ -231,7 +231,7 @@ align-items: space-around;
 display: flex;
 position: relative;
 height: fit-content;
-top:100px;
+top:9%;
 width: 100%;
 justify-content: space-between;
 
@@ -242,13 +242,14 @@ justify-content: space-between;
   display: flex !important;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+  padding-bottom:30%;
 }
 h1{
   
   font-size: 60px;
   font-weight: lighter;
   color: #ffffff;
-  padding-top: 94px;
+  padding-top: 20%;
 }
 h3 {
   margin: 40px 0 0;
@@ -307,7 +308,7 @@ justify-content: space-between;
 }
 
 .secao{  
-
+  padding-top: 35%;
   background-color: #e48f8e;
   display: flex !important;
   justify-content: center;
@@ -472,7 +473,7 @@ a {
 }}
 
 @media screen and (max-width: 400px) {
-
+ 
 .txt{
   color:white;
   font-style: inherit;
