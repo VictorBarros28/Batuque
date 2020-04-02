@@ -25,6 +25,8 @@
       </div>
     </div>
 <div class="carrosselClientes">
+  
+   <h3>+ QUE CLIENTES, FRIENDS</h3>
     <CarrosselClientes></CarrosselClientes>
 </div>    
 
@@ -279,8 +281,11 @@ a {
   display: none;
 }
 .carrosselClientes{
-  display: initial;
-  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:90%;
+  padding-bottom: 20%;
 }
 
 
@@ -308,22 +313,19 @@ justify-content: space-between;
 }
 
 .secao{  
-  padding-top: 35%;
+  padding-top: 55%;
+  padding-bottom: 54%;
   background-color: #e48f8e;
   display: flex !important;
   justify-content: center;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
-h1{
-  
-  font-size: 50px;
-  font-weight: lighter;
+h3{
+  font-size: 40px;
+  font-weight: normal;
   color: #ffffff;
-  padding-top: 94px;
-}
-h3 {
-  margin: 40px 0 0;
+   margin: 40px 0 0;
 }
 ul {
   list-style-type: none;
@@ -382,16 +384,6 @@ justify-content: space-between;
   justify-content: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
-h1{
-  
-  font-size: 30px;
-  font-weight: lighter;
-  color: #ffffff;
-  padding-top: 94px;
-}
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -410,6 +402,17 @@ a {
   color: #ffffff;
   width: 100%;
 }
+
+@media screen and (max-width: 478px) {
+
+h3{
+font-size:35px;
+
+}
+
+
+}
+
 
 @media screen and (max-width: 450px) {
 
@@ -443,15 +446,10 @@ justify-content: space-between;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
-h1{
-  
-  font-size: 30px;
-  font-weight: lighter;
-  color: #ffffff;
-  padding-top: 94px;
-}
-h3 {
-  margin: 40px 0 0;
+
+h3{
+  font-size:30px;
+
 }
 ul {
   list-style-type: none;
@@ -503,16 +501,6 @@ justify-content: space-between;
   align-items: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
-h1{
-  
-  font-size: 30px;
-  font-weight: lighter;
-  color: #ffffff;
-  padding-top: 94px;
-}
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -531,6 +519,12 @@ a {
   color: #ffffff;
   width: 100%;
 }}
+}
+
+@media screen and (max-width: 320px) {
+  h3{
+    font-size: 24px;
+  }
 }
   
 </style>

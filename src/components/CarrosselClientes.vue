@@ -130,17 +130,16 @@ width: 100%;
 
 .carousel-item{
   background-color: #e48f8e !important;
-  height: 100%;
+  height: 110%;
   width: 70%;
 }
 
 
 #carousel-1{
   background-color:#e48f8e !important ;
-  height: 800px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
   
 }
 
@@ -157,6 +156,21 @@ border: 1px solid red !important;
   width: 80vw;
   justify-content: center;
 }
+@media screen and (max-width: 420px) {
+
+.carousel-item{
+  background-color: #e48f8e !important;
+  height: 90%;
+  width: 70%;
+}
+
+
+}
+
+
+
+
+
 
 @media screen and (max-width: 400px) {
   .batuque{
