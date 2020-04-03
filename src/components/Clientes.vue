@@ -384,6 +384,11 @@ justify-content: space-between;
   justify-content: center;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
+
+h3{
+padding-left:5%;
+font-size: 37px;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -448,7 +453,7 @@ justify-content: space-between;
 }
 
 h3{
-  font-size:30px;
+  font-size:28px;
 
 }
 ul {
@@ -495,6 +500,11 @@ justify-content: space-between;
 
 }
 
+
+h3{
+  font-size:26px;
+
+}
 .secao{  
   background-color: #e48f8e;
   display: flex !important;
