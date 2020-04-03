@@ -12,7 +12,7 @@
         >
         
         <swiper-slide class="slides" >
-          <h1 data-aos="fade-up" class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
         <div class="slidecard">  
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -24,7 +24,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1  data-aos="fade-up"  class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1    class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -35,7 +35,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1 data-aos="fade-up"  class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1   class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
@@ -46,7 +46,7 @@
         </div>
         </swiper-slide>
         <swiper-slide class="slides">
-          <h1  data-aos="fade-up" class="titulo">QUEM SOMOS NÓS?</h1>
+          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
           <div class="slidecard">
           <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
             elit, sed do eiusmod tempor incididunt ut labore et 
