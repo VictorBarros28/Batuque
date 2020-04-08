@@ -107,9 +107,10 @@ justify-content: space-around;
   -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
 }
 h1{
-  width: 50vw;
+  width: 55vw;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
+  padding-bottom: 30px;
   font-weight: lighter;
   color: #ffffff;
 }
@@ -137,7 +138,7 @@ a {
   margin-left: 9%;
 }
  
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1357px) {
 .txt{
   color:white;
   font-style: inherit;
@@ -167,9 +168,10 @@ justify-content: space-between;
 }
 h1{
   
-  font-size: 60px;
+  font-size: 55px;
   font-weight: lighter;
   color: #ffffff;
+  padding-bottom: 10px;
   padding-top: 94px;
 }
 h3 {
@@ -297,9 +299,10 @@ justify-content: space-between;
 }
 h3{
   font-size: 40px;
-  font-weight: normal;
+  font-weight: bolder;
   color: #ffffff;
    margin: 40px 0 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ul {
   list-style-type: none;
