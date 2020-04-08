@@ -5,7 +5,7 @@
     <Carrossel></Carrossel>
      <Servicos></Servicos>
    
-     <div class="sonhos"></div>
+     <sonhos></sonhos>    
         <Clientes></Clientes>
         <Footer></Footer>
    
@@ -22,6 +22,7 @@
   import Clientes from './components/Clientes'
   import Servicos from './components/Servicos'
   import Nav from './components/Nav'
+  import sonhos from './components/sonhos'
 export default {
   components:{
     Banner,
@@ -29,7 +30,8 @@ export default {
     Carrossel,
     Clientes,
     Servicos,
-    Nav
+    Nav,
+    sonhos
   }
 }
 </script>
