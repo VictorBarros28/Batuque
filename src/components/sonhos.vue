@@ -48,10 +48,9 @@ export default {
   height: fit-content;
   width: fit-content;
   background-color: #e5908f;
-  padding-top: 1.6vh;
-  padding-bottom: 6.58vh;
+  padding-top:  0.8075vw;
+  padding-bottom: 3.3208437500000003vw;
   margin-left:0.5%;
-  
 }
 .nomes{
   display: flex;
@@ -62,18 +61,18 @@ export default {
 .img-responsive{
   border: transparent 1vh solid;
   width:   11.807291666666666vw;
-  height:  24.395252837977296vh;
+  height:  12.311979166666667vw;
 }
 
 .img-r1{
   border: transparent 1vh solid;
   width:  11.765625vw;
-  height: 38.85448916408669vh;
+  height: 19.609375vw;
 }
 
 .img-r2{
   border: transparent 1vh solid;
-   height:  23.395252837977296vh;
+   height:  11.807291666666666vw;
    width:  23.579166666666668vw;
   
 }
@@ -121,6 +120,41 @@ h1{
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color:  #707070;
 font-weight: bolder;
+
+}
+
+@media screen and (max-width: 1357px) {
+h4{
+  font-size: 20px; 
+}
+
+
+
+}
+
+@media screen and (max-width: 1140px) {
+h4{
+  font-size: 17px; 
+}
+
+.proj{
+  display: flex;
+  justify-content: baseline;
+  height: 5%;
+  width: 100%;
+  padding-left: 15vw;
+  margin-bottom: 0.5vh;
+}
+
+.proj2{
+  display: flex;
+  align-items:flex-start;
+  justify-content: baseline;
+  height: 10%;
+  width: 100%;
+  padding-left: 15vw;
+  margin-bottom: 30vh;
+}
 
 }
 </style>
