@@ -30,25 +30,31 @@
 </div>
 </div>
  
+
+ <div class="carrosselSonhos">
+    <CarrosselSonhos></CarrosselSonhos>
+</div>    
 </div>
 
 </template>
 <script>
+import CarrosselSonhos from './CarrosselSonhos'
 export default {
   name: 'sonhos',
   components:{
+    CarrosselSonhos
   },
 }
 </script>
 
 <style scoped>
 .correcao{
-  margin-top:0.5%;
+  margin-top:8px;
   display: flex;
+  width:fit-content;
   height: fit-content;
-  width: fit-content;
   background-color: #e5908f;
-  padding-top:  0.8075vw;
+  padding-top:  0.5075vw;
   padding-bottom: 3.3208437500000003vw;
   margin-left:0.5%;
 }
@@ -65,7 +71,8 @@ export default {
 }
 
 .img-r1{
-  border: transparent 1vh solid;
+  border:transparent solid 10px;
+  padding-top : 5%;
   width:  11.765625vw;
   height: 19.609375vw;
 }
@@ -155,6 +162,28 @@ h4{
   padding-left: 15vw;
   margin-bottom: 30vh;
 }
+@media screen and (max-width: 975px) {
+h4{
+  font-size: 14px; 
+}
 
+}
+
+
+@media screen and (max-width: 835px) {
+  .portfolio{
+  display: none;
+}
+
+
+.carrosselSonhos{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:90%;
+  padding-bottom: 20%;
+}
+
+}
 }
 </style>
