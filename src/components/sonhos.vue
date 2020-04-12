@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style scoped>
+.carrosselSonhos{
+  display: none;
+}
 .correcao{
   margin-top:8px;
   display: flex;
@@ -180,8 +183,9 @@ h4{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  width:90%;
-  padding-bottom: 20%;
+  width:100vw;
+  height: 100%;
+  padding-bottom: 10%;
 }
 
 }

@@ -16,55 +16,69 @@
       <!-- Text slides with image -->
  <b-carousel-slide  img-blank> 
     <div class="teste">
-        <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden1">
-          <img src ="../assets/navbar.png" class = "batuque">
-          
-        </p>
+      <div class = "clientela">
+      <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
+      <img src= "../assets/Imagem 2.png"  href="" class="img-responsive">
+     </div>
+<div class = "clientela">
+       <img src= "../assets/Imagem 11.png" href="" class="img-responsive">
+      <img src= "../assets/Imagem 9.png"  href="" class="img-responsive">    
+</div>
 
-        <p class = clientela>
-          
-          <img src ="../assets/navbar.png" class = "batuque1">
-          <img src= "../assets/grupo26.png" class= "eden">
-          
-        </p>
+<div class = "clientela">
+  <img src= "../assets/Imagem 4.png"  href="" class="img-responsive">
+  <img src= "../assets/Imagem 3.png"  href="" class="img-responsive">
+      
+</div>
+ <div class = "correcao">
+      <img src= "../assets/Imagem 10.png" href="" class="img-r1">
+      </div>
     </div>
           
       </b-carousel-slide>
 
- <b-carousel-slide  img-blank> 
+<b-carousel-slide  img-blank> 
     <div class="teste">
-        <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden1">
-          <img src ="../assets/navbar.png" class = "batuque">
-          
-        </p>
+      <div class = "clientela">
+      <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
+      <img src= "../assets/Imagem 2.png"  href="" class="img-responsive">
+     </div>
+<div class = "clientela">
+       <img src= "../assets/Imagem 11.png" href="" class="img-responsive">
+      <img src= "../assets/Imagem 9.png"  href="" class="img-responsive">    
+</div>
 
-        <p class = clientela>
-          
-          <img src ="../assets/navbar.png" class = "batuque1">
-          <img src= "../assets/grupo26.png" class= "eden">
-          
-        </p>
+<div class = "clientela">
+  <img src= "../assets/Imagem 4.png"  href="" class="img-responsive">
+  <img src= "../assets/Imagem 3.png"  href="" class="img-responsive">
+      
+</div>
+ <div class = "correcao">
+      <img src= "../assets/Imagem 10.png" href="" class="img-r1">
+      </div>
     </div>
           
       </b-carousel-slide>
 
-
- <b-carousel-slide  img-blank> 
+<b-carousel-slide  img-blank> 
     <div class="teste">
-        <p class = clientela>
-          <img src= "../assets/grupo26.png" class= "eden1">
-          <img src ="../assets/navbar.png" class = "batuque">
-          
-        </p>
+      <div class = "clientela">
+      <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
+      <img src= "../assets/Imagem 2.png"  href="" class="img-responsive">
+     </div>
+<div class = "clientela">
+       <img src= "../assets/Imagem 11.png" href="" class="img-responsive">
+      <img src= "../assets/Imagem 9.png"  href="" class="img-responsive">    
+</div>
 
-        <p class = clientela>
-          
-          <img src ="../assets/navbar.png" class = "batuque1">
-          <img src= "../assets/grupo26.png" class= "eden">
-          
-        </p>
+<div class = "clientela">
+  <img src= "../assets/Imagem 4.png"  href="" class="img-responsive">
+  <img src= "../assets/Imagem 3.png"  href="" class="img-responsive">
+      
+</div>
+ <div class = "correcao">
+      <img src= "../assets/Imagem 10.png" href="" class="img-r1">
+      </div>
     </div>
           
       </b-carousel-slide>
@@ -99,17 +113,26 @@
 </script>
 
 <style scoped>
-.eden{
-border-top:solid transparent 100px;
+
+
+.correcao{
+  margin-top:8px;
+  display: flex;
+  width:fit-content;
+  height: fit-content;
+  background-color: #e5908f;
+  padding-top:  0.5075vw;
+  padding-bottom: 8.6208437500000003vw;
+  margin-left:0.5%;
 }
-.eden1{
-border-bottom: solid transparent 130px;
+
+.img-responsive{
+  border: transparent 1vh solid;
 }
-.batuque{
-  border-bottom: solid transparent 10px;
-}
-.batuque1{
-border-top: solid transparent 41px;
+
+.img-r1{
+  border:transparent solid 10px;
+  padding-top : 5%;
 }
 .CardClientes{
   border:2px solid red;
@@ -117,37 +140,35 @@ border-top: solid transparent 41px;
   flex-wrap: wrap;
 }
 .clientela{
-  border:solid transparent 15px;
 display: flex;
 align-items:baseline;
 flex-direction: column;
-height: 100%;
+height: fit-content;
 justify-content: center;
-width: 100%;
 }
 .carousel-item{
   background-color: transparent !important;
-  height: 110%;
-  width: 70%;
+  width: 100%;
+  height:100vh;
 }
 #carousel-1{
+  height: 100vh;
   background-color:transparent !important ;
-  height: 400px;
   display: flex;
   justify-content: center;
   
-}
-#CarrosselClientes{
 }
 .carousel-caption {
 display:flex;
 border: 1px solid red !important;
 }
 .teste{
+  height: 60vh;
   display:flex;
-  width: 80vw;
+  width: 75vw;
   justify-content: center;
 }
+
 @media screen and (max-width: 420px) {
 .carousel-item{
   background-color: transparent !important;
