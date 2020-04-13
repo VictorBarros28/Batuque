@@ -116,23 +116,26 @@
 
 
 .correcao{
-  margin-top:8px;
+  margin-top:3px;
   display: flex;
-  width:fit-content;
+  width:240px;
   height: fit-content;
   background-color: #e5908f;
-  padding-top:  0.5075vw;
-  padding-bottom: 8.6208437500000003vw;
-  margin-left:0.5%;
+  padding-top:  20px;
+  padding-bottom:4%;
+  margin-left:3px;
 }
 
+
 .img-responsive{
-  border: transparent 1vh solid;
+  border: transparent 3px solid;
+  width:   100%;
+  height:  100%;
 }
 
 .img-r1{
-  border:transparent solid 10px;
   padding-top : 5%;
+  width:  151.6px;
 }
 .CardClientes{
   border:2px solid red;
@@ -177,21 +180,6 @@ border: 1px solid red !important;
 }
 }
 @media screen and (max-width: 400px) {
-  .batuque{
-width: 99%;
-  }
-  .batuque1{
-    border-top:solid transparent 21px;
-width: 99%;
-  }
-  .eden{
-width: 99%;
-border-top:solid transparent 30px;
-border-bottom: solid transparent 30px;
-  }
-  .eden1{
-width: 99%;
-border-bottom: solid transparent 50px;
-  }
+
 }
 </style>
