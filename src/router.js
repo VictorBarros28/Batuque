@@ -25,6 +25,31 @@ export default new Router({
       component: () => import("./components/DescricaoProdutos.vue")
     },
     {
+      path: "/identidade",
+      name: "identidade",
+      component: () => import("./components/identidade.vue")
+    },
+    {
+      path: "/ambientacao",
+      name: "ambientacao",
+      component: () => import("./components/ambientacao.vue")
+    },
+    {
+      path: "/editorial",
+      name: "editorial",
+      component: () => import("./components/editorial.vue")
+    },
+    {
+      path: "/sites",
+      name: "sites",
+      component: () => import("./components/sites.vue")
+    },
+    {
+      path: "/sinalizacao",
+      name: "sinalizacao",
+      component: () => import("./components/sinalizacao.vue")
+    },
+    {
       path: "/index",
       name: "index",
       component: () => import("./components/Index.vue")

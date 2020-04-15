@@ -6,11 +6,14 @@
 
    <div class = "portfolio">
      <div class = "nomes"> 
-      <h4> IDENTIDADE VISUAL </h4>
-      <h4> AMBIENTAÇÃO </h4>
-      <h4> EDITORIAL </h4>
-      <h4> LAYOUT DE SITES </h4>
-      <h4> SINALIZAÇÃO  </h4>
+        <md-tabs md-sync-route class="md-transparent" md-alignment="fixed" >
+      <md-tab id="tab1" md-label="IDENTIDADE VISUAL" to="/identidade"></md-tab>
+      <md-tab id="tab2" md-label="AMBIENTAÇÃO" to="/ambientacao"> </md-tab>
+      <md-tab id="tab3" md-label="EDITORIAL" to="/editorial"></md-tab>
+      <md-tab id="tab4" md-label="LAYOUT DE SITES" to="/sites"></md-tab>
+      <md-tab id="tab5" md-label="SINALIZAÇÃO" to="/sinalizacao"></md-tab>
+    </md-tabs>
+    
       </div>
       <div class = "proj">
       <img src= "../assets/Imagem 8.png"  href="" class="img-responsive">
@@ -48,17 +51,19 @@ export default {
 </script>
 
 <style scoped>
+
+
 .carrosselSonhos{
   display: none;
 }
 .correcao{
-  margin-top:8px;
-  display: flex;
+  margin-top: 9px;
+  display : flex;
   width:fit-content;
   height: fit-content;
   background-color: #e5908f;
-  padding-top:  0.5075vw;
-  padding-bottom: 3.3208437500000003vw;
+  padding-top:  0.1075vw;
+  padding-bottom: 4.6vw;
   margin-left:0.5%;
 }
 .nomes{
@@ -74,10 +79,12 @@ export default {
 }
 
 .img-r1{
-  border:transparent solid 10px;
+  border-left: transparent solid 10px;
+  border-top: transparent solid 10px;
+  border-right: transparent solid 10px;
   padding-top : 5%;
   width:  11.765625vw;
-  height: 19.609375vw;
+  height: 100%;
 }
 
 .img-r2{
@@ -89,6 +96,7 @@ export default {
 .proj{
   display: flex;
   justify-content: baseline;
+  align-items: flex-start;
   height: 10%;
   width: 100%;
   padding-left: 15vw;
@@ -108,7 +116,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: last baseline;
   width: 100%;
   color:#d16e72;
  }
@@ -139,6 +147,9 @@ h4{
 }
 
 
+.correcao{
+  padding-bottom: 4.9vw;
+}
 
 }
 
@@ -164,6 +175,11 @@ h4{
   width: 100%;
   padding-left: 15vw;
   margin-bottom: 30vh;
+}
+
+
+.correcao{
+  padding-bottom: 5vw;
 }
 @media screen and (max-width: 975px) {
 h4{
