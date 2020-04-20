@@ -20,19 +20,19 @@
       <div   data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
 
-        <router-link class = "txt" to = "/grafico">GRÁFICO</router-link>
+        <router-link class = "txt" :to = "{ name: 'grafico'}">GRÁFICO</router-link>
 
 
       </div>
       <div   data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_INTERIORES.png" href=""  class="img-responsive">
         
-            <router-link class = "txt" to = "/interiores">INTERIORES</router-link>
+            <router-link class = "txt" :to = "{name: 'interiores'}">INTERIORES</router-link>
       </div>
       <div  data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_PRODUTOS.png" href=""  class="img-responsive">
         
-            <router-link class = "txt" to = "/produtos">PRODUTOS</router-link>
+            <router-link class = "txt" :to = "{name: 'produtos'}">PRODUTOS</router-link>
       </div>
     </div>
     

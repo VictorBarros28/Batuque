@@ -1,9 +1,9 @@
 <template>
     <div id="index">
 
-       
-    
-        
+      
+    <Servicos></Servicos>
+     <sonhos></sonhos>     
         
         
         
@@ -16,7 +16,7 @@
 import Navbar from './Navbar'
 import Banner from './Banner'
 import Formulario from './Formulario'
-
+import sonhos from './sonhos'
 import Carrossel from './Carrossel'
 import Clientes from './Clientes'
 import Servicos from './Servicos'
@@ -32,6 +32,7 @@ export default {
         Clientes,
         Footer,
         Formulario,
+        sonhos,
       
 
     }

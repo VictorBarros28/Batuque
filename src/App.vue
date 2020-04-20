@@ -3,10 +3,10 @@
    <Nav></Nav>
     <Banner></Banner>
     <Carrossel></Carrossel>
-     <Servicos></Servicos>
-   
-     <sonhos></sonhos>    
-        <Clientes></Clientes>
+     
+     <router-view/>
+     <router-view name="produtos"/>
+       <Clientes></Clientes>
         <Footer></Footer>
    
   
@@ -31,7 +31,7 @@ export default {
     Clientes,
     Servicos,
     Nav,
-    sonhos
+    sonhos,
   }
 }
 </script>
