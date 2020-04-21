@@ -1,10 +1,16 @@
 <template>
     <div id="index">
 
-      
-    <Servicos></Servicos>
+              
+    
+    <Banner></Banner>
+    <Carrossel></Carrossel>
+       <Servicos></Servicos>
      <sonhos></sonhos>     
-        
+
+     <!-- <router-view name="produtos"/> -->
+       <Clientes></Clientes>
+        <Footer></Footer>
         
         
     </div>
