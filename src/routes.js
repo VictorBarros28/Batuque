@@ -21,6 +21,7 @@ let index = {
     path: "/index",
     name: "index",
     component: Index
+    
 }
 
 let nav = {
@@ -45,33 +46,7 @@ let sonhos = {
     path: "/sonhos",
     name: "sonhos",
     component: Sonhos,
-    children: [
-      {
-          path: "/identidade",
-          component: Identidade,
-          name: "identidade",
-      },
-      {
-              path: "/ambientacao",
-              component: Ambientacao,
-              name: "ambientacao",
-            },
-            {
-              path: "/sinalizacao",
-              component:Sinalizacao,
-              name: "sinalizacao",
-            },
-            {
-              path: "/editorial",
-              component:Editorial,
-              name: "editorial",
-            },
-            {
-              path: "/sites",
-              component:Sites,
-              name: "sites",
-            },
-  ],
+    
 }
 
 let footer = {
@@ -85,23 +60,7 @@ let servicos = {
     name: 'Servicos',
     path: '/Servicos',
     component: Servicos,
-    children: [
-        {
-            path: "/grafico",
-            component: DescricaoGrafico,
-            name: "grafico",
-        },
-        {
-                path: "/interiores",
-                component: DescricaoInteriores,
-                name: "interiores",
-              },
-              {
-                path: "/produtos",
-                component:DescricaoProdutos,
-                name: "produtos",
-              },
-    ],
+   
 }
 
 
@@ -116,8 +75,50 @@ let app = {
         footer,
         servicos,
         nav,
-        banner
-    ]
+        banner,
+        
+          {
+              path: "/identidade",
+              component: Identidade,
+              name: "identidade",
+          },
+          {
+                  path: "/ambientacao",
+                  component: Ambientacao,
+                  name: "ambientacao",
+                },
+                {
+                  path: "/sinalizacao",
+                  component:Sinalizacao,
+                  name: "sinalizacao",
+                },
+                {
+                  path: "/editorial",
+                  component:Editorial,
+                  name: "editorial",
+                },
+                {
+                  path: "/sites",
+                  component:Sites,
+                  name: "sites",
+                },
+                {
+                  path: "/grafico",
+                  component: DescricaoGrafico,
+                  name: "grafico",
+              },
+              {
+                      path: "/interiores",
+                      component: DescricaoInteriores,
+                      name: "interiores",
+                    },
+                    {
+                      path: "/produtos",
+                      component:DescricaoProdutos,
+                      name: "produtos",
+                    },
+      ],
+    
 }
 
 

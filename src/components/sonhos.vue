@@ -4,12 +4,13 @@
 <div class="title">
 <h1> SONHOS ENTREGUES</h1>
    <div class = "portfolio">
+
      <div class = "nomes"> 
     
         <md-tabs md-sync-route class="md-transparent" md-alignment="fixed" >
         
       <md-tab id="tab1" md-label="IDENTIDADE VISUAL" to="/identidade"></md-tab>
-      <md-tab id="tab2" md-label="AMBIENTAÇÃO" to="/ambientacao"> </md-tab>
+      <md-tab id="tab2" md-label="AMBIENTAÇÃO" to="/ambientacao"></md-tab>
       <md-tab id="tab3" md-label="EDITORIAL" to="/editorial"></md-tab>
       <md-tab id="tab4" md-label="LAYOUT DE SITES" to="/sites"></md-tab>
       <md-tab id="tab5" md-label="SINALIZAÇÃO" to="/sinalizacao"></md-tab>

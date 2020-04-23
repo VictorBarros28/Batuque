@@ -1,16 +1,16 @@
 <template>
     <div id="index">
 
-              
-    
-    <Banner></Banner>
+                
+   <Nav></Nav>
+   <Banner></Banner>
     <Carrossel></Carrossel>
-       <Servicos></Servicos>
-     <sonhos></sonhos>     
+    <Servicos></Servicos>
+    <sonhos></sonhos>     
+    <Clientes></Clientes>
+    <Footer></Footer>
+    
 
-     <!-- <router-view name="produtos"/> -->
-       <Clientes></Clientes>
-        <Footer></Footer>
         
         
     </div>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Navbar from './Navbar'
+import Nav from './Nav'
 import Banner from './Banner'
 import Formulario from './Formulario'
 import sonhos from './sonhos'
@@ -31,7 +31,8 @@ import Footer from './Footer'
 export default {
     
     components:{
-        'home-navebar': Navbar,
+        // 'home-navebar': Nav,
+        Nav,
         Servicos,
         Banner,
         Carrossel,
