@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-
+               
+   <Nav></Nav>
+   <Banner></Banner>
+    <Carrossel></Carrossel>
      <router-view> 
      </router-view>
-
+    <sonhos></sonhos>     
+    <Clientes></Clientes>
+    <Footer></Footer>
   </div>
 </template>
 

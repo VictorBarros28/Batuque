@@ -145,15 +145,15 @@ export default {
 
 }
 
-#__BVID__38___BV_tab_button__,#__BVID__40___BV_tab_button__,#__BVID__42___BV_tab_button__,#__BVID__44___BV_tab_button__,#__BVID__46___BV_tab_button__{
+
+.nav-link.active , .nav-link{
       color: #e48f8e!important;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: transparent;
+      background-color: transparent!important;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
+    color: #495057!important;
     border-color: #dee2e6 #dee2e6 #dee2e6 !important;
     border:0px;
 
@@ -187,8 +187,8 @@ export default {
   width:fit-content;
   height: fit-content;
   background-color: #e5908f;
-  padding-top:  0.1075vw;
-  padding-bottom: 4.6vw;
+  padding-top:  1%;
+  padding-bottom: 6.7%;
   margin-left:0.5%;
 }
 .nomes{
@@ -197,6 +197,7 @@ export default {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-bottom: 12%;
 }
 .img-responsive{
   border: transparent 1vh solid;

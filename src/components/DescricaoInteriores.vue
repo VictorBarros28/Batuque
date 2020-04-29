@@ -1,10 +1,5 @@
 <template>
-<div class = "org">
-    <div id="index">             
-   <Nav></Nav>
-   <Banner></Banner>
-    <Carrossel></Carrossel>
-    <div class="hello">
+<div class="hello">
     
 
   <img src = "../assets/BATIUQUE_LATERAL.png" class= "lateral1">
@@ -31,53 +26,19 @@
   </div>
 <img src = "../assets/latdir.png" class= "lateral2">
 </div>
-    <sonhos></sonhos>     
-    <Clientes></Clientes>
-    <Footer></Footer>   
-    </div>
-
-
-</div>
 </template>
 
 <script>
-import Nav from './Nav'
-import Banner from './Banner'
-import Formulario from './Formulario'
-import sonhos from './sonhos'
-import Carrossel from './Carrossel'
-import Clientes from './Clientes'
-import Servicos from './Servicos'
-import Footer from './Footer'
 export default {
   name: 'servicos',
   props: {
     msg: String
-  },
-      components:{
-        // 'home-navebar': Nav,
-        Nav,
-        Servicos,
-        Banner,
-        Carrossel,
-        Clientes,
-        Footer,
-        Formulario,
-        sonhos,
-      
-
-    }
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.index{
-  background-color: #f8f8f8;
-}
- .sonhos{
-        height: 100vh;
-    }
 .lateral1{
   width: 215px;
   position: relative;
@@ -104,7 +65,6 @@ position: relative;
 bottom:35px;  
 align-items: space-around;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -112,7 +72,6 @@ height: fit-content;
 top:100px;
 width: 70vw;
 justify-content: space-around;
-
 }
 .hello{  
  
@@ -168,7 +127,6 @@ a {
 }
  
   @media screen and (max-width: 1300px) {
-
 .lateral1{
   position: relative;
   left: -100px;
@@ -193,7 +151,6 @@ position: relative;
 bottom:35px;  
 align-items: space-around;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -201,9 +158,7 @@ height: fit-content;
 top:100px;
 width: 100%;
 justify-content: space-between;
-
 }
-
 .cardservicos1{
   display: flex;
   align-items: center;
@@ -254,9 +209,7 @@ a {
   color: #ffffff;
   width: 100%;
 }}
-
 @media screen and (max-width: 1000px) {
-
 .lateral1{
   width: 160px;
   position: relative;
@@ -283,7 +236,6 @@ position: relative;
 bottom:35px;  
 align-items: space-around;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -291,9 +243,7 @@ height: fit-content;
 top:100px;
 width: 110%;
 justify-content: space-between;
-
 }
-
 .cardservicos1{
   display: flex;
   align-items: center;
@@ -344,10 +294,7 @@ a {
   color: #ffffff;
   width: 100%;
 }}
-
-
 @media screen and (max-width: 731px) {
-
 .lateral1{
   width: 100px;
   position: relative;
@@ -374,7 +321,6 @@ position: relative;
 bottom:35px;  
 align-items: space-around;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -382,9 +328,7 @@ height: fit-content;
 top:100px;
 width: 110%;
 justify-content: space-between;
-
 }
-
 .cardservicos1{
   display: flex;
   align-items: center;
@@ -435,10 +379,7 @@ a {
   color: #ffffff;
   width: 100%;
 }}
-
-
 @media screen and (max-width: 530px) {
-
 .lateral1{
   width: 100px;
   position: relative;
@@ -465,7 +406,6 @@ position: relative;
 bottom:20px;  
 align-items: space-between;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -473,9 +413,7 @@ height: fit-content;
 top:100px;
 width: 110%;
 justify-content: space-between;
-
 }
-
 .cardservicos1{
   display: flex;
   align-items: center;

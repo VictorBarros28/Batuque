@@ -1,14 +1,9 @@
 <template>
     <div id="index">
 
-                
-   <Nav></Nav>
-   <Banner></Banner>
-    <Carrossel></Carrossel>
+ 
     <Servicos></Servicos>
-    <sonhos></sonhos>     
-    <Clientes></Clientes>
-    <Footer></Footer>
+
     
 
         

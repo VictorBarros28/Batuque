@@ -82,7 +82,6 @@ position: relative;
 bottom:35px;  
 align-items: space-around;
 }
-
 .cardservicos{
 display: flex;
 position: relative;
@@ -90,9 +89,7 @@ height: fit-content;
 top:100px;
 width: 70vw;
 justify-content: space-around;
-
 }
-
 .cardservicos1{
   display: flex;
   flex-direction: column;
@@ -119,6 +116,73 @@ justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
+/* 
+.lateral1{
+  width: 215px;
+  position: relative;
+  left: -100px;
+  bottom:-400px;
+}
+.lateral2{  
+  width: 150px;
+  position: relative;
+  display: flex;
+  bottom:450px;
+  right: 0%;
+  
+}
+.txt{
+  color:white;
+  text-decoration: none;
+  font-style: inherit;
+  font-family: monospace;
+  font-weight:lighter;
+  font-size: 35px;
+}
+.img-responsive{
+position: relative;
+bottom:35px;  
+align-items: space-around;
+}
+
+.cardservicos{
+display: flex;
+position: relative;
+height: fit-content;
+top:100px;
+width: 70vw;
+justify-content: space-around;
+
+}
+
+.cardservicos1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hello{  
+  height:fit-content;
+  padding-top: 21vh;
+  padding-bottom:10vh;
+  background-color: #e48f8e;
+  display: flex !important;
+  align-items: center;
+  position:relative;
+ 
+  z-index:1;
+  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+}
+.cont{  
+ 
+  height: 50%;
+  position: relative;
+  right:2%;
+  top:-250px;
+  background-color: #e48f8e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 .cont h1{
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
