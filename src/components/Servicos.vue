@@ -11,9 +11,7 @@
     <h1 data-aos="fade-down" > O QUE FAZEMOS ?</h1>
     <div class = "textservices">
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Além de realizar sonhos, a Batuque presta serviços das três áreas contempladas no Curso de Design da Universidade Federal de Alagoas. 
       </p>
     </div>
 
