@@ -14,7 +14,34 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
+      
  <b-carousel-slide  img-blank> 
+  <h5 style="color: #e48f8e!important; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; padding-bottom:4vh;">IDENTIDADE VISUAL</h5>
+    <div class="teste">
+      
+      <div class = "clientela">
+      <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
+      <img src= "../assets/Imagem 2.png"  href="" class="img-responsive">
+     </div>
+<div class = "clientela">
+       <img src= "../assets/Imagem 11.png" href="" class="img-responsive">
+      <img src= "../assets/Imagem 9.png"  href="" class="img-responsive">    
+</div>
+
+<div class = "clientela">
+  <img src= "../assets/Imagem 4.png"  href="" class="img-responsive">
+  <img src= "../assets/Imagem 3.png"  href="" class="img-responsive">
+      
+</div>
+ <div class = "correcao">
+      <img src= "../assets/Imagem 10.png" href="" class="img-r1">
+      </div>
+    </div>
+          
+      </b-carousel-slide>
+
+<b-carousel-slide  img-blank> 
+   <h5 style="color: #e48f8e!important; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; padding-bottom:4vh;">AMBIENTAÇÃO</h5>
     <div class="teste">
       <div class = "clientela">
       <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
@@ -38,6 +65,7 @@
       </b-carousel-slide>
 
 <b-carousel-slide  img-blank> 
+   <h5 style="color: #e48f8e!important; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; padding-bottom:4vh;">EDITORIAL</h5>
     <div class="teste">
       <div class = "clientela">
       <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
@@ -60,7 +88,32 @@
           
       </b-carousel-slide>
 
-<b-carousel-slide  img-blank> 
+      <b-carousel-slide  img-blank> 
+   <h5 style="color: #e48f8e!important; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; padding-bottom:4vh;">LAYOUT DE SITES</h5>
+    <div class="teste">
+      <div class = "clientela">
+      <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
+      <img src= "../assets/Imagem 2.png"  href="" class="img-responsive">
+     </div>
+<div class = "clientela">
+       <img src= "../assets/Imagem 11.png" href="" class="img-responsive">
+      <img src= "../assets/Imagem 9.png"  href="" class="img-responsive">    
+</div>
+
+<div class = "clientela">
+  <img src= "../assets/Imagem 4.png"  href="" class="img-responsive">
+  <img src= "../assets/Imagem 3.png"  href="" class="img-responsive">
+      
+</div>
+ <div class = "correcao">
+      <img src= "../assets/Imagem 10.png" href="" class="img-r1">
+      </div>
+    </div>
+          
+      </b-carousel-slide>
+
+      <b-carousel-slide  img-blank> 
+   <h5 style="color: #e48f8e!important; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bolder; padding-bottom:4vh;">SINALIZACAO</h5>
     <div class="teste">
       <div class = "clientela">
       <img src= "../assets/Imagem 7.png"  href="" class="img-responsive">
@@ -111,9 +164,13 @@
     }
   }
 </script>
-
 <style scoped>
-
+h5{
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .correcao{
   margin-top:3px;
@@ -155,6 +212,7 @@ justify-content: center;
   height:100vh;
 }
 #carousel-1{
+  text-shadow: #e5908f 1px 1px 2px!important;
   height: 100vh;
   background-color:transparent !important ;
   display: flex;
@@ -176,8 +234,9 @@ border: 1px solid red !important;
 .carousel-item{
   background-color: transparent !important;
   height: 90%;
-  width: 70%;
+  width: 90%;
 }
+
 }
 @media screen and (max-width: 400px) {
 

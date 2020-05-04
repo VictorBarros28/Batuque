@@ -550,4 +550,17 @@ h4{
 
 
 }
+
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 30px;
+    padding-top:10%;
+  }
+}
+  @media screen and (max-width: 330px) {
+  h1{
+    font-size: 20px;
+    padding-top:10%;
+  }
+}
 </style>
