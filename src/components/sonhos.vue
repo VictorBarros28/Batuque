@@ -6,11 +6,11 @@
 <br>
 <br>
 <!-- TODO : Conseguir forma de manipular "title, para que o responsivo funcione bem e a navbar não seja afetada." -->
-
+<div id = "teste">
    <div class = "portfolio">
   <b-card  class = "tabs" no-body>
     <b-tabs card>
-      <b-tab title="IDENTIDADE VISUAL⠀⠀⠀⠀⠀" title-link-class ="h4" active> 
+      <b-tab title="IDENTIDADE VISUAL" title-link-class ="h4" active> 
          <div class = "nomes">
      <div class = "proj">
       <img src= "../assets/Imagem 8.png"  v-b-modal.modal-center1 href="" class="img-responsive">
@@ -61,7 +61,7 @@
 </div>
 </div>
       </b-tab>
-      <b-tab title="AMBIENTAÇÃO⠀⠀⠀⠀⠀⠀" title-link-class ="h4">
+      <b-tab title="AMBIENTAÇÃO" title-link-class ="h4">
       <div class = "nomes"> 
      <div class = "proj">
       <img src= "../assets/Imagem 8.png" v-b-modal.modal-center11 href="" class="img-responsive">
@@ -111,7 +111,7 @@
 </div>
 </div>
       </b-tab>
-            <b-tab title="EDITORIAL ⠀⠀⠀⠀" title-link-class ="h4">
+            <b-tab title="EDITORIAL" title-link-class ="h4">
          <div class = "nomes"> 
      <div class = "proj">
       <img src= "../assets/Imagem 8.png" v-b-modal.modal-center21 href="" class="img-responsive">
@@ -209,7 +209,7 @@
   </b-modal>
 </div>
 </div></b-tab>
-            <b-tab title="⠀⠀⠀⠀⠀⠀⠀SINALIZAÇÃO" title-link-class ="h4">
+            <b-tab title="SINALIZAÇÃO" title-link-class ="h4">
          <div class = "nomes"> 
      <div class = "proj">
       <img src= "../assets/Imagem 8.png" v-b-modal.modal-center41 href="" class="img-responsive">
@@ -261,7 +261,7 @@
     </b-tabs>
   </b-card>
       </div>
-
+</div>
 
  <div class="carrosselSonhos">
     <CarrosselSonhos></CarrosselSonhos>
@@ -279,25 +279,98 @@ export default {
 }
 </script>
 <style>
-.card-header{
+#teste .nav{
+   width: fit-content;
+   display: flex;
+   align-items: stretch;
+}
+#teste .card-header{
+  display: flex;
+  justify-content:center;
+  padding-left: 1.5vw;
  border-bottom:0px !important;
   background-color: transparent !important;
+  width: 100%;
+
 }
-
-
-.nav-link.active , .nav-link{
+#teste .nav-link, .nav-link.active {
+  padding-left:3.1vw;
+  padding-right: 3.1vw;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
       color: #e48f8e!important;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: transparent!important;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+#teste .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #495057!important;
     border-color: #dee2e6 #dee2e6 #dee2e6 !important;
     border:0px;
 
 }
+
+#teste .card-body{
+  padding: 0px;
+}
+
+@media screen and (max-width: 1840px) {
+#teste .card-header{
+  display: flex;
+  justify-content:center;
+  padding-left: 1.5vw;
+ border-bottom:0px !important;
+  background-color: transparent !important;
+  width: 90vw;
+
+}
+
+#teste .nav-link, .nav-link.active {
+  padding-left:2vw;
+  padding-right: 2vw;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      color: #e48f8e!important;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: transparent!important;
+} 
+}
+
+@media screen and (max-width: 1500px) {
+
+#teste .nav-link, .nav-link.active {
+  padding-left:1.3vw;
+  padding-right: 1.3vw;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      color: #e48f8e!important;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: transparent!important;
+} 
+
+}
+
+@media screen and (max-width: 1320px) {
+#teste .nav-link, .nav-link.active {
+  padding-left:1.3vw;
+  padding-right: 1.3vw;
+      font-size: 1.6vw;
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      color: #e48f8e!important;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: transparent!important;
+} 
+
+}
+
 </style>
+
+
 <style scoped>
 
 
@@ -402,7 +475,14 @@ color:  #707070;
 font-weight: bolder;
 
 }
+@media screen and (max-width: 1500px) {
 
+  
+.title{
+  height: 70vh;
+}
+
+}
 @media screen and (max-width: 1357px) {
 h4{
   font-size: 20px; 
@@ -423,8 +503,7 @@ h4,a{
 .proj{
   display: flex;
   justify-content: baseline;
-  height: 5%;
-  width: 100%;
+  width: 100vw;
   padding-left: 15vw;
   margin-bottom: 0.5vh;
 }
@@ -434,7 +513,7 @@ h4,a{
   align-items:flex-start;
   justify-content: baseline;
   height: 10%;
-  width: 100%;
+  width: fit-content;
   padding-left: 15vw;
   margin-bottom: 30vh;
 }
@@ -443,7 +522,9 @@ h4,a{
 .correcao{
   padding-bottom: 5vw;
 }
+}
 @media screen and (max-width: 975px) {
+
 h4{
   font-size: 14px; 
 }
@@ -468,6 +549,5 @@ h4{
 
 
 
-}
 }
 </style>
