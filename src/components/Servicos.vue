@@ -668,14 +668,14 @@ a {
   width: 100px;
   position: relative;
   left: -30px;
-  bottom:-589px;
+  bottom: -509px;
 }
 .lateral2{  
-  width: 70px;
+  width: 20%;
   position: relative;
   display: flex;
   bottom:290px;
-  right: 0%;
+  right: 4%;
   
 }
 .txt{
@@ -696,7 +696,7 @@ display: flex;
 position: relative;
 height: fit-content;
 top:100px;
-width: 110%;
+width: 150%;
 justify-content: space-between;
 
 }

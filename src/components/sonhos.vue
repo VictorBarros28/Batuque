@@ -368,6 +368,17 @@ export default {
 
 }
 
+
+@media screen and (max-height: 376px) {
+  .teste{
+    margin-top: 2%!important;
+    height: 50vh!important;
+    margin-bottom: 15%!important;
+
+  }
+
+}
+
 </style>
 
 
@@ -460,9 +471,9 @@ export default {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    width: 100%;
-   height: 90vh;
+   height: 100%;
  }
 
  h4{
@@ -479,7 +490,7 @@ font-weight: bolder;
 
   
 .title{
-  height: 70vh;
+  height: 100vh;
 }
 
 }
@@ -515,7 +526,7 @@ h4,a{
   height: 10%;
   width: fit-content;
   padding-left: 15vw;
-  margin-bottom: 30vh;
+  /* margin-bottom: 30vh; */
 }
 
 
@@ -543,12 +554,18 @@ h4{
   flex-direction: column;
   justify-content: center;
   width:100vw;
-  height: 100%;
+  height: 50%;
   padding-bottom: 10%;
 }
 
-
-
+h1{
+    margin-bottom: 20%;
+}
+}
+@media screen and (max-width: 650px) {
+  h1{
+    margin-bottom: 15%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -563,4 +580,14 @@ h4{
     padding-top:10%;
   }
 }
+
+@media screen and (max-height: 530px) {
+
+  .title{
+    margin-bottom:20%;
+  }
+}
+
+
+
 </style>
