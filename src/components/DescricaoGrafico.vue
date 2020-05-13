@@ -1,4 +1,6 @@
 <template>
+<div id="Servicos">
+   
 <div class="hello">
     
 
@@ -6,8 +8,8 @@
 
   
   <div class= "cont">
-    <h1>{{ msg }}</h1>
-    <div class = "texto">
+    <h1 data-aos="fade-down" > GRÁFICO </h1>
+    <div class = "textservices">
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -16,15 +18,20 @@
     </div>
 
     <div class="cardservicos">
-      <div class="cardservicos1 grid-md">
+      <div   data-aos="fade-right" class="cardservicos1 grid-md">
         <img src= "../assets/BATUQUE_GRAFICO.png" href="" class="img-responsive">
-        <p class = "txt">GRÁFICO</p>
+
+        <!-- <router-link class = "txt" :to = "{ name: 'grafico'}">GRÁFICO</router-link> -->
+
+
       </div>
+
     </div>
-
-
+    
   </div>
-<img src = "../assets/latdir.png" class= "lateral2">
+  <img src = "../assets/latdir.png" class= "lateral2">
+
+</div>
 </div>
 </template>
 
@@ -43,18 +50,82 @@ export default {
   width: 215px;
   position: relative;
   left: -100px;
+  bottom:-700px;
+}
+.lateral2{  
+  width: 150px;
+  position: relative;
+  display: flex;
+  bottom:450px;
+  right: 0%;
+  
+}
+.txt{
+  color:white;
+  text-decoration: none;
+  font-style: inherit;
+  font-family: monospace;
+  font-weight:lighter;
+  font-size: 35px;
+}
+.img-responsive{
+position: relative;
+bottom:35px;  
+align-items: space-around;
+}
+.cardservicos{
+display: flex;
+position: relative;
+height: fit-content;
+top:100px;
+width: 70vw;
+justify-content: space-evenly;
+/* justify-content: space-around; */
+}
+.cardservicos1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hello{  
+  
+  padding-bottom:200px;
+  background-color: #e48f8e;
+  display: flex !important;
+  align-items: center;
+  position:relative;
+  top:-60px;
+  z-index:1;
+  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+}
+.cont{  
+  
+  position: relative;
+  right:2%;
+  top:-30px;
+  background-color: #e48f8e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+.lateral1{
+  width: 215px;
+  position: relative;
+  left: -100px;
   bottom:-400px;
 }
 .lateral2{  
   width: 150px;
   position: relative;
   display: flex;
-  bottom:200px;
+  bottom:450px;
   right: 0%;
   
 }
 .txt{
   color:white;
+  text-decoration: none;
   font-style: inherit;
   font-family: monospace;
   font-weight:lighter;
@@ -75,35 +146,43 @@ width: 70vw;
 justify-content: space-around;
 
 }
-.hello{  
- 
-  height: fit-content;
-  padding-bottom:200px;
-  background-color: #e48f8e;
-  display: flex !important;
-  align-items: center;
-   position:relative;
-  top:-60px;
-  z-index:1;
-  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
-  
-  position: relative;
-  right:2%;
-  top:-30px;
-  background-color: #e48f8e;
+
+.cardservicos1{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.hello{  
+  height:fit-content;
+  padding-top: 21vh;
+  padding-bottom:10vh;
+  background-color: #e48f8e;
+  display: flex !important;
+  align-items: center;
+  position:relative;
+ 
+  z-index:1;
+  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+}
+.cont{  
+ 
+  height: 50%;
+  position: relative;
+  right:2%;
+  top:-250px;
+  background-color: #e48f8e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.cont h1{
   
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
   font-weight: lighter;
   color: #ffffff;
-  padding-top: 94px;
+  padding-top: 260px;
+  padding-bottom: 72px;
 }
 h3 {
   margin: 40px 0 0;
@@ -119,13 +198,14 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  height: fit-content;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight:lighter;
   color: #ffffff;
-  width: 100%;
+  width: 90%;
+  margin-left: 9%;
 }
  
   @media screen and (max-width: 1300px) {
@@ -133,12 +213,12 @@ a {
 .lateral1{
   position: relative;
   left: -100px;
-  bottom:-580px;
+  bottom:-700px;
 }
 .lateral2{  
   position: relative;
   display: flex;
-  bottom:350px;
+  bottom:450px;
   right: 0%;
   
 }
@@ -161,7 +241,8 @@ position: relative;
 height: fit-content;
 top:100px;
 width: 100%;
-justify-content: space-between;
+justify-content: space-evenly;
+/* justify-content: space-between; */
 
 }
 
@@ -171,8 +252,6 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
- 
-  height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -187,7 +266,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 60px;
   font-weight: lighter;
@@ -208,7 +287,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
   font-size: 25px;
   font-weight:lighter;
@@ -222,13 +301,13 @@ a {
   width: 160px;
   position: relative;
   left: -60px;
-  bottom:-579px;
+  bottom:-719px;
 }
 .lateral2{  
   width: 100px;
   position: relative;
   display: flex;
-  bottom:310px;
+  bottom:450px;
   right: 0%;
   
 }
@@ -251,7 +330,8 @@ position: relative;
 height: fit-content;
 top:100px;
 width: 110%;
-justify-content: space-between;
+justify-content: space-evenly;
+/* justify-content: space-between; */
 
 }
 
@@ -261,8 +341,6 @@ justify-content: space-between;
   flex-direction: column;
 }
 .hello{  
- 
-  height: 1000px;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
@@ -277,7 +355,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 60px;
   font-weight: lighter;
@@ -298,7 +376,7 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
   font-size: 30px;
   font-weight:lighter;
@@ -319,7 +397,7 @@ a {
   width: 80px;
   position: relative;
   display: flex;
-  bottom:310px;
+  bottom:370px;
   right: 0%;
   
 }
@@ -342,7 +420,8 @@ position: relative;
 height: fit-content;
 top:100px;
 width: 110%;
-justify-content: space-between;
+justify-content: space-evenly;
+/* justify-content: space-between; */
 
 }
 
@@ -368,7 +447,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 50px;
   font-weight: lighter;
@@ -389,9 +468,9 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
  
-  font-size: 20px;
+  font-size: 26px;
   font-weight:lighter;
   color: #ffffff;
   width: 100%;
@@ -404,13 +483,13 @@ a {
   width: 100px;
   position: relative;
   left: -30px;
-  bottom:-479px;
+  bottom:-589px;
 }
 .lateral2{  
-  width: 80px;
+  width: 70px;
   position: relative;
   display: flex;
-  bottom:220px;
+  bottom:290px;
   right: 0%;
   
 }
@@ -421,7 +500,7 @@ a {
   font-size: 12px;
 }
 .img-responsive{
-width: 50px;
+width: 80px;
 position: relative;
 bottom:20px;  
 align-items: space-between;
@@ -433,7 +512,8 @@ position: relative;
 height: fit-content;
 top:100px;
 width: 110%;
-justify-content: space-between;
+justify-content: space-evenly;
+/* justify-content: space-between; */
 
 }
 
@@ -459,7 +539,7 @@ justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-h1{
+.cont h1{
   
   font-size: 30px;
   font-weight: lighter;
@@ -480,12 +560,195 @@ li {
 a {
   color: #42b983;
 }
-.texto{
+.textservices{
+  line-height: 0.8;
+  font-size: 25px;
+  font-weight:lighter;
+  color: #ffffff;
+  width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+
+.lateral1{
+  width: 100px;
+  position: relative;
+  left: -30px;
+  bottom:-589px;
+}
+.lateral2{  
+  width: 70px;
+  position: relative;
+  display: flex;
+  bottom:290px;
+  right: 0%;
+  
+}
+.txt{
+  color:white;
+  font-style: inherit;
+  font-weight:lighter;
+  font-size: 12px;
+}
+.img-responsive{
+width: 60px;
+position: relative;
+bottom:20px;  
+align-items: space-between;
+}
+
+.cardservicos{
+display: flex;
+position: relative;
+height: fit-content;
+top:100px;
+width: 110%;
+justify-content: space-evenly;
+/* justify-content: space-between; */
+
+}
+
+.cardservicos1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hello{  
  
-  font-size: 10px;
+  height: 800px;
+  background-color: #e48f8e;
+  display: flex !important;
+  align-items: center;
+  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+}
+.cont{  
+  position: relative;
+  right:0%;
+  top:-30px;
+  background-color: #e48f8e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont h1{
+  
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-top: 94px;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+.textservices{
+  line-height: 0.8;
+  font-size: 25px;
   font-weight:lighter;
   color: #ffffff;
   width: 100%;
 }}
+
+@media screen and (max-width: 400px) {
+
+.lateral1{
+  width: 100px;
+  position: relative;
+  left: -30px;
+  bottom: -509px;
+}
+.lateral2{  
+  width: 20%;
+  position: relative;
+  display: flex;
+  bottom:290px;
+  right: 4%;
+  
+}
+.txt{
+  color:white;
+  font-style: inherit;
+  font-weight:lighter;
+  font-size: 12px;
+}
+.img-responsive{
+width: 60px;
+position: relative;
+bottom:20px;  
+align-items: space-between;
+}
+
+.cardservicos{
+display: flex;
+position: relative;
+height: fit-content;
+top:100px;
+width: 150%;
+justify-content: space-evenly;
+/* justify-content: space-between; */
+
+}
+
+.cardservicos1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hello{  
+ 
+  height: 800px;
+  background-color: #e48f8e;
+  display: flex !important;
+  align-items: center;
+  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
+}
+.cont{  
+  position: relative;
+  right:0%;
+  top:-30px;
+  background-color: #e48f8e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont h1{
+  
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-top: 94px;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+.textservices{
+  line-height: 0.8;
+  font-size: 20px;
+  font-weight:lighter;
+  color: #ffffff;
+  width: 100%;
+}}
+}
   
 </style>
