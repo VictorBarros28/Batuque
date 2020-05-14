@@ -1,108 +1,100 @@
 <template>
-  <div class="bannerCarrossel" id="About" >
+  <div class="bannerCarrossel" id="About">
     <md-card>
-      <md-card-actions>
-        
-        
-      </md-card-actions>
+      <md-card-actions> </md-card-actions>
       <md-card-media>
         <!-- swiper -->
-        <swiper :options="swiperOption"
-        
-        >
-        
-        <swiper-slide class="slides" >
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
-        <div class="slidecard">  
-          <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.</p>
-          <img class="imagens" src="../assets/sobre.png" alt="">
-          
-        </div>
-        </swiper-slide>
-        <swiper-slide class="slides">
-          <h1    class="titulo">QUEM SOMOS NÓS?</h1>
-          <div class="slidecard">
-          <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.</p>
-          <img class="imagens" src="../assets/sobre_dois.png" alt="">
-        </div>
-        </swiper-slide>
-        <swiper-slide class="slides">
-          <h1   class="titulo">QUEM SOMOS NÓS?</h1>
-          <div class="slidecard">
-          <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.</p>
-          <img class="imagens" src="../assets/sobre_tres.png" alt="">
-        </div>
-        </swiper-slide>
-        <swiper-slide class="slides">
-          <h1  class="titulo">QUEM SOMOS NÓS?</h1>
-          <div class="slidecard">
-          <p class="texto">"Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.</p>
-          <img class="imagens" src="../assets/sobre_quatro.png" alt="">
-          </div>
+        <swiper :options="swiperOption">
+          <swiper-slide class="slides">
+            <h1 class="titulo">QUEM SOMOS NÓS?</h1>
+            <div class="slidecard">
+              <p class="texto">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img class="imagens" src="../assets/sobre.png" alt="" />
+            </div>
+          </swiper-slide>
+          <swiper-slide class="slides">
+            <h1 class="titulo">QUEM SOMOS NÓS?</h1>
+            <div class="slidecard">
+              <p class="texto">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img class="imagens" src="../assets/sobre_dois.png" alt="" />
+            </div>
+          </swiper-slide>
+          <swiper-slide class="slides">
+            <h1 class="titulo">QUEM SOMOS NÓS?</h1>
+            <div class="slidecard">
+              <p class="texto">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img class="imagens" src="../assets/sobre_tres.png" alt="" />
+            </div>
+          </swiper-slide>
+          <swiper-slide class="slides">
+            <h1 class="titulo">QUEM SOMOS NÓS?</h1>
+            <div class="slidecard">
+              <p class="texto">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img class="imagens" src="../assets/sobre_quatro.png" alt="" />
+            </div>
+          </swiper-slide>
 
-        </swiper-slide>
-        
-        
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
-    </md-card-media>
-  </md-card>
-</div>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </md-card-media>
+    </md-card>
+  </div>
 </template>
 
-
 <script>
-import AOS from 'aos'
-  export default {
-    data() {
-      return {
-        swiperOption: {
-          loop:true,
-         autoplay:true,
-         duration:8000,
-          pagination: {
-            el: '.swiper-pagination',    
-          }
-        }
-      }
-    }
-  }
+import AOS from "aos";
+export default {
+  data() {
+    return {
+      swiperOption: {
+        loop: true,
+        autoplay: true,
+        duration: 8000,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      },
+    };
+  },
+};
 </script>
 
 <style>
- .slidecard{
-   
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-   padding-bottom: 180px;
- }
-  .imagens{
-
-    padding-left:15px;
-  }
-.bannerCarrossel h1{
+.slidecard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 180px;
+}
+.imagens {
+  padding-left: 15px;
+}
+.bannerCarrossel h1 {
   font-size: 50px !important;
   color: #707070;
-  font-family: 'Segoe UI' !important;
+  font-family: "Segoe UI" !important;
   font-weight: 500 !important;
- padding-top:80px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,43 +103,40 @@ import AOS from 'aos'
   z-index: 2;
 }
 
-.slides{
-  
+.slides {
   width: 100%;
   height: 0%;
-  background-color: rgba(255, 255, 255, 0.750);
+  background-color: rgba(255, 255, 255, 0.75);
   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   padding-left: 17.5%;
   padding-right: 17.5%;
   align-items: center;
-  
+
   z-index: 1;
 }
-.bannerCarrossel{
-  background-image: url('../assets/banner.png');
+.bannerCarrossel {
+  background-image: url("../assets/banner.png");
   width: 100%;
   height: 100vh;
   background-position: right;
   background-size: cover;
- 
 }
-.swiper-slide{
+.swiper-slide {
   height: 100vh !important;
 }
-.md-card-actions{
+.md-card-actions {
   padding: 0px !important;
 }
-.imagens{
+.imagens {
   width: 350px !important;
   height: 350px !important;
-  
 }
-.texto{
+.texto {
   width: 440px;
- /* height:225px; */
+  /* height:225px; */
   text-align: center;
   font-family: Calibri;
   color: #707070;
@@ -155,135 +144,116 @@ import AOS from 'aos'
   letter-spacing: -1.86px;
   line-height: 46px;
   text-align: justify;
-  transition:0.2s;
-  
+  transition: 0.2s;
 }
 
-@media screen and (max-height: 780px)  {
-    .slidecard{
-     
-      padding-bottom: 25px;
-    }
+@media screen and (max-height: 780px) {
+  .slidecard {
+    padding-bottom: 25px;
+  }
 }
 
-
-
-@media screen and (max-height: 780px)  and (max-width: 825px) {
-  .slidecard{
-      
-    }
-    .texto {
+@media screen and (max-height: 780px) and (max-width: 825px) {
+  .slidecard {
+  }
+  .texto {
     line-height: 30px;
-    transition:0.2s;
-    }
-    .imagens {
+    transition: 0.2s;
+  }
+  .imagens {
     width: 220px !important;
     height: 220px !important;
-    }
+  }
 }
 
-
-
-@media screen and (max-width: 700px){
-
-.texto{
-  font-size: 20px;
-  letter-spacing: 0;
+@media screen and (max-width: 700px) {
+  .texto {
+    font-size: 20px;
+    letter-spacing: 0;
     line-height: 25px;
     width: 80%;
-    transition:0.2s;
+    transition: 0.2s;
+  }
+  .imagens {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .slides {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .bannerCarrossel h1 {
+    font-size: 30px !important;
+    margin-top: 8% !important;
+  }
 }
-.imagens{
-  width: 280px !important;
-  height: 280px !important;
-}
-.slides{
-  padding-left: 3%;
-  padding-right: 3%;
-}
-.bannerCarrossel h1{
-  font-size: 30px !important;
-  margin-top: 8% !important;
-  
-}
-}
-
-
 
 @media only screen and (max-width: 786px) {
-  .slidecard{
-    
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 81px;
-    }
-    .bannerCarrossel h1 {
-      padding-bottom: 50px;
-    }
-
+  .slidecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 81px;
+  }
+  .bannerCarrossel h1 {
+    padding-bottom: 50px;
+  }
 }
-@media screen and  (max-width: 1900px)  and (max-height:480px)  {
-
-.texto{
-  line-height:36px;
-  transition:0.2s;
-}
-.imagens{
-  width:280px !important;
-  height:280px !important;
-}
-.bannerCarrossel h1 {
+@media screen and (max-width: 1900px) and (max-height: 480px) {
+  .texto {
+    line-height: 36px;
+    transition: 0.2s;
+  }
+  .imagens {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  .bannerCarrossel h1 {
     font-size: 45px !important;
-}
+  }
 }
 
-@media screen and (max-height: 450px)  and (max-width: 825px) {
-  .slidecard{
-     
-      display: flex;
-      justify-content: center;
-      flex-direction: initial;
-      padding-bottom: 25px;
-
-     
-    }
-    .texto{
-      line-height: 25px;
-      transition:0.2s;
-    }
-    .imagens{
-      width: 220px !important;
+@media screen and (max-height: 450px) and (max-width: 825px) {
+  .slidecard {
+    display: flex;
+    justify-content: center;
+    flex-direction: initial;
+    padding-bottom: 25px;
+  }
+  .texto {
+    line-height: 25px;
+    transition: 0.2s;
+  }
+  .imagens {
+    width: 220px !important;
     height: 220px !important;
-    }
+  }
 
-    .bannerCarrossel h1 {
+  .bannerCarrossel h1 {
     font-size: 40px !important;
     padding-bottom: 0px;
     margin-top: 5% !important;
-    }
+  }
 }
 
-@media screen and (max-height: 380px)  and (max-width: 650px) {
-  .slidecard{
-     
-      display: flex;
-      justify-content: center;
-      flex-direction: initial;
-      padding-bottom: 83px;
-
-    }
-    .imagens {
+@media screen and (max-height: 380px) and (max-width: 650px) {
+  .slidecard {
+    display: flex;
+    justify-content: center;
+    flex-direction: initial;
+    padding-bottom: 83px;
+  }
+  .imagens {
     width: 230px !important;
     height: 230px !important;
-    }
-    .texto{
-      line-height: 23px;
-      transition:0.2s;
-    }
-    .bannerCarrossel h1 {
+  }
+  .texto {
+    line-height: 23px;
+    transition: 0.2s;
+  }
+  .bannerCarrossel h1 {
     padding-bottom: 20px !important;
-    }
+  }
 }
 /*
 @media screen and (max-width: 825px) and (orientation: landscape) {
@@ -309,39 +279,32 @@ import AOS from 'aos'
 
 }
 */
-@media screen and  (max-width: 812px) and (max-height: 380px)  {
-  .slidecard{
-    
+@media screen and (max-width: 812px) and (max-height: 380px) {
+  .slidecard {
     margin-bottom: 25px;
-
   }
 }
 
-@media screen and  (max-width: 650px) and (max-height: 370px)  {
-  .slidecard{
-  
+@media screen and (max-width: 650px) and (max-height: 370px) {
+  .slidecard {
     margin-bottom: 0px;
-
   }
   .bannerCarrossel h1 {
     padding-bottom: 0px !important;
-}
-
-}
-@media screen and  (max-width: 320px)  {
-  .slidecard{
-    
   }
-  .texto{
+}
+@media screen and (max-width: 320px) {
+  .slidecard {
+  }
+  .texto {
     width: 100%;
-    font-size:20px !important;
-    transition:0.2s;
+    font-size: 20px !important;
+    transition: 0.2s;
   }
 }
 
-@media screen and  (max-width: 570px) and (max-height: 325px)  {
-  .slidecard{
-    
+@media screen and (max-width: 570px) and (max-height: 325px) {
+  .slidecard {
   }
   .imagens {
     width: 210px !important;
@@ -349,30 +312,27 @@ import AOS from 'aos'
   }
 }
 
-
-@media screen and (min-width: 600px) and (max-width: 950px){
-.slides{
-  padding-right: 7%;
-  padding-left: 7%;
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .slides {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
 }
-}
 
-@media screen and (max-width: 426px){
-  .slides{
-    
+@media screen and (max-width: 426px) {
+  .slides {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .imagens{
-  width: 200px !important;
-  height: 200px !important;
+  .imagens {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .texto {
+    font-size: 23px;
+    transition: 0.2s;
+  }
 }
-.texto{
-  font-size:23px;
-  transition:0.2s;
-}
-}
-
 </style>
