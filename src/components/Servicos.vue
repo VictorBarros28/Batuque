@@ -69,7 +69,7 @@ export default {
 .lateral1 {
   width: 215px;
   position: relative;
-  left: -100px;
+  left: -50px;
   bottom: -700px;
 }
 .lateral2 {

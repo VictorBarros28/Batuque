@@ -4,7 +4,7 @@
       <b-carousel
         id="carousel-1"
         v-model="slide"
-        :interval="4"
+        :interval="0"
         controls
         background="#ababab"
         img-width="1024"
@@ -125,7 +125,7 @@ export default {
 }
 .teste {
   display: flex;
-  width: 80vw;
+  width: 73.5vw;
   justify-content: center;
 }
 @media screen and (max-width: 420px) {

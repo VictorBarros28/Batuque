@@ -2,7 +2,7 @@
   <div id="Servicos">
     <div class="hello">
       
-      <img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" />
+      <!-- <img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" /> -->
 
       <div class="cont">
         <h1 data-aos="fade-down">PRODUTOS</h1>

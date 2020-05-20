@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <Servicos></Servicos>
+     <Servicos></Servicos>
   </div>
 </template>
 
@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style>
+
 #index {
   background-color: #f8f8f8;
 }

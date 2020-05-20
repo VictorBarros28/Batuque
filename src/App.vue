@@ -2,8 +2,9 @@
   <div id="app">
     <Nav></Nav>
     <Banner></Banner>
-    <Carrossel></Carrossel>
-    <router-view> </router-view>
+    <Carrossel></Carrossel> 
+      <router-view class="a"></router-view>
+    <logolateral></logolateral>
     <sonhos></sonhos>
     <Clientes></Clientes>
     <Footer></Footer>
@@ -18,6 +19,7 @@ import Clientes from "./components/Clientes";
 import Servicos from "./components/Servicos";
 import Nav from "./components/Nav";
 import sonhos from "./components/sonhos";
+import logolateral from "./components/logolateral"
 export default {
   components: {
     Banner,
@@ -27,11 +29,13 @@ export default {
     Servicos,
     Nav,
     sonhos,
+    logolateral,
   },
 };
 </script>
 
 <style>
+
 * {
   margin: 0;
   padding: 0;

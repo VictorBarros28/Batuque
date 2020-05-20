@@ -4,7 +4,7 @@
       <b-carousel
         id="carousel-1"
         v-model="slide"
-        :interval="4"
+        :interval="8000"
         controls
         background="#ababab"
         img-width="1024"

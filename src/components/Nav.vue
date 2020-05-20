@@ -17,9 +17,7 @@
           <b-nav-item class="cor" href="#">portfólio</b-nav-item>
           <b-nav-item class="cor" href="#Servicos">serviços</b-nav-item>
           <b-nav-item class="cor" href="#">blog</b-nav-item>
-          <b-nav-item data-scroll class="cor" href="#Contato"
-            >contato</b-nav-item
-          >
+          <b-nav-item data-scroll class="cor" href="#Contato">contato</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
