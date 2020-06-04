@@ -3,7 +3,9 @@
     <Nav></Nav>
     <Banner></Banner>
     <Carrossel></Carrossel> 
-      <router-view class="a"></router-view>
+ 
+       <router-view name= "servicos"></router-view>
+ 
     <logolateral></logolateral>
     <sonhos></sonhos>
     <Clientes></Clientes>

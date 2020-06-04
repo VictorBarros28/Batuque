@@ -1,17 +1,42 @@
 <template>
-    <div>
- <img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" />
-
+    <div class = lateral>
+      
+ <div class = lat2><img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" /></div>
+<div class = lat><img src="../assets/latdir.png" class="lateral2" /></div>
+ 
+      
     </div>
-
 </template>
 
 <style>
+.lat2{
+  height: 0px;
+}
 
+.lat{
+  width: 100%;
+/* width: fit-content; */
+}
+
+.lateral2 {
+  width: 9vw;
+  position: relative;
+  display: flex;
+  left:90.85%;
+  top:-82.5vw;
+  z-index: 1;
+}
+.lateral{
+  width: 100%;
+}
+
+.lat2{
+  width: 100%;
+  /* width:99.1vw; */
+}
 .lateral1{
   width: 12vw;
   left: -2.9vw;
-  bottom: -800px;
   top:-19.8vw;
   display: flex;
   position: relative;
@@ -19,10 +44,87 @@
   z-index: 1;
 }
 
+/* .lateral2{
+  width: 9.7vw;
+  left: 89.4vw;
+  top:-101vw;
+  display: flex;
+  position: relative;
+  height: fit-content;
+  z-index: 1;
+} */
+
+@media screen and (max-width: 1900px) {
+.lateral2 {
+
+  top:-83.5vw;
+ 
+}
+
+}
+
+@media screen and (max-width: 1864px) {
+
+  .lateral2 {
+
+  top:-110.5vw;
+ 
+}
+}
+
+
+
+@media screen and (max-width: 1831px) {
+  .lateral2 {
+
+  top:-111.5vw;
+ 
+}
+
+}
+
+@media screen and (max-width: 1798px) {
+
+  .lateral2 {
+
+  top:-113vw;
+ 
+}
+}
+
+@media screen and (max-width: 1758px) {
+
+  .lateral2 {
+  top:-114vw;
+ 
+}
+}
+
+
+
+@media screen and (max-width: 1732px) {
+
+  .lateral2 {
+  top:-115vw;
+ 
+}
+}
+
+@media screen and (max-width: 1701px) {
+
+  .lateral2 {
+  top:-116vw;
+ 
+}
+}
 @media screen and (max-width: 1628px) {
 .lateral1{
   top:-21vw;
 }
+
+/* .lateral2{
+
+} */
 
 }
 
