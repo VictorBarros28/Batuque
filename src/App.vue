@@ -4,7 +4,7 @@
     <Banner></Banner>
     <Carrossel></Carrossel> 
  
-       <router-view name= "servicos"></router-view>
+       <router-view />
  
     <logolateral></logolateral>
     <sonhos></sonhos>

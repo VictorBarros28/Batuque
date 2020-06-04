@@ -1,6 +1,7 @@
 <template>
   <div id="index">
-     <Servicos></Servicos>
+     
+    <servicos></servicos>
       
   </div>
 </template>
