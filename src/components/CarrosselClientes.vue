@@ -125,7 +125,8 @@ export default {
 }
 .teste {
   display: flex;
-  width: 73.5vw;
+  width: 85.5vw;
+  /* width: 73.5vw; */
   justify-content: center;
 }
 @media screen and (max-width: 420px) {
@@ -134,8 +135,7 @@ export default {
     height: 90%;
     width: 70%;
   }
-}
-@media screen and (max-width: 400px) {
+
   .batuque {
     width: 99%;
   }
@@ -152,5 +152,8 @@ export default {
     width: 99%;
     border-bottom: solid transparent 50px;
   }
+
 }
+
+  
 </style>

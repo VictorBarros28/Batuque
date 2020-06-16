@@ -1,12 +1,12 @@
 <template>
   <div id="Servicos">
     <div class="hello">
-      <img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" />
+      <!-- <img src="../assets/BATIUQUE_LATERAL.png" class="lateral1" /> -->
 
       <div class="cont">
         <h1 data-aos="fade-down">INTERIORES</h1>
         <div class="textservices">
-<div class = "back"> <router-link class = "txt" :to = "{ name: 'index'}"> ⮜ </router-link> </div>
+<div class = "back" id="trigger-right"> <router-link class = "txt" :to = "{ name: 'index'}"> ⮜ </router-link> </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -16,7 +16,7 @@
         </div>
 
         <div class="cardservicos">
-          <div data-aos="fade-right" class="cardservicos1 grid-md">
+          <div data-aos="fade-right" data-aos-anchor="#trigger-right" class="cardservicos1 grid-md">
             <img
               src="../assets/BATUQUE_INTERIORES.png"
               href=""
@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <img src="../assets/latdir.png" class="lateral2" />
+      <!-- <img src="../assets/latdir.png" class="lateral2" /> -->
     </div>
   </div>
 </template>
@@ -43,6 +43,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.back{
+  display: flex;
+  justify-content: flex-start;
+}
 .lateral1 {
   width: 215px;
   position: relative;
@@ -75,8 +79,7 @@ export default {
   height: fit-content;
   top: 100px;
   width: 70vw;
-  justify-content: space-evenly;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 .cardservicos1 {
   display: flex;
@@ -84,93 +87,26 @@ export default {
   align-items: center;
 }
 .hello {
+
   padding-bottom: 200px;
   background-color: #e48f8e;
   display: flex !important;
   align-items: center;
   position: relative;
+  height: 100vh;
   top: -60px;
   z-index: 1;
   -webkit-clip-path: polygon(100% 4%, 100% 90%, 0 100%, 0 0);
 }
 .cont {
   position: relative;
-  right: 2%;
-  top: -30px;
-  padding-top:10%;
+  width: 99%;
   padding-bottom: 9%;
   background-color: #e48f8e;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* 
-.lateral1{
-  width: 215px;
-  position: relative;
-  left: -100px;
-  bottom:-400px;
-}
-.lateral2{  
-  width: 150px;
-  position: relative;
-  display: flex;
-  bottom:450px;
-  right: 0%;
-  
-}
-.txt{
-  color:white;
-  text-decoration: none;
-  font-style: inherit;
-  font-family: monospace;
-  font-weight:lighter;
-  font-size: 35px;
-}
-.img-responsive{
-position: relative;
-bottom:35px;  
-align-items: space-around;
-}
-
-.cardservicos{
-display: flex;
-position: relative;
-height: fit-content;
-top:100px;
-width: 70vw;
-justify-content: space-around;
-
-}
-
-.cardservicos1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hello{  
-  height:fit-content;
-  padding-top: 21vh;
-  padding-bottom:10vh;
-  background-color: #e48f8e;
-  display: flex !important;
-  align-items: center;
-  position:relative;
- 
-  z-index:1;
-  -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-}
-.cont{  
- 
-  height: 50%;
-  position: relative;
-  right:2%;
-  top:-250px;
-  background-color: #e48f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 .cont h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 60px;
@@ -199,7 +135,7 @@ a {
   font-size: 35px;
   font-weight: lighter;
   color: #ffffff;
-  width: 90%;
+  width: 80%;
   margin-left: 9%;
 }
 
@@ -233,9 +169,8 @@ a {
     position: relative;
     height: fit-content;
     top: 100px;
-    width: 100%;
-    justify-content: space-evenly;
-    /* justify-content: space-between; */
+    width: 15%;
+    justify-content: space-EVENLY;
   }
 
   .cardservicos1 {
@@ -244,6 +179,8 @@ a {
     flex-direction: column;
   }
   .hello {
+    top: -6vh;
+    padding-bottom: 0px;
     background-color: #e48f8e;
     display: flex !important;
     align-items: center;
@@ -251,7 +188,7 @@ a {
   }
   .cont {
     position: relative;
-    right: 4%;
+    justify-content: center;
     top: -30px;
     background-color: #e48f8e;
     display: flex;
@@ -282,7 +219,6 @@ a {
     font-size: 25px;
     font-weight: lighter;
     color: #ffffff;
-    width: 100%;
   }
 }
 
@@ -318,9 +254,8 @@ a {
     position: relative;
     height: fit-content;
     top: 100px;
-    width: 110%;
+    width: 80%;
     justify-content: space-evenly;
-    /* justify-content: space-between; */
   }
 
   .cardservicos1 {
@@ -336,7 +271,7 @@ a {
   }
   .cont {
     position: relative;
-    right: 2%;
+    right: -1%;
     top: -30px;
     background-color: #e48f8e;
     display: flex;
@@ -367,7 +302,6 @@ a {
     font-size: 30px;
     font-weight: lighter;
     color: #ffffff;
-    width: 100%;
   }
 }
 
@@ -392,7 +326,7 @@ a {
     font-size: 20px;
   }
   .img-responsive {
-    width: 90px;
+        width: 107px;
     position: relative;
     bottom: 35px;
     align-items: space-around;
@@ -403,9 +337,8 @@ a {
     position: relative;
     height: fit-content;
     top: 100px;
-    width: 110%;
+    width: 15%;
     justify-content: space-evenly;
-    /* justify-content: space-between; */
   }
 
   .cardservicos1 {
@@ -414,7 +347,6 @@ a {
     flex-direction: column;
   }
   .hello {
-    height: 1000px;
     background-color: #e48f8e;
     display: flex !important;
     align-items: center;
@@ -453,24 +385,11 @@ a {
     font-size: 26px;
     font-weight: lighter;
     color: #ffffff;
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 530px) {
-  .lateral1 {
-    width: 100px;
-    position: relative;
-    left: -30px;
-    bottom: -589px;
-  }
-  .lateral2 {
-    width: 70px;
-    position: relative;
-    display: flex;
-    bottom: 290px;
-    right: 0%;
-  }
+
   .txt {
     color: white;
     font-style: inherit;
@@ -478,7 +397,7 @@ a {
     font-size: 12px;
   }
   .img-responsive {
-    width: 80px;
+    width: 97px;
     position: relative;
     bottom: 20px;
     align-items: space-between;
@@ -489,7 +408,7 @@ a {
     position: relative;
     height: fit-content;
     top: 100px;
-    width: 110%;
+    width: 20%;
     justify-content: space-evenly;
     /* justify-content: space-between; */
   }
@@ -500,7 +419,6 @@ a {
     flex-direction: column;
   }
   .hello {
-    height: 800px;
     background-color: #e48f8e;
     display: flex !important;
     align-items: center;
@@ -509,14 +427,15 @@ a {
   .cont {
     position: relative;
     right: 0%;
-    top: -30px;
+    top: -10vh;
     background-color: #e48f8e;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .cont h1 {
-    font-size: 30px;
+font-size: 36px;
+    height: 12vh;
     font-weight: lighter;
     color: #ffffff;
     padding-top: 94px;
@@ -536,46 +455,34 @@ a {
     color: #42b983;
   }
   .textservices {
-    line-height: 0.8;
+      line-height: 1.2;
     font-size: 25px;
     font-weight: lighter;
     color: #ffffff;
-    width: 100%;
+    width: 80%;
   }
 
   @media screen and (max-width: 450px) {
-    .lateral1 {
-      width: 100px;
-      position: relative;
-      left: -30px;
-      bottom: -589px;
-    }
-    .lateral2 {
-      width: 70px;
-      position: relative;
-      display: flex;
-      bottom: 290px;
-      right: 0%;
-    }
+   
     .txt {
       color: white;
       font-style: inherit;
       font-weight: lighter;
       font-size: 12px;
     }
-    .img-responsive {
+    /* .img-responsive {
       width: 60px;
       position: relative;
       bottom: 20px;
       align-items: space-between;
-    }
+    } */
 
     .cardservicos {
       display: flex;
       position: relative;
       height: fit-content;
       top: 100px;
-      width: 110%;
+      width: 25%;
       justify-content: space-evenly;
       /* justify-content: space-between; */
     }
@@ -585,24 +492,24 @@ a {
       align-items: center;
       flex-direction: column;
     }
-    .hello {
+    /* .hello {
       height: 800px;
       background-color: #e48f8e;
       display: flex !important;
       align-items: center;
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-    }
+    } */
     .cont {
       position: relative;
       right: 0%;
-      top: -30px;
+      top: -5px;
       background-color: #e48f8e;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .cont h1 {
-      font-size: 30px;
+      font-size: 42px;
       font-weight: lighter;
       color: #ffffff;
       padding-top: 94px;
@@ -622,28 +529,16 @@ a {
       color: #42b983;
     }
     .textservices {
-      line-height: 0.8;
+        line-height: 1.1;
       font-size: 25px;
       font-weight: lighter;
       color: #ffffff;
-      width: 100%;
+      width: 80%;
     }
   }
 
   @media screen and (max-width: 400px) {
-    .lateral1 {
-      width: 100px;
-      position: relative;
-      left: -30px;
-      bottom: -509px;
-    }
-    .lateral2 {
-      width: 20%;
-      position: relative;
-      display: flex;
-      bottom: 290px;
-      right: 4%;
-    }
+  
     .txt {
       color: white;
       font-style: inherit;
@@ -661,8 +556,8 @@ a {
       display: flex;
       position: relative;
       height: fit-content;
-      top: 100px;
-      width: 150%;
+      top: 90px;
+      width: 20%;
       justify-content: space-evenly;
       /* justify-content: space-between; */
     }
@@ -672,21 +567,17 @@ a {
       align-items: center;
       flex-direction: column;
     }
-    .hello {
+    /* .hello {
       height: 800px;
       background-color: #e48f8e;
       display: flex !important;
       align-items: center;
       -webkit-clip-path: polygon(100% 6%, 100% 90%, 0 100%, 0 0);
-    }
+    } */
     .cont {
-      position: relative;
-      right: 0%;
-      top: -30px;
-      background-color: #e48f8e;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    
+      top: -12vh;
+     
     }
     .cont h1 {
       font-size: 30px;
@@ -709,12 +600,72 @@ a {
       color: #42b983;
     }
     .textservices {
-      line-height: 0.8;
+      line-height: 1.0;
       font-size: 20px;
       font-weight: lighter;
       color: #ffffff;
-      width: 100%;
+      width: 80%;
     }
   }
+}
+
+@media screen and (max-height: 955px) {
+.hello{
+  top: -8vh;
+}
+}
+
+@media screen and (max-height: 455px) {
+  .hello{
+  top: -10vh;
+}
+
+.textservices{
+  font-size:12px;
+}
+
+.cont h1{
+ font-size: 20px;
+ padding-bottom: 4px;
+}
+.img-responsive{
+  width: 10vw;
+}
+
+.cardservicos{
+  top: 56px;
+}
+
+.lateral1{
+    width: 11vw !important;
+    top: -21vw !important;
+}
+
+}
+</style>
+
+<style>
+
+@media screen and (max-height: 745px) {
+  
+.lateral1 {
+    width: 12vw;
+    top:-24vw;
+}}
+
+@media screen and (max-height: 568px) {
+  
+.lateral1 {
+       width: 18vw;
+    top: -40vw;
+}}
+
+@media screen and (max-height: 455px) {
+
+.lateral1{
+    width: 11vw !important;
+    top: -21vw !important;
+}
+
 }
 </style>

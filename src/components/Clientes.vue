@@ -55,7 +55,7 @@ export default {
   width: 100%;
   margin-right: 7%;
   margin-top: 2%;
-  height: 60vh;
+  height: 57vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -65,7 +65,7 @@ export default {
   margin-right: 7%;
   display: flex;
   justify-content: space-around;
-  height: 60vh;
+  height: 57vh;
   flex-direction: column;
 }
 .txt {
@@ -140,7 +140,7 @@ a {
     font-size: 30px;
   }
   .img-responsive {
-    width: 200px;
+    width: 262px;
     position: relative;
     bottom: 35px;
     align-items: space-around;
@@ -188,7 +188,14 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1226px) {
+  .batuque{
+  height: 55vh;
+}
+
+  .edens{
+    height: 55vh;
+  }
   .titulo {
     padding-left: 6vw;
   }
@@ -257,7 +264,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 95%;
     padding-bottom: 20%;
   }
   .txt {
