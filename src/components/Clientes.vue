@@ -376,7 +376,8 @@ a {
   }
   @media screen and (max-width: 478px) {
     h3 {
-      font-size: 35px;
+          padding-left: 8vw;
+      font-size: 31px;
     }
   }
   @media screen and (max-width: 450px) {

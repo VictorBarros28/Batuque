@@ -157,3 +157,9 @@ export default {
 
   
 </style>
+
+<style>
+.carousel-control-next {
+    right: -5vw;
+}
+</style>

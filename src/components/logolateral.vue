@@ -19,10 +19,10 @@
 }
 
 .lateral2 {
-  width: 8.5vw;
+  width: 7.5vw;
   position: relative;
   display: flex;
-  left:91.5%;
+  left:92.4%;
 top: -119vh;
   z-index: 1;
 }
@@ -134,6 +134,113 @@ width: 12.5vw;
  
 }
 }
+
+@media screen and (max-width: 623px) {
+
+  .lateral2 {
+
+  top:-106.3vh;
+ 
+}
+}
+@media screen and (max-width: 467px) {
+
+  .lateral2 {
+
+  top:-105.3vh;
+ 
+}
+}
+
+@media screen and (max-width: 395px) {
+
+  .lateral2 {
+
+  top:-104.3vh;
+ 
+}
+}
+
+@media screen and (max-width: 318px) {
+
+  .lateral2 {
+
+  top:-103.3vh;
+ 
+}
+}
+
+
+@media screen and (max-height: 825px) {
+
+  .lateral2 {
+
+  top:-109.3vh;
+ 
+}
+}
+
+
+
+
+@media screen and (max-height: 780px) {
+
+  .lateral2 {
+
+  
+    top: -117.3vh;
+
+ 
+}
+}
+
+@media screen and (max-height: 731px) {
+
+  .lateral2 {
+
+  
+    top: -110.3vh;
+
+ 
+}
+}
+
+@media screen and (max-height: 650px) {
+
+  .lateral2 {
+
+  
+    top: -109.3vh;
+
+ 
+}
+}
+
+
+@media screen and (max-height: 570px) {
+
+  .lateral2 {
+
+  top:-110.3vh;
+ 
+}
+
+.lateral1{
+  top: -41vw!important;
+  width: 19vw!important;
+}
+}
+
+@media screen and (max-height: 455px){
+.lateral2{
+  width: 7vw !important;
+  left: 93.3%!important;
+  top: -121.3vh!important;
+}
+.lateral1 {
+    width: 11vw !important;
+    top: -21vw !important;
+}}
 @media screen and (max-width: 1628px) {
 .lateral1{
   top:-21vw;
@@ -167,8 +274,8 @@ width: 12.5vw;
 
 @media screen and (max-width: 786px) {
 .lateral1{
-  width: 16vw;
-  top:-30vw;
+  width: 14vw;
+  top: -27vw;
   left: -3.9vw;
 }
 }

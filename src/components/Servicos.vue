@@ -673,6 +673,24 @@ font-size: 36px;
     }
 }
 
+@media screen and (height: 1024px) {
+  .conteudoservicos h1{
+    font-size: 5vh;
+  }
+.cardservicos{
+  top: 67px;
+}
+.img-responsive{
+  width: 92px;
+
+}
+
+.txt{
+  font-size: 3vw;
+}
+
+}
+
 @media screen and (max-height: 830px) {
 .cardservicos{
   top: 4vh;
@@ -691,7 +709,17 @@ font-size: 36px;
 
 
 @media screen and (max-height: 455px) {
- 
+.txt{
+  font-size: 4vh;
+}
+
+.textservices{
+  width: 71vw;
+} 
+
+  .conteudoservicos h1{
+    font-size: 9vh;
+  } 
 .img-responsive{
   width: 10vw;
 }
