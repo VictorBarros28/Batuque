@@ -159,7 +159,24 @@ export default {
 </style>
 
 <style>
-.carousel-control-next {
-    right: -5vw;
+
+
+/* 
+@media screen and (max-width: 700px){
+
+#CarrosselClientes .carousel-control-next {
+    right: 0vw;
 }
+
+} */
+@media screen and (max-height: 420px){
+#CarrosselClientes .teste{
+    width: 57.5vw!important;
+}
+#CarrosselClientes  .carousel-inner {
+    width: 80%!important;
+    height: 90vh!important;
+
+
+}}
 </style>
