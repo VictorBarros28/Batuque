@@ -3,9 +3,7 @@
     <Nav></Nav>
     <Banner></Banner>
     <Carrossel></Carrossel> 
- 
-       <router-view />
- 
+       <router-view/>
     <logolateral></logolateral>
     <sonhos></sonhos>
     <Clientes></Clientes>

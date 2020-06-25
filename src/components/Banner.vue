@@ -4,7 +4,7 @@
       <div id="banner">
         <div class="filtro">
           <div id="texto">
-            <div id="h1">LOREM IPSUM DOLOR SIT AMET, TOC TOC TOC</div>
+            <div id="h1">Prazer, somos a BATUQUE! Empresa Júnior de Design</div>
           </div>
           <div id="mouse">
             <img src="../assets/mouse.png" id="icone" />

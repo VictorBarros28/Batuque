@@ -1,7 +1,7 @@
-<template>
+// <template>
   <div class="Navbar ">
     <b-navbar toggleable="lg" id="navbar" class="navbarshadow">
-      <b-navbar-brand href="#">
+      <b-navbar-brand v-scroll-to="'#'">
         <img id="logo" src="../assets/logo_branca.png" alt="" />
       </b-navbar-brand>
 
@@ -12,12 +12,12 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item data-scroll class="cor" href="#Home">home</b-nav-item>
-          <b-nav-item data-scroll class="cor" href="#About">sobre</b-nav-item>
-          <b-nav-item class="cor" href="#">portfólio</b-nav-item>
-          <b-nav-item class="cor" href="#Servicos">serviços</b-nav-item>
+          <b-nav-item data-scroll class="cor" v-scroll-to="'#Home'">home</b-nav-item>
+          <b-nav-item data-scroll class="cor" v-scroll-to="'#About'">sobre</b-nav-item>
+          <b-nav-item class="cor" v-scroll-to="'#Sonhos'">portfólio</b-nav-item>
+          <b-nav-item class="cor" v-scroll-to="'#Servicos'">serviços</b-nav-item>
           <b-nav-item class="cor" href="#">blog</b-nav-item>
-          <b-nav-item data-scroll class="cor" href="#Contato">contato</b-nav-item>
+          <b-nav-item data-scroll class="cor" v-scroll-to="'#Contato'">contato</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -37,9 +37,10 @@ import SmoothScroll from "smooth-scroll";
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 500,
 });
-
 //adicionando o efeito de trocar a navbar com o scroll
 export default {
+
+  
   methods: {
     handleScroll(event) {
       if ($(window).scrollTop()) {
@@ -47,7 +48,6 @@ export default {
         $("#navbar").removeClass("navbarshadow");
         $("a").removeClass("cor");
         $("li").removeClass("cor");
-
         document
           .getElementById("logo")
           .setAttribute("src", require("@/assets/logo_rosa.png"));
@@ -57,7 +57,6 @@ export default {
       } else {
         $("#navbar").removeClass("navwhite");
         $("#navbar").addClass("navbarshadow");
-
         $("a").addClass("cor");
         $("li").addClass("cor");
         document
@@ -76,42 +75,38 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
 };
+
+
 </script>
 
 <style>
 .navbar {
   transition: 2s;
 }
-
 .navbarshadow {
   box-shadow: none !important;
 }
-
 .cor a {
   color: white !important;
   font-family: Calibri;
   font-weight: lighter;
   font-size: 25px;
 }
-
 .navbar-light .navbar-nav .nav-item .nav-link {
   font-size: 25px;
   font-family: Calibri;
   font-weight: lighter;
 }
-
 #logo {
   width: 300px !important;
   margin-left: 110px;
 }
-
 .Navbar {
   position: fixed;
   z-index: 50;
   top: 0;
   width: 100%;
 }
-
 .navwhite {
   background-color: white !important;
   transition: 2s;
@@ -121,12 +116,10 @@ export default {
   height: 20px;
   margin-top: 15px;
 }
-
 .navbar-expand-lg .navbar-collapse {
   transition: 0.5s;
   margin-right: 229px;
 }
-
 @media screen and (max-width: 1500px) {
   .navbar-expand-lg .navbar-collapse {
     transition: 0.5s;
@@ -136,7 +129,6 @@ export default {
 @media screen and (max-width: 1300px) {
   .navbar-expand-lg .navbar-collapse {
     transition: 0.5s;
-
     margin-right: 100px;
   }
 }
@@ -153,7 +145,6 @@ export default {
     margin-left: 70px;
   }
 }
-
 @media screen and (max-width: 680px) {
   #logo {
     width: 200px !important;

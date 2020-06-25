@@ -1,6 +1,6 @@
-<template>
-  <div class="title">
-    <h1>SONHOS ENTREGUES</h1>
+<template >
+  <div class="title" id = "Sonhos" >
+    <h1 >SONHOS ENTREGUES</h1>
     <br />
     <br />
     <!-- TODO : Conseguir forma de manipular "title, para que o responsivo funcione bem e a navbar não seja afetada." -->

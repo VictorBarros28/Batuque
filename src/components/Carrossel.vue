@@ -9,10 +9,7 @@
             <h1 class="titulo">QUEM SOMOS NÓS?</h1>
             <div class="slidecard">
               <p class="texto">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Nós prezamos pela melhor relação com nossos clientes, nos identificando e sempre os tratando com o carinho que merecem! E muitas vezes isso se torna uma amizade para vida! :)
               </p>
               <img class="imagens" src="../assets/sobre.png" alt="" />
             </div>
@@ -21,10 +18,7 @@
             <h1 class="titulo">QUEM SOMOS NÓS?</h1>
             <div class="slidecard">
               <p class="texto">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Um dos nossos maiores objetivos é sem dúvida que todos conheçam e aprendam um pouco sobre Design e assim percebam que Design é sim para todos! 
               </p>
               <img class="imagens" src="../assets/sobre_dois.png" alt="" />
             </div>
@@ -33,10 +27,7 @@
             <h1 class="titulo">QUEM SOMOS NÓS?</h1>
             <div class="slidecard">
               <p class="texto">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Nós acreditamos que por meio do Design conseguimos dar vida aos sonhos dos nossos clientes! Pois, é a partir do nosso trabalho que ele conhece o rosto, personalidade e até mesmo a casa do seu negócio!
               </p>
               <img class="imagens" src="../assets/sobre_tres.png" alt="" />
             </div>
@@ -45,10 +36,7 @@
             <h1 class="titulo">QUEM SOMOS NÓS?</h1>
             <div class="slidecard">
               <p class="texto">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Para nós já virou gíria, mas esse lema da Batuque carrega muito significado! Somos uma empresa fora da curva, com desafios diários e mesmo assim sempre acreditamos no nosso potencial e principalmente no poder de mudança! 
               </p>
               <img class="imagens" src="../assets/sobre_quatro.png" alt="" />
             </div>

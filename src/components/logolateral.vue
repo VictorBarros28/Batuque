@@ -14,6 +14,7 @@
 }
 
 .lat{
+  height: 0px;
   width: 100%;
 /* width: fit-content; */
 }
