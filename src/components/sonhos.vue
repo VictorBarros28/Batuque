@@ -56,12 +56,12 @@
                   <b-modal id="modal-center5" centered title="BootstrapVue">
                     <p class="my-4">Modal 5!</p>
                   </b-modal>
-                  <div class="correcao" v-b-modal.modal-center6>
+   
                     <b-modal id="modal-center6" centered title="BootstrapVue">
                       <p class="my-4">Modal 6!</p>
                     </b-modal>
-                    <img src="../assets/Imagem 10.png" href="" class="img-r1" />
-                  </div>
+                    <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+                  
                 </div>
                 <div class="proj2">
                   <img
@@ -151,13 +151,13 @@
                   <b-modal id="modal-center15" centered title="BootstrapVue">
                     <p class="my-4">Modal 15!</p>
                   </b-modal>
-                  <div class="correcao" v-b-modal.modal-center16>
+                 
                     <b-modal id="modal-center16" centered title="BootstrapVue">
                       <p class="my-4">Modal 16!</p>
                     </b-modal>
-                    <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+                    <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
                   </div>
-                </div>
+             
                 <div class="proj2">
                   <img
                     src="../assets/Imagem 3.png"
@@ -246,12 +246,12 @@
                   <b-modal id="modal-center25" centered title="BootstrapVue">
                     <p class="my-4">Modal 25!</p>
                   </b-modal>
-                  <div class="correcao" v-b-modal.modal-center26>
+              
                     <b-modal id="modal-center26" centered title="BootstrapVue">
                       <p class="my-4">Modal 26!</p>
                     </b-modal>
-                    <img src="../assets/Imagem 10.png" href="" class="img-r1" />
-                  </div>
+                    <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+               
                 </div>
                 <div class="proj2">
                   <img
@@ -341,12 +341,12 @@
                   <b-modal id="modal-center35" centered title="BootstrapVue">
                     <p class="my-4">Modal 35!</p>
                   </b-modal>
-                  <div class="correcao" v-b-modal.modal-center36>
+              
                     <b-modal id="modal-center36" centered title="BootstrapVue">
                       <p class="my-4">Modal 36!</p>
                     </b-modal>
-                    <img src="../assets/Imagem 10.png" href="" class="img-r1" />
-                  </div>
+                    <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+                 
                 </div>
                 <div class="proj2">
                   <img
@@ -436,12 +436,12 @@
                   <b-modal id="modal-center45" centered title="BootstrapVue">
                     <p class="my-4">Modal 45!</p>
                   </b-modal>
-                  <div class="correcao" v-b-modal.modal-center46>
+                 
                     <b-modal id="modal-center46" centered title="BootstrapVue">
                       <p class="my-4">Modal 46!</p>
                     </b-modal>
-                    <img src="../assets/Imagem 10.png" href="" class="img-r1" />
-                  </div>
+                    <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+                 
                 </div>
                 <div class="proj2">
                   <img
@@ -619,7 +619,7 @@ export default {
 .carrosselSonhos {
   display: none;
 }
-.correcao {
+/* .correcao {
   margin-top: 9px;
   display: flex;
   width: fit-content;
@@ -628,7 +628,7 @@ export default {
   padding-top: 1%;
   padding-bottom: 6.7%;
   margin-left: 0.5%;
-}
+} */
 .nomes {
   display: flex;
   align-items: baseline;
@@ -643,14 +643,23 @@ export default {
   height: 12.311979166666667vw;
 }
 
-.img-r1 {
+.img-responsive1 {
+  border-top: transparent 1vh solid;
+  border-left: transparent 1vh solid;
+  border-bottom: transparent 0.9vh solid;
+  width: 11.807291666666666vw;
+  height: 24.743958333333334vw;
+
+ 
+}
+/* .img-r1 {
   border-left: transparent solid 10px;
   border-top: transparent solid 10px;
   border-right: transparent solid 10px;
   padding-top: 5%;
   width: 11.765625vw;
   height: 100%;
-}
+} */
 
 .img-r2 {
   border: transparent 1vh solid;
@@ -709,9 +718,9 @@ h1 {
     font-size: 20px;
   }
 
-  .correcao {
+  /* .correcao {
     padding-bottom: 4.9vw;
-  }
+  } */
 }
 
 @media screen and (max-width: 1140px) {
@@ -725,7 +734,7 @@ h1 {
     justify-content: baseline;
     width: 100vw;
     padding-left: 15vw;
-    margin-bottom: 0.5vh;
+    /* margin-bottom: 0.5vh; */
   }
 
   .proj2 {
@@ -738,9 +747,9 @@ h1 {
     /* margin-bottom: 30vh; */
   }
 
-  .correcao {
+  /* .correcao {
     padding-bottom: 5vw;
-  }
+  } */
 }
 @media screen and (max-width: 975px) {
   h4 {

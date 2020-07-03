@@ -1,4 +1,4 @@
-// <template>
+ <template>
   <div class="Navbar ">
     <b-navbar toggleable="lg" id="navbar" class="navbarshadow">
       <b-navbar-brand v-scroll-to="'#'">

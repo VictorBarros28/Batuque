@@ -669,6 +669,13 @@ font-size: 36px;
       flex-direction: column;
     }
 }
+@media screen and (min-width: 2000px) {
+.textservices{
+  width: 65%;
+  margin-left: 5%;
+}
+
+}
 
 @media screen and (height: 1024px) {
   .conteudoservicos h1{

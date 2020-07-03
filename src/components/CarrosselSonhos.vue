@@ -59,9 +59,11 @@
                 class="img-responsive"
               />
             </div>
-            <div class="correcao">
-              <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+            <div class="clientela">
+           
+              <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
             </div>
+           
           </div>
         </b-carousel-slide>
 
@@ -109,8 +111,10 @@
                 class="img-responsive"
               />
             </div>
-            <div class="correcao">
-              <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+            <div class="clientela">
+           
+              <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+          
             </div>
           </div>
         </b-carousel-slide>
@@ -159,8 +163,10 @@
                 class="img-responsive"
               />
             </div>
-            <div class="correcao">
-              <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+            <div class="clientela">
+            
+              <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
+            
             </div>
           </div>
         </b-carousel-slide>
@@ -209,9 +215,11 @@
                 class="img-responsive"
               />
             </div>
-            <div class="correcao">
-              <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+            <div class="clientela">
+         
+              <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
             </div>
+            
           </div>
         </b-carousel-slide>
 
@@ -259,9 +267,11 @@
                 class="img-responsive"
               />
             </div>
-            <div class="correcao">
-              <img src="../assets/Imagem 10.png" href="" class="img-r1" />
+            <div class="clientela">
+        
+              <img src="../assets/Imagem 10.png" href="" class="img-responsive1" />
             </div>
+           
           </div>
         </b-carousel-slide>
       </b-carousel>
@@ -295,16 +305,7 @@ h5 {
   align-items: center;
 }
 
-.correcao {
-  margin-top: 3px;
-  display: flex;
-  width: 240px;
-  height: fit-content;
-  background-color: #e5908f;
-  padding-top: 20px;
-  padding-bottom: 4%;
-  margin-left: 3px;
-}
+
 
 .img-responsive {
   border: transparent 3px solid;
@@ -312,10 +313,16 @@ h5 {
   height: 100%;
 }
 
-.img-r1 {
-  padding-top: 5%;
-  width: 151.6px;
+
+.img-responsive1 {
+  border-left: transparent 3px solid;
+  padding-top:3px;
+  width: 100%;
+  height: 100%;
+
 }
+
+
 .CardClientes {
   border: 2px solid red;
   display: flex;
@@ -351,6 +358,27 @@ h5 {
   justify-content: center;
 }
 
+@media screen and (max-width: 470px) {
+  .img-responsive1 {
+  border-left: transparent 3px solid;
+  padding-top:3px;
+  width: 100%;
+  height: 100%;
+}
+
+h5{
+    width: 80vw;
+}
+.teste{
+  width: 80vw;
+    /* padding-right: 5vw; */
+}
+
+.carrosselSonhos{
+    margin-left: -5vw;
+}
+
+}
 @media screen and (max-width: 420px) {
   .carousel-item {
     background-color: transparent !important;
